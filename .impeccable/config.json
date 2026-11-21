@@ -1,0 +1,107 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "tight-leading",
+        "value": "*",
+        "files": [
+          "identities/seed.html"
+        ],
+        "createdAt": "2026-11-21T15:07:58.272Z",
+        "reason": "model triage: flagged rules are display headings >=36px (1.05-1.15 intentional); body is 1.6"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "identities/seed.html"
+        ],
+        "createdAt": "2026-11-21T15:07:58.284Z",
+        "reason": "model triage: flagged nodes are DaisyUI .alert, padded by component CSS the static detector does not load"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "identities/modular.html"
+        ],
+        "createdAt": "2026-11-21T15:08:23.977Z",
+        "reason": "model triage: flagged nodes are DaisyUI .alert, padded by component CSS the static detector does not load"
+      },
+      {
+        "rule": "tight-leading",
+        "value": "*",
+        "files": [
+          "identities/letterpress.html"
+        ],
+        "createdAt": "2026-11-21T15:08:32.734Z",
+        "reason": "model triage: flagged rule is Bodoni Moda display heading >=40px; body Literata is 1.6+"
+      },
+      {
+        "rule": "tight-leading",
+        "value": "*",
+        "files": [
+          "identities/webring.html"
+        ],
+        "createdAt": "2026-11-21T15:11:01.595Z",
+        "reason": "model triage: flagged rule is Pixelify Sans display heading; reading text is 1.6"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-21T15:11:15.736Z",
+        "reason": "model triage: rendered h1 is 54px, h2 27px, body 18-20px (screenshot .impeccable/review/overview); static pass cannot resolve Tailwind size classes"
+      },
+      {
+        "rule": "repeating-stripes-gradient",
+        "value": "*",
+        "files": [
+          "identities/seed.html"
+        ],
+        "createdAt": "2026-11-21T15:34:10.793Z",
+        "reason": "model triage: the repeating gradient draws the seed packet's perforation/crimp ticks, the world's own material, not decorative stripes"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "*",
+        "files": [
+          "explore/wordmarks.html"
+        ],
+        "createdAt": "2026-11-21T16:05:38.105Z",
+        "reason": "model triage: explore/wordmarks.html is a font-comparison fixture that intentionally renders candidate faces outside the design system; not shipped (outside the Vite build)"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "*",
+        "files": [
+          "explore/wordmarks.html"
+        ],
+        "createdAt": "2026-11-21T16:05:38.116Z",
+        "reason": "model triage: explore/wordmarks.html is a font-comparison fixture that intentionally renders candidate faces outside the design system; not shipped (outside the Vite build)"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-21T16:23:16.882Z",
+        "reason": "model triage: index.html is the neutral overview on DaisyUI stock light/dark themes, recorded as out of scope in DESIGN.md"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgb(0, 0, 0)",
+        "files": [
+          "identities/modular.html"
+        ],
+        "createdAt": "2026-11-21T16:23:16.893Z",
+        "reason": "model triage: DaisyUI derived button border (#0000 transparent / fill mix at depth 0), no authored value; documented in DESIGN.md shared notes"
+      }
+    ]
+  }
+}

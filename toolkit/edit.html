@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en" data-identity="wompland" data-default-mode="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Glyph editor · WompLand toolkit</title>
+  <link rel="icon" href="/brands/wompland/favicon.svg">
+  <link rel="stylesheet" href="../src/toolkit/editor.css">
+  <script type="module" src="../src/toolkit/editor.js"></script>
+</head>
+<body data-brand="wompland">
+<a class="skip" href="#canvas">Skip to the glyph canvas</a>
+
+<header class="bar">
+  <a class="home" href="/" aria-label="WompLand toolkit home">
+    <img class="for-light" src="/brands/wompland/horizontal.svg" alt="" width="148" height="28">
+    <img class="for-dark" src="/brands/wompland/horizontal-reverse.svg" alt="" width="148" height="28">
+  </a>
+  <div class="bar-title">
+    <span class="bar-label">Editing</span>
+    <h1 id="brand-title">Loading…</h1>
+    <span class="dirty" id="dirty" hidden><svg viewBox="0 0 10 10" aria-hidden="true"><rect x="1" y="1" width="8" height="8"/></svg><span class="dirty-text">Unsaved changes</span></span>
+  </div>
+  <div class="bar-actions">
+    <button class="b b-ink" id="save" type="button" disabled>Save</button>
+    <button class="b b-more" type="button" popovertarget="more-menu" aria-label="More actions">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="2"/></svg><span>More</span>
+    </button>
+    <div class="more-menu" id="more-menu" popover>
+      <button class="b" id="revert" type="button" disabled>Revert to saved</button>
+      <a class="b" id="guide-link" href="/toolkit/brand.html?brand=wompland">Open brand guide</a>
+    </div>
+    <button class="b b-mode" type="button" data-mode-toggle aria-label="Dark mode">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 1v14h7V1Z" fill="currentColor"/></svg>
+      <span>Dark</span>
+    </button>
+  </div>
+</header>
+
+<div class="notices">
+  <p class="notice" id="readonly-note" hidden>Read-only. Editing runs under <code>npm run dev</code>; this build shows the saved brands.</p>
+  <p class="notice" id="disk-note" hidden></p>
+  <div class="notice notice-error" id="save-errors" role="alert" hidden></div>
+  <p class="notice notice-error" id="gate-note" hidden></p>
+  <p class="notice notice-narrow">The editor works best on a wider screen.</p>
+</div>
+
+<div class="workspace">
+  <nav class="rail" aria-labelledby="rail-h">
+    <h2 class="plate-h" id="rail-h">Brands</h2>
+    <ul class="brand-list" id="brand-list"></ul>
+
+    <form class="new-womp" id="new-womp" novalidate>
+      <h2 class="plate-h" id="new-h">New Womp</h2>
+      <label class="lbl" for="job">Job word</label>
+      <div class="name-field">
+        <input id="job" name="job" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="list" aria-describedby="job-help job-error" maxlength="24">
+        <span aria-hidden="true">Womp</span>
+      </div>
+      <p class="hint" id="job-help">Lowercase letters only. Name: <strong id="job-preview">listWomp</strong></p>
+      <p class="field-error" id="job-error" hidden></p>
+      <button class="b b-block" type="submit" id="create">Create Womp</button>
+    </form>
+  </nav>
+
+  <main class="stage" id="main" aria-labelledby="stage-h">
+    <h2 class="sr-only" id="stage-h">Glyph</h2>
+    <div class="tools">
+      <fieldset class="seg" id="tool-group">
+        <legend class="lbl">Tool</legend>
+        <div class="seg-row" id="tools"></div>
+      </fieldset>
+      <fieldset class="seg" id="size-group">
+        <legend class="lbl">Size</legend>
+        <div class="seg-row" id="sizes"></div>
+      </fieldset>
+      <fieldset class="seg" id="rot-group">
+        <legend class="lbl">Rotation <kbd>R</kbd></legend>
+        <div class="seg-row" id="rots"></div>
+      </fieldset>
+    </div>
+
+    <div class="canvas-wrap">
+      <div class="axis axis-x num" aria-hidden="true"><span></span><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span></span></div>
+      <div class="axis axis-y num" aria-hidden="true"><span></span><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span></span></div>
+      <svg id="canvas" class="canvas" viewBox="0 0 540 540" tabindex="0" role="application"
+           aria-roledescription="glyph canvas" aria-label="Glyph field, 7 by 7 modules" aria-describedby="canvas-help"></svg>
+    </div>
+
+    <div class="readout" aria-hidden="true">
+      <span class="ro-pos num" id="ro-pos">x –  y –</span>
+      <span class="ro-status" id="ro-status"></span>
+    </div>
+
+    <div class="history">
+      <button class="b b-sm" id="undo" type="button" disabled aria-keyshortcuts="Meta+Z Control+Z">Undo</button>
+      <button class="b b-sm" id="redo" type="button" disabled aria-keyshortcuts="Meta+Shift+Z Control+Shift+Z">Redo</button>
+      <button class="b b-sm b-ink b-place" id="place" type="button">Place</button>
+      <label class="check"><input type="checkbox" id="show-grid" checked> Construction grid</label>
+      <span class="spacer"></span>
+      <button class="b b-sm b-danger" id="clear" type="button">Clear glyph</button>
+    </div>
+
+    <details class="keys">
+      <summary>Keyboard</summary>
+      <dl id="canvas-help">
+        <div><dt><kbd>←</kbd><kbd>↑</kbd><kbd>→</kbd><kbd>↓</kbd></dt><dd>Move the cursor, or the selected shape</dd></div>
+        <div><dt><kbd>Enter</kbd></dt><dd>Place, select or erase at the cursor</dd></div>
+        <div><dt><kbd>C</kbd> <kbd>G</kbd> <kbd>Q</kbd> <kbd>V</kbd> <kbd>E</kbd></dt><dd>Cell, ring, quarter, select, erase</dd></div>
+        <div><dt><kbd>1</kbd>–<kbd>4</kbd></dt><dd>Size</dd></div>
+        <div><dt><kbd>R</kbd> / <kbd>Shift</kbd><kbd>R</kbd></dt><dd>Rotate clockwise / counter-clockwise</dd></div>
+        <div><dt><kbd>Delete</kbd></dt><dd>Remove the selected shape</dd></div>
+        <div><dt><kbd>Esc</kbd></dt><dd>Deselect</dd></div>
+        <div><dt><kbd>⌘</kbd><kbd>Z</kbd> / <kbd>⇧</kbd><kbd>⌘</kbd><kbd>Z</kbd></dt><dd>Undo / redo</dd></div>
+        <div><dt><kbd>⌘</kbd><kbd>S</kbd></dt><dd>Save</dd></div>
+      </dl>
+    </details>
+    <p class="sr-only" id="live" aria-live="polite" aria-atomic="true"></p>
+  </main>
+
+  <aside class="inspector" aria-labelledby="insp-h">
+    <h2 class="sr-only" id="insp-h">Brand settings</h2>
+
+    <section class="plate" aria-labelledby="name-h">
+      <h3 class="sr-only" id="name-h">Name</h3>
+      <div class="name-row">
+        <p class="brand-name" id="brand-name"></p>
+        <span class="name-actions">
+          <button class="b b-sm" id="rename" type="button" hidden>Rename</button>
+          <button class="b b-sm b-danger" id="delete" type="button" hidden>Delete Womp</button>
+        </span>
+      </div>
+      <p class="hint" id="role-line"></p>
+    </section>
+
+    <fieldset class="plate" id="color-group">
+      <legend class="plate-h">Color</legend>
+      <div class="swatches" id="swatches"></div>
+    </fieldset>
+
+    <fieldset class="plate" id="tone-group">
+      <legend class="plate-h">Glyph tone</legend>
+      <div class="tones" id="tones"></div>
+    </fieldset>
+
+    <section class="plate" aria-labelledby="prev-h">
+      <h3 class="plate-h" id="prev-h">Previews</h3>
+      <div class="sizes" id="prev-sizes"></div>
+      <h4 class="lbl">Lockups</h4>
+      <div class="lockups" id="prev-lockups"></div>
+      <h4 class="lbl">Theme</h4>
+      <div class="themes" id="prev-themes"></div>
+    </section>
+
+    <section class="plate" aria-labelledby="checks-h">
+      <h3 class="plate-h" id="checks-h">Contrast checks</h3>
+      <div id="checks"></div>
+    </section>
+  </aside>
+</div>
+
+<dialog class="dlg" id="dlg" aria-labelledby="dlg-h" aria-describedby="dlg-body">
+  <form method="dialog" id="dlg-form">
+    <h2 id="dlg-h"></h2>
+    <div id="dlg-body"></div>
+    <div class="dlg-input" id="dlg-input" hidden>
+      <label class="lbl" for="dlg-job">New job word</label>
+      <div class="name-field">
+        <input id="dlg-job" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" maxlength="24" aria-describedby="dlg-job-help dlg-job-error">
+        <span aria-hidden="true">Womp</span>
+      </div>
+      <p class="hint" id="dlg-job-help">New name: <strong id="dlg-preview"></strong></p>
+      <p class="field-error" id="dlg-job-error" hidden></p>
+    </div>
+    <div class="dlg-actions" id="dlg-actions"></div>
+  </form>
+</dialog>
+</body>
+</html>

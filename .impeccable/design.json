@@ -1,0 +1,1216 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-21T18:23:51.088Z",
+  "title": "Design System: WompLand",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#141414",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242424",
+          "#404040",
+          "#5d5d5d",
+          "#808080",
+          "#a4a4a4",
+          "#cacaca",
+          "#eeeeee"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "#FFFFFF",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242424",
+          "#404040",
+          "#5d5d5d",
+          "#808080",
+          "#a4a4a4",
+          "#cacaca",
+          "#eeeeee"
+        ]
+      },
+      "white-200": {
+        "role": "neutral",
+        "displayName": "White 200",
+        "canonical": "#F3F2EE",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242422",
+          "#40403d",
+          "#5e5e5a",
+          "#81807d",
+          "#a5a5a1",
+          "#cbcac8",
+          "#efeeee"
+        ]
+      },
+      "white-300": {
+        "role": "neutral",
+        "displayName": "White 300",
+        "canonical": "#E4E2DB",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#252421",
+          "#41403a",
+          "#5f5e58",
+          "#82807a",
+          "#a6a59e",
+          "#cccac6",
+          "#efeeed"
+        ]
+      },
+      "white-muted": {
+        "role": "neutral",
+        "displayName": "White Muted",
+        "canonical": "#57554F",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#252421",
+          "#42403a",
+          "#605d57",
+          "#82807a",
+          "#a7a49e",
+          "#cccac6",
+          "#efeeed"
+        ]
+      },
+      "graphite": {
+        "role": "neutral",
+        "displayName": "Graphite",
+        "canonical": "#1D1E20",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#232425",
+          "#3f4042",
+          "#5c5e60",
+          "#7f8083",
+          "#a3a4a7",
+          "#c9cacc",
+          "#eeeeef"
+        ]
+      },
+      "graphite-200": {
+        "role": "neutral",
+        "displayName": "Graphite 200",
+        "canonical": "#25272A",
+        "tonalRamp": [
+          "#0b0b0c",
+          "#232426",
+          "#3e4043",
+          "#5b5e61",
+          "#7e8084",
+          "#a2a5a9",
+          "#c9cbcd",
+          "#eeeeef"
+        ]
+      },
+      "graphite-300": {
+        "role": "neutral",
+        "displayName": "Graphite 300",
+        "canonical": "#303236",
+        "tonalRamp": [
+          "#0b0b0c",
+          "#232426",
+          "#3e4044",
+          "#5b5e62",
+          "#7e8085",
+          "#a2a5a9",
+          "#c9cace",
+          "#eeeeef"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "#EEECE6",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#252421",
+          "#41403b",
+          "#5f5d58",
+          "#82807b",
+          "#a6a49f",
+          "#cccac7",
+          "#efeeed"
+        ]
+      },
+      "graphite-muted": {
+        "role": "neutral",
+        "displayName": "Graphite Muted",
+        "canonical": "#A9A69E",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#252420",
+          "#424039",
+          "#605d56",
+          "#838078",
+          "#a7a49c",
+          "#cccac5",
+          "#efeeed"
+        ]
+      },
+      "info-light": {
+        "role": "status",
+        "displayName": "Info Light",
+        "canonical": "#3E4A52",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#1e252a",
+          "#364249",
+          "#536068",
+          "#75828b",
+          "#99a7b0",
+          "#c3ccd2",
+          "#eceff1"
+        ]
+      },
+      "info-dark": {
+        "role": "status",
+        "displayName": "Info Dark",
+        "canonical": "#B8C3CA",
+        "tonalRamp": [
+          "#0a0b0c",
+          "#202528",
+          "#384147",
+          "#555f65",
+          "#788288",
+          "#9ca6ad",
+          "#c5ccd0",
+          "#eceff0"
+        ]
+      },
+      "success-light": {
+        "role": "status",
+        "displayName": "Success Light",
+        "canonical": "#1D6B3A",
+        "tonalRamp": [
+          "#050e07",
+          "#002d12",
+          "#004e23",
+          "#216e3d",
+          "#49935f",
+          "#6eb882",
+          "#aad8b4",
+          "#e4f3e7"
+        ]
+      },
+      "success-dark": {
+        "role": "status",
+        "displayName": "Success Dark",
+        "canonical": "#6CC38A",
+        "tonalRamp": [
+          "#040e07",
+          "#002d14",
+          "#004d27",
+          "#08703d",
+          "#3c945e",
+          "#63ba82",
+          "#a4dab4",
+          "#e3f3e7"
+        ]
+      },
+      "warning-light": {
+        "role": "status",
+        "displayName": "Warning Light",
+        "canonical": "#8F6400",
+        "tonalRamp": [
+          "#100a02",
+          "#322000",
+          "#553a00",
+          "#7b5600",
+          "#a37724",
+          "#ca9c4d",
+          "#e4c696",
+          "#f7edde"
+        ]
+      },
+      "warning-dark": {
+        "role": "status",
+        "displayName": "Warning Dark",
+        "canonical": "#F2B53A",
+        "tonalRamp": [
+          "#120a00",
+          "#312100",
+          "#543a00",
+          "#7a5600",
+          "#a67700",
+          "#d49900",
+          "#ebc481",
+          "#f9edd9"
+        ]
+      },
+      "error-light": {
+        "role": "status",
+        "displayName": "Error Light",
+        "canonical": "#B3261E",
+        "tonalRamp": [
+          "#180504",
+          "#4b0001",
+          "#7d0002",
+          "#ac1d17",
+          "#d64a3d",
+          "#ff7362",
+          "#ffb5aa",
+          "#ffe9e5"
+        ]
+      },
+      "error-dark": {
+        "role": "status",
+        "displayName": "Error Dark",
+        "canonical": "#FF7B6B",
+        "tonalRamp": [
+          "#170604",
+          "#4b0101",
+          "#7d0002",
+          "#a62820",
+          "#d05143",
+          "#fa7767",
+          "#ffb5aa",
+          "#ffe9e5"
+        ]
+      },
+      "rose-field": {
+        "role": "palette",
+        "displayName": "Rose field",
+        "canonical": "#C5547C",
+        "palette": "rose",
+        "tone": "field",
+        "tonalRamp": [
+          "#431827",
+          "#450622",
+          "#78003c",
+          "#9c2e59",
+          "#c5547c",
+          "#ee79a0",
+          "#ffb1c7",
+          "#FFE7EE"
+        ]
+      },
+      "rose-pale": {
+        "role": "palette",
+        "displayName": "Rose pale",
+        "canonical": "#FFE7EE",
+        "palette": "rose",
+        "tone": "pale",
+        "tonalRamp": [
+          "#0d0a0b",
+          "#2b2124",
+          "#4c3a40",
+          "#6b575d",
+          "#8f7a80",
+          "#b49ea4",
+          "#d5c6ca",
+          "#f2edee"
+        ]
+      },
+      "rose-deep": {
+        "role": "palette",
+        "displayName": "Rose deep",
+        "canonical": "#431827",
+        "palette": "rose",
+        "tone": "deep",
+        "tonalRamp": [
+          "#10090b",
+          "#351a23",
+          "#5d2f3e",
+          "#7e4d5b",
+          "#a36f7e",
+          "#ca93a2",
+          "#e4bfc9",
+          "#f7ebee"
+        ]
+      },
+      "vermilion-field": {
+        "role": "palette",
+        "displayName": "Vermilion field",
+        "canonical": "#CA5843",
+        "palette": "vermilion",
+        "tone": "field",
+        "tonalRamp": [
+          "#451911",
+          "#480801",
+          "#781100",
+          "#a1321f",
+          "#ca5843",
+          "#f37d66",
+          "#ffb6a6",
+          "#FFE9E4"
+        ]
+      },
+      "vermilion-pale": {
+        "role": "palette",
+        "displayName": "Vermilion pale",
+        "canonical": "#FFE9E4",
+        "palette": "vermilion",
+        "tone": "pale",
+        "tonalRamp": [
+          "#0d0a0a",
+          "#2b211f",
+          "#4c3b37",
+          "#6b5955",
+          "#8f7b77",
+          "#b49f9b",
+          "#d5c7c4",
+          "#f2edec"
+        ]
+      },
+      "vermilion-deep": {
+        "role": "palette",
+        "displayName": "Vermilion deep",
+        "canonical": "#451911",
+        "palette": "vermilion",
+        "tone": "deep",
+        "tonalRamp": [
+          "#110908",
+          "#371b16",
+          "#5f3127",
+          "#804e44",
+          "#a67166",
+          "#cd9589",
+          "#e6c1b8",
+          "#f8ebe9"
+        ]
+      },
+      "copper-field": {
+        "role": "palette",
+        "displayName": "Copper field",
+        "canonical": "#BE6600",
+        "palette": "copper",
+        "tone": "field",
+        "tonalRamp": [
+          "#411F00",
+          "#3a1b00",
+          "#613100",
+          "#8c4a00",
+          "#be6600",
+          "#e68b3c",
+          "#f9bc8f",
+          "#FFEADB"
+        ]
+      },
+      "copper-pale": {
+        "role": "palette",
+        "displayName": "Copper pale",
+        "canonical": "#FFEADB",
+        "palette": "copper",
+        "tone": "pale",
+        "tonalRamp": [
+          "#0d0b09",
+          "#2b221b",
+          "#4c3c30",
+          "#6b5a4d",
+          "#8f7c6f",
+          "#b4a092",
+          "#d5c8be",
+          "#f2edea"
+        ]
+      },
+      "copper-deep": {
+        "role": "palette",
+        "displayName": "Copper deep",
+        "canonical": "#411F00",
+        "palette": "copper",
+        "tone": "deep",
+        "tonalRamp": [
+          "#100a06",
+          "#341e0d",
+          "#5a3618",
+          "#7a5436",
+          "#9f7658",
+          "#c59b7b",
+          "#e1c4b0",
+          "#f6ece6"
+        ]
+      },
+      "ochre-field": {
+        "role": "palette",
+        "displayName": "Ochre field",
+        "canonical": "#A37900",
+        "palette": "ochre",
+        "tone": "field",
+        "tonalRamp": [
+          "#362600",
+          "#302100",
+          "#523c00",
+          "#785800",
+          "#a27900",
+          "#c99d3d",
+          "#e3c78f",
+          "#FAEDD5"
+        ]
+      },
+      "ochre-pale": {
+        "role": "palette",
+        "displayName": "Ochre pale",
+        "canonical": "#FAEDD5",
+        "palette": "ochre",
+        "tone": "pale",
+        "tonalRamp": [
+          "#0d0b08",
+          "#292318",
+          "#493e2b",
+          "#675c47",
+          "#8a7f69",
+          "#afa38d",
+          "#d2cabb",
+          "#f1eee9"
+        ]
+      },
+      "ochre-deep": {
+        "role": "palette",
+        "displayName": "Ochre deep",
+        "canonical": "#362600",
+        "palette": "ochre",
+        "tone": "deep",
+        "tonalRamp": [
+          "#0d0b06",
+          "#2c230e",
+          "#4e3d19",
+          "#6d5b37",
+          "#907e58",
+          "#b6a27c",
+          "#d6c9b0",
+          "#f2eee6"
+        ]
+      },
+      "olive-field": {
+        "role": "palette",
+        "displayName": "Olive field",
+        "canonical": "#888500",
+        "palette": "olive",
+        "tone": "field",
+        "tonalRamp": [
+          "#2C2B00",
+          "#272600",
+          "#444200",
+          "#646100",
+          "#888500",
+          "#acaa3d",
+          "#cfcf90",
+          "#F0F1D6"
+        ]
+      },
+      "olive-pale": {
+        "role": "palette",
+        "displayName": "Olive pale",
+        "canonical": "#F0F1D6",
+        "palette": "olive",
+        "tone": "pale",
+        "tonalRamp": [
+          "#0b0b08",
+          "#252518",
+          "#41412b",
+          "#5f5f48",
+          "#82826a",
+          "#a6a78d",
+          "#cbccbb",
+          "#efefea"
+        ]
+      },
+      "olive-deep": {
+        "role": "palette",
+        "displayName": "Olive deep",
+        "canonical": "#2C2B00",
+        "palette": "olive",
+        "tone": "deep",
+        "tonalRamp": [
+          "#0c0c06",
+          "#26250e",
+          "#434219",
+          "#606037",
+          "#838359",
+          "#a8a87c",
+          "#cccdb0",
+          "#efefe6"
+        ]
+      },
+      "fern-field": {
+        "role": "palette",
+        "displayName": "Fern field",
+        "canonical": "#43963C",
+        "palette": "fern",
+        "tone": "field",
+        "tonalRamp": [
+          "#11310E",
+          "#012e00",
+          "#034f00",
+          "#187112",
+          "#43963c",
+          "#69bc61",
+          "#a7dba1",
+          "#E2F5DF"
+        ]
+      },
+      "fern-pale": {
+        "role": "palette",
+        "displayName": "Fern pale",
+        "canonical": "#E2F5DF",
+        "palette": "fern",
+        "tone": "pale",
+        "tonalRamp": [
+          "#0a0c09",
+          "#1e271d",
+          "#354533",
+          "#536350",
+          "#758672",
+          "#99ab96",
+          "#c3cec1",
+          "#ecf0eb"
+        ]
+      },
+      "fern-deep": {
+        "role": "palette",
+        "displayName": "Fern deep",
+        "canonical": "#11310E",
+        "palette": "fern",
+        "tone": "deep",
+        "tonalRamp": [
+          "#080d07",
+          "#172915",
+          "#294925",
+          "#466842",
+          "#688b64",
+          "#8cb087",
+          "#bbd2b7",
+          "#e9f1e8"
+        ]
+      },
+      "jade-field": {
+        "role": "palette",
+        "displayName": "Jade field",
+        "canonical": "#009867",
+        "palette": "jade",
+        "tone": "field",
+        "tonalRamp": [
+          "#00321F",
+          "#002c1b",
+          "#004d32",
+          "#006f4a",
+          "#009867",
+          "#45be8a",
+          "#98dcb9",
+          "#DBF6E7"
+        ]
+      },
+      "jade-pale": {
+        "role": "palette",
+        "displayName": "Jade pale",
+        "canonical": "#DBF6E7",
+        "palette": "jade",
+        "tone": "pale",
+        "tonalRamp": [
+          "#090c0a",
+          "#1a2721",
+          "#2f463a",
+          "#4d6457",
+          "#6e877a",
+          "#92ac9e",
+          "#bfcfc6",
+          "#ebf0ed"
+        ]
+      },
+      "jade-deep": {
+        "role": "palette",
+        "displayName": "Jade deep",
+        "canonical": "#00321F",
+        "palette": "jade",
+        "tone": "deep",
+        "tonalRamp": [
+          "#070d09",
+          "#102a1e",
+          "#1c4a35",
+          "#3c6953",
+          "#5e8c75",
+          "#82b199",
+          "#b5d3c2",
+          "#e8f1ec"
+        ]
+      },
+      "teal-field": {
+        "role": "palette",
+        "displayName": "Teal field",
+        "canonical": "#00948C",
+        "palette": "teal",
+        "tone": "field",
+        "tonalRamp": [
+          "#00302D",
+          "#002b28",
+          "#004a46",
+          "#006c66",
+          "#00948c",
+          "#45bab1",
+          "#98d9d3",
+          "#D5F7F3"
+        ]
+      },
+      "teal-pale": {
+        "role": "palette",
+        "displayName": "Teal pale",
+        "canonical": "#D5F7F3",
+        "palette": "teal",
+        "tone": "pale",
+        "tonalRamp": [
+          "#080c0c",
+          "#172826",
+          "#294643",
+          "#466461",
+          "#688784",
+          "#8caca9",
+          "#bbd0cd",
+          "#e9f0ef"
+        ]
+      },
+      "teal-deep": {
+        "role": "palette",
+        "displayName": "Teal deep",
+        "canonical": "#00302D",
+        "palette": "teal",
+        "tone": "deep",
+        "tonalRamp": [
+          "#070d0c",
+          "#102927",
+          "#1c4845",
+          "#3c6763",
+          "#5e8a86",
+          "#82afaa",
+          "#b5d1ce",
+          "#e8f1f0"
+        ]
+      },
+      "cornflower-field": {
+        "role": "palette",
+        "displayName": "Cornflower field",
+        "canonical": "#477ED8",
+        "palette": "cornflower",
+        "tone": "field",
+        "tonalRamp": [
+          "#13284B",
+          "#061d44",
+          "#16366b",
+          "#29559f",
+          "#477ed8",
+          "#7ca5e9",
+          "#b4ccf2",
+          "#E5EFFF"
+        ]
+      },
+      "cornflower-pale": {
+        "role": "palette",
+        "displayName": "Cornflower pale",
+        "canonical": "#E5EFFF",
+        "palette": "cornflower",
+        "tone": "pale",
+        "tonalRamp": [
+          "#070b14",
+          "#1c222b",
+          "#343b45",
+          "#4f5661",
+          "#6e7581",
+          "#8e96a2",
+          "#b6becb",
+          "#e4ecf9"
+        ]
+      },
+      "cornflower-deep": {
+        "role": "palette",
+        "displayName": "Cornflower deep",
+        "canonical": "#13284B",
+        "palette": "cornflower",
+        "tone": "deep",
+        "tonalRamp": [
+          "#060b16",
+          "#1b222e",
+          "#333b48",
+          "#4d5664",
+          "#6c7584",
+          "#8c96a5",
+          "#b5bece",
+          "#e2ecfc"
+        ]
+      },
+      "iris-field": {
+        "role": "palette",
+        "displayName": "Iris field",
+        "canonical": "#7E6ED3",
+        "palette": "iris",
+        "tone": "field",
+        "tonalRamp": [
+          "#282249",
+          "#24184e",
+          "#412988",
+          "#5d4aab",
+          "#7e6ed3",
+          "#a193fc",
+          "#c7c2ff",
+          "#EDECFF"
+        ]
+      },
+      "iris-pale": {
+        "role": "palette",
+        "displayName": "Iris pale",
+        "canonical": "#EDECFF",
+        "palette": "iris",
+        "tone": "pale",
+        "tonalRamp": [
+          "#0b0b0d",
+          "#23232c",
+          "#3f3e4d",
+          "#5d5c6c",
+          "#7f7e8f",
+          "#a3a2b4",
+          "#cac9d5",
+          "#eeeef2"
+        ]
+      },
+      "iris-deep": {
+        "role": "palette",
+        "displayName": "Iris deep",
+        "canonical": "#282249",
+        "palette": "iris",
+        "tone": "deep",
+        "tonalRamp": [
+          "#0b0a11",
+          "#232038",
+          "#3e3962",
+          "#5c5783",
+          "#7e7aa8",
+          "#a29ece",
+          "#c8c7e7",
+          "#eeedf8"
+        ]
+      },
+      "violet-field": {
+        "role": "palette",
+        "displayName": "Violet field",
+        "canonical": "#A061BE",
+        "palette": "violet",
+        "tone": "field",
+        "tonalRamp": [
+          "#351D41",
+          "#341044",
+          "#5b1b75",
+          "#7b3d98",
+          "#a061be",
+          "#c686e6",
+          "#e1b8f7",
+          "#F7E8FF"
+        ]
+      },
+      "violet-pale": {
+        "role": "palette",
+        "displayName": "Violet pale",
+        "canonical": "#F7E8FF",
+        "palette": "violet",
+        "tone": "pale",
+        "tonalRamp": [
+          "#0c0a0d",
+          "#28212c",
+          "#463a4d",
+          "#65586b",
+          "#887a8f",
+          "#ad9fb4",
+          "#d0c7d5",
+          "#f0edf2"
+        ]
+      },
+      "violet-deep": {
+        "role": "palette",
+        "displayName": "Violet deep",
+        "canonical": "#351D41",
+        "palette": "violet",
+        "tone": "deep",
+        "tonalRamp": [
+          "#0d090f",
+          "#2c1d33",
+          "#4d345a",
+          "#6c527a",
+          "#8f749e",
+          "#b498c4",
+          "#d5c2e0",
+          "#f2ecf5"
+        ]
+      },
+      "plum-field": {
+        "role": "palette",
+        "displayName": "Plum field",
+        "canonical": "#B7589F",
+        "palette": "plum",
+        "tone": "field",
+        "tonalRamp": [
+          "#3E1935",
+          "#3f0a34",
+          "#6d0d5a",
+          "#90347b",
+          "#b7589f",
+          "#df7dc5",
+          "#f4b3e1",
+          "#FFE6F7"
+        ]
+      },
+      "plum-pale": {
+        "role": "palette",
+        "displayName": "Plum pale",
+        "canonical": "#FFE6F7",
+        "palette": "plum",
+        "tone": "pale",
+        "tonalRamp": [
+          "#0d0a0c",
+          "#2b2028",
+          "#4c3946",
+          "#6b5665",
+          "#8f7988",
+          "#b49dad",
+          "#d5c5d0",
+          "#f2edf0"
+        ]
+      },
+      "plum-deep": {
+        "role": "palette",
+        "displayName": "Plum deep",
+        "canonical": "#3E1935",
+        "palette": "plum",
+        "tone": "deep",
+        "tonalRamp": [
+          "#0f090d",
+          "#321b2c",
+          "#57304d",
+          "#784e6c",
+          "#9c708f",
+          "#c294b5",
+          "#dfc0d5",
+          "#f5ebf2"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "Names in lockups: Archivo 600 camelCase, cap height 5u, -0.01em, outlined."
+      },
+      "display": {
+        "displayName": "Display",
+        "purpose": "One opener line per page."
+      },
+      "headline": {
+        "displayName": "Heading 1",
+        "purpose": "40px step; sample post titles."
+      },
+      "title-lg": {
+        "displayName": "Heading 2",
+        "purpose": "28px plate heads."
+      },
+      "title": {
+        "displayName": "Heading 3",
+        "purpose": "22px sub-heads, editor brand name, dialog heads."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "18px reading at 68ch."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "Captions, tables, nav, buttons; the editor surface size."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase spec labels, table heads, the mode toggle."
+      },
+      "code": {
+        "displayName": "Code",
+        "purpose": "JetBrains Mono code blocks only."
+      }
+    },
+    "brandSystem": {
+      "tile": {
+        "modules": 9,
+        "margin": 1,
+        "field": 7,
+        "fileUnitPx": 8,
+        "favicon": {
+          "grid": 16,
+          "margin": 1,
+          "unit": 2
+        }
+      },
+      "shapes": {
+        "cell": {
+          "size": [
+            1,
+            1
+          ]
+        },
+        "ring": {
+          "size": [
+            2,
+            4
+          ],
+          "thickness": 1
+        },
+        "pie": {
+          "size": [
+            1,
+            4
+          ]
+        },
+        "rot": [
+          "top-left",
+          "top-right",
+          "bottom-right",
+          "bottom-left"
+        ]
+      },
+      "lockup": {
+        "font": "Archivo 600",
+        "capU": 5,
+        "gapU": 3,
+        "stackGapU": 2,
+        "tracking": "-0.01em",
+        "ink": "#141414",
+        "reverse": "#EEECE6",
+        "clearSpaceU": 2
+      },
+      "minSizes": [
+        {
+          "use": "Horizontal lockup",
+          "px": 120,
+          "print": "30 mm"
+        },
+        {
+          "use": "Stacked lockup",
+          "px": 72,
+          "print": "20 mm"
+        },
+        {
+          "use": "Tile, full art",
+          "px": 24,
+          "print": "8 mm"
+        },
+        {
+          "use": "Tile, favicon art",
+          "px": 16
+        }
+      ],
+      "paletteGates": {
+        "fieldOnGround": 3,
+        "glyphOnField": 3,
+        "lightness": [
+          0.56,
+          0.62
+        ],
+        "hueDrift": 12,
+        "avoidDistance": 0.1,
+        "distinct": 0.045,
+        "avoid": {
+          "#21759B": "WordPress cerulean",
+          "#3858E9": "Gutenberg blue",
+          "#95BF47": "Shopify lime"
+        }
+      },
+      "themeName": "wompland-<slug>-<light|dark>",
+      "currentBrands": [
+        {
+          "slug": "wompland",
+          "name": "WompLand",
+          "role": "master",
+          "color": "ochre",
+          "glyph": "deep"
+        },
+        {
+          "slug": "blogwomp",
+          "name": "blogWomp",
+          "role": "sub",
+          "color": "vermilion",
+          "glyph": "deep"
+        },
+        {
+          "slug": "wikiwomp",
+          "name": "wikiWomp",
+          "role": "sub",
+          "color": "teal",
+          "glyph": "pale"
+        }
+      ],
+      "note": "Brand assignments are user-editable data in brands/*.json, not fixed tokens."
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "state",
+        "value": "150ms ease-out",
+        "purpose": "Background and color changes on editor buttons and tool radios."
+      },
+      {
+        "name": "reduced",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "All transitions and animations removed."
+      },
+      {
+        "name": "review-still",
+        "value": "?still",
+        "purpose": "mode.js stops every animation and transition for captures."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "cols-8",
+        "value": "760px"
+      },
+      {
+        "name": "cols-12",
+        "value": "1100px"
+      },
+      {
+        "name": "editor-one-column",
+        "value": "900px"
+      },
+      {
+        "name": "editor-compact",
+        "value": "1240px"
+      },
+      {
+        "name": "editor-overflow-menu",
+        "value": "640px"
+      },
+      {
+        "name": "editor-narrow",
+        "value": "520px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Ink Button",
+      "kind": "button",
+      "refersTo": "button-ink",
+      "description": "Editor primary action: solid ink, square, 2px border.",
+      "html": "<button class=\"ds-b ds-b-ink\">Save brand</button>",
+      "css": ".ds-b{font-family:Archivo,ui-sans-serif,system-ui,sans-serif;display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:0 16px;border:2px solid #141414;border-radius:0;background:#fff;color:#141414;font-weight:600;font-size:.9375rem;letter-spacing:.01em;cursor:pointer;transition:background-color 150ms ease-out,color 150ms ease-out}.ds-b:hover{background:#F3F2EE}.ds-b:active{background:#E4E2DB}.ds-b:focus-visible{outline:3px solid #141414;outline-offset:2px}.ds-b-ink{background:#141414;color:#fff}.ds-b-ink:hover{background:color-mix(in oklab,#141414 82%,#fff)}.ds-b-ink:active{background:color-mix(in oklab,#141414 70%,#fff)}"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Editor secondary action: white with a 2px ink border.",
+      "html": "<button class=\"ds-b\">Revert</button>",
+      "css": ".ds-b{font-family:Archivo,ui-sans-serif,system-ui,sans-serif;display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:0 16px;border:2px solid #141414;border-radius:0;background:#fff;color:#141414;font-weight:600;font-size:.9375rem;letter-spacing:.01em;cursor:pointer;transition:background-color 150ms ease-out}.ds-b:hover{background:#F3F2EE}.ds-b:active{background:#E4E2DB}.ds-b:focus-visible{outline:3px solid #141414;outline-offset:2px}"
+    },
+    {
+      "name": "Tool Radios",
+      "kind": "chip",
+      "refersTo": "tool-radio",
+      "description": "Segmented shape/size/rotation picker; the checked option inverts to ink.",
+      "html": "<div class=\"ds-seg\"><label class=\"ds-seg-btn\"><input type=\"radio\" name=\"t\" checked>Cell</label><label class=\"ds-seg-btn\"><input type=\"radio\" name=\"t\">Ring</label><label class=\"ds-seg-btn\"><input type=\"radio\" name=\"t\">Pie</label></div>",
+      "css": ".ds-seg{display:flex}.ds-seg-btn{font-family:Archivo,ui-sans-serif,system-ui,sans-serif;position:relative;display:inline-flex;align-items:center;min-height:44px;padding:0 10px;border:2px solid #141414;background:#fff;color:#141414;font-weight:600;font-size:.8125rem;cursor:pointer;transition:background-color 150ms ease-out,color 150ms ease-out}.ds-seg-btn+.ds-seg-btn{margin-left:-2px}.ds-seg-btn input{position:absolute;inset:0;opacity:0;margin:0;cursor:inherit}.ds-seg-btn:hover{background:#F3F2EE}.ds-seg-btn:has(input:checked){background:#141414;color:#fff;z-index:1}.ds-seg-btn:has(input:focus-visible){outline:3px solid #141414;outline-offset:2px;z-index:2}"
+    },
+    {
+      "name": "Name Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "New Womp: job word input joined to a fixed Womp suffix.",
+      "html": "<div class=\"ds-name\"><input placeholder=\"list\" aria-label=\"Job word\"><span>Womp</span></div>",
+      "css": ".ds-name{font-family:Archivo,ui-sans-serif,system-ui,sans-serif;display:flex;border:2px solid #141414;background:#fff;color:#141414}.ds-name:focus-within{outline:3px solid #141414;outline-offset:2px}.ds-name input{flex:1;min-width:0;padding:8px 10px;border:0;background:transparent;font:500 1rem/1.4 Archivo,sans-serif;outline:none;color:inherit}.ds-name input::placeholder{color:#57554F}.ds-name span{padding:8px 10px;background:#F3F2EE;border-left:2px solid #141414;font-weight:600;font-size:1rem;line-height:1.4}"
+    },
+    {
+      "name": "Mode Toggle",
+      "kind": "button",
+      "refersTo": "mode-toggle",
+      "description": "Masthead dark-mode toggle with an inverted state chip.",
+      "html": "<button class=\"ds-mode\" aria-pressed=\"false\">Dark mode <span>Off</span></button>",
+      "css": ".ds-mode{font-family:Archivo,ui-sans-serif,system-ui,sans-serif;display:inline-flex;align-items:center;gap:8px;border:2px solid #141414;padding:6px 10px;background:transparent;color:#141414;font-size:.8125rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;cursor:pointer}.ds-mode span{min-width:2.2em;padding:1px 4px;background:#141414;color:#fff;text-align:center}.ds-mode:hover{background:#141414;color:#fff}.ds-mode:hover span{background:#fff;color:#141414}.ds-mode:focus-visible{outline:3px solid #141414;outline-offset:3px}"
+    },
+    {
+      "name": "Spec Plate",
+      "kind": "card",
+      "refersTo": "tile-wompland",
+      "description": "Art above, caption row below, 2px ink rules; here the WompLand tile.",
+      "html": "<figure class=\"ds-spec\"><div class=\"ds-spec-art\"><svg viewBox=\"0 0 72 72\" width=\"72\" height=\"72\"><rect width=\"72\" height=\"72\" fill=\"#A37900\"/><path fill=\"#362600\" d=\"M8 8h8v40H8zM56 8h8v40h-8zM32 24h8v24h-8z\"/></svg></div><figcaption class=\"ds-spec-cap\"><b>Mark</b><span>mark.svg</span></figcaption></figure>",
+      "css": ".ds-spec{font-family:Archivo,ui-sans-serif,system-ui,sans-serif;margin:0;border:2px solid #141414;background:#fff;color:#141414}.ds-spec-art{padding:24px;display:grid;place-items:center;min-height:140px}.ds-spec-cap{display:flex;justify-content:space-between;gap:12px;border-top:2px solid #141414;padding:8px 12px;font-size:.9375rem}.ds-spec-cap b{font-weight:600}"
+    },
+    {
+      "name": "Gate Row",
+      "kind": "custom",
+      "refersTo": "input",
+      "description": "Contrast-gate table: label heads, hairlines, verdict as word plus mark.",
+      "html": "<table class=\"ds-gate\"><thead><tr><th>Pair</th><th>Ratio</th><th>Min</th><th>Result</th></tr></thead><tbody><tr><td>base-content on base-100</td><td>18.1</td><td>7</td><td>✓ Pass</td></tr><tr class=\"fail\"><td>muted on base-200</td><td>4.2</td><td>4.5</td><td>✗ Fail</td></tr></tbody></table>",
+      "css": ".ds-gate{font-family:Archivo,ui-sans-serif,system-ui,sans-serif;border-collapse:collapse;font-size:.9375rem;font-variant-numeric:tabular-nums lining-nums;color:#141414}.ds-gate th,.ds-gate td{text-align:left;padding:8px 12px;border-top:1px solid rgb(20 20 20/.22)}.ds-gate thead th{border-top:0;font-size:.8125rem;letter-spacing:.04em;text-transform:uppercase;font-weight:600;color:#57554F}.ds-gate td:last-child{font-weight:600}.ds-gate tr.fail td:last-child{color:#B3261E}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The construction manual",
+    "overview": "WompLand has one identity, Modular, and this repo is the toolkit that produces it. Every brand is a glyph built from three module shapes on a 7 by 7 field, set inside a 9 by 9 tile filled with one palette color, beside its name in Archivo 600. The master is WompLand; every sub-brand is `<job>Womp`. Brands live as JSON in `brands/`; a build turns each one into logo files, icons and a DaisyUI light and dark theme, and the toolkit pages (home, editor, brand guide, system guide) draw every logo at runtime from that same data.\n\nThe toolkit UI speaks the same language as the marks: ink on white or paper on graphite, 2px ink rules, square corners, no shadows, Archivo on a strict seven-step scale, and a faint construction grid behind the page. It reads like a well-made specification sheet: everything measured, nothing decorative. Earlier candidate identities (Seed Packet, Webring, Letterpress) and the retired module-alphabet sheet are kept in `archive/`, outside the build.",
+    "keyCharacteristics": [
+      "Brand data, not hand-drawn art: `brands/<slug>.json` validated by `src/brand/schema.js`, colors from the gated `brands/palette.json`.",
+      "One isomorphic brand core (`src/brand/`: palette, schema, geometry, text, lockup, theme) shared by the Node generator, the dev save API and the browser.",
+      "Every brand gets the same lockups, icons and themes with no per-app design work.",
+      "WCAG 2.2 AA throughout, AAA 7:1 for body text in both modes, 16px minimum body size, pass/fail never shown by color alone.",
+      "Flat, square, ruled: 2px borders, 3px section rules, radius 0, DaisyUI depth and noise 0."
+    ],
+    "rules": [
+      {
+        "name": "The Schema Rule",
+        "body": "A brand file is `{ slug, name, role, color, glyph, shapes }` and nothing else. `role` is `master` (exactly one, named `WompLand`) or `sub` (name matches lowercase letters + `Womp`); `slug` is the lowercase name; `color` is a palette id; `glyph` is `pale` or `deep`. Shapes sit on the 7 by 7 field (x, y 0 to 6, origin top-left, y down):",
+        "section": "Overview / Brand data"
+      },
+      {
+        "name": "The Lockup Rule",
+        "body": "A lockup is the tile plus the name in Archivo 600, camelCase as written, tracked -0.01em, outlined to paths so no file depends on the font. In modules (u = 1/9 of the tile): the name's cap height is 5u. Horizontal: the name starts 3u right of the tile with its caps centred on the tile (cap top 2u, baseline 7u). Stacked: the tile is centred over the name with 2u from the tile bottom to the cap top. The tile never changes between grounds; only the name switches from ink (#141414) to paper (#EEECE6) in the reverse files.",
+        "section": "Overview / Geometry and lockups"
+      },
+      {
+        "name": "The fromField Rule",
+        "body": "A brand contributes only its field color. `fromField()` keeps the field's hue and chroma and steps OKLCH lightness by 0.005 (down on white, up on graphite) until the color clears 4.6:1 on both page grounds of that mode; that becomes the brand's primary, with ink or white as its content color, whichever contrasts more. Secondary is ink (light) or paper (dark); accent is amber (#8F6400 light, #F2B53A dark). Neutrals and status colors are shared by every brand.",
+        "section": "Overview / Themes"
+      },
+      {
+        "name": "The Contrast Gate Rule",
+        "body": "No theme ships unless `contrastChecks()` passes: base-content on base-100/200/300 at 7:1; muted on base-100/200 at 4.5:1; every role's content color on that role at 4.5:1; primary on base-100/200 at 4.5:1; secondary, accent and status colors on base-100 at 3:1. `brandThemeCSS()` throws on any miss, and `npm run palette` also proves every palette entry yields passing themes with either glyph tone. All six current themes pass.",
+        "section": "Overview / Themes"
+      },
+      {
+        "name": "The Palette Gate Rule",
+        "body": "`src/brand/palette.js` gates every entry: field at 3:1 or more against white and against graphite; pale and deep each at 3:1 or more on the field (WCAG 1.4.11); field lightness in OKLCH 0.56 to 0.62; pale and deep within 12 degrees of the field's hue; OKLab distance 0.1 or more from WordPress cerulean (#21759B), Gutenberg blue (#3858E9) and Shopify lime (#95BF47); and 0.045 or more between any two fields. `npm run palette` fails on any miss.",
+        "section": "Colors / The field palette"
+      },
+      {
+        "name": "The One Blue Rule",
+        "body": "The palette has exactly one blue, Cornflower (hue 260, `#477ED8`). At the shared L 0.60, blue hues from about 200 to 275 degrees sit 0.071 to 0.103 OKLab from WordPress cerulean or Gutenberg blue; 260 is the hue between Teal (188) and Iris (288) that clears the 0.1 gate from both (0.103), and it sits 0.074 from Iris and 0.153 from Teal. The sky and cerulean blues around 220 to 245 degrees fail the gate and stay out. Blue itself is fine; what reads as WordPress is blue together with a W. So no Womp pairs a blue field with a W-shaped glyph, a letter, or a mark in a circle, and every icon stays a picture of its own object (the master icon included). Other blues at this lightness fail the distance gate, so Cornflower is the palette's blue.",
+        "section": "Colors / The field palette"
+      },
+      {
+        "name": "The Seven Steps Rule",
+        "body": "Type lives on 13 / 15 / 18 / 22 / 28 / 40 / 64px. Headings stay tight (-2%), labels open up (+4%) and run in capitals, nothing is set below 13px, and tabular lining figures are used wherever numbers line up.",
+        "section": "Typography / Hierarchy"
+      },
+      {
+        "name": "The Construction Grid Rule",
+        "body": "On the read pages the layout is the construction grid: an 8px unit; 4 columns with 16px gutters, 8 columns from 760px, 12 columns with 24px gutters from 1100px; sheet max 1440px. Both edges of every column are drawn faintly in `--grid` behind content, and everything starts and ends on those edges: no inset padding on grid children, and nested layouts are CSS subgrids of the page grid rather than their own column math. Sections are plates: a 3px top rule, 56px top and 80px bottom padding, the head in columns 1 to 4 and the body in 5 to 12 from 1100px, so the body is always 8 columns (4 on phones). Inside the body, pairs take 4 columns each (`.half`) and small multiples take 2 (`.quarter`); bordered boxes sit on column edges, and only their own contents are padded. Spacing is multiples of the unit.",
+        "section": "Layout"
+      }
+    ],
+    "dos": [
+      "Do change a brand by editing its glyph and color in the toolkit (or `brands/<slug>.json`) and saving; the generator rewrites the logos, icons and themes.",
+      "Do build every glyph from cells, quarter rings and filled quarters inside the 7 by 7 field, one module thick.",
+      "Do pick a palette color no other Womp uses, and the pale or deep glyph that reads better and stays clear of other brands' icons.",
+      "Do set every name in Archivo 600 camelCase on the lockup spec, and keep 2 modules of clear space.",
+      "Do edit the palette only in `scripts/palette.mjs` and let `npm run palette` fail the build on any gate miss.",
+      "Do show pass and fail with a word and a mark, never color alone."
+    ],
+    "donts": [
+      "Don't put a circle or ring around the icon.",
+      "Don't stretch the tile. It is always square.",
+      "Don't rotate or flip it. The icon has one upright, and turned it stops reading as itself.",
+      "Don't set the name in another face, or build it from modules.",
+      "Don't use a color outside the palette, even a familiar one.",
+      "Don't put a W, or any letter or circled mark, on a blue tile. Blue plus a W reads as WordPress.",
+      "Don't give blogWomp a pale glyph.",
+      "Don't hand-edit `src/themes/*`, `public/brands/*` or `public/fonts/*`; they are generated.",
+      "Don't add shadows or rounded corners to the toolkit UI.",
+      "Don't resemble WordPress, Shopify, Wix, Squarespace, Ghost, Medium, Notion, Webflow or Substack."
+    ]
+  }
+}

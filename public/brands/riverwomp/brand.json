@@ -1,0 +1,165 @@
+{
+  "slug": "riverwomp",
+  "name": "riverWomp",
+  "role": "sub",
+  "color": "cornflower",
+  "glyph": "pale",
+  "shapes": [
+    {
+      "type": "cell",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "type": "cell",
+      "x": 2,
+      "y": 0
+    },
+    {
+      "type": "cell",
+      "x": 3,
+      "y": 0
+    },
+    {
+      "type": "cell",
+      "x": 4,
+      "y": 0
+    },
+    {
+      "type": "cell",
+      "x": 5,
+      "y": 0
+    },
+    {
+      "type": "cell",
+      "x": 6,
+      "y": 0
+    },
+    {
+      "type": "cell",
+      "x": 2,
+      "y": 2
+    },
+    {
+      "type": "cell",
+      "x": 3,
+      "y": 2
+    },
+    {
+      "type": "cell",
+      "x": 4,
+      "y": 2
+    },
+    {
+      "type": "cell",
+      "x": 5,
+      "y": 2
+    },
+    {
+      "type": "cell",
+      "x": 6,
+      "y": 2
+    },
+    {
+      "type": "cell",
+      "x": 0,
+      "y": 4
+    },
+    {
+      "type": "cell",
+      "x": 2,
+      "y": 4
+    },
+    {
+      "type": "cell",
+      "x": 3,
+      "y": 4
+    },
+    {
+      "type": "cell",
+      "x": 4,
+      "y": 4
+    },
+    {
+      "type": "cell",
+      "x": 5,
+      "y": 4
+    },
+    {
+      "type": "cell",
+      "x": 6,
+      "y": 4
+    },
+    {
+      "type": "cell",
+      "x": 2,
+      "y": 6
+    },
+    {
+      "type": "cell",
+      "x": 3,
+      "y": 6
+    },
+    {
+      "type": "cell",
+      "x": 4,
+      "y": 6
+    },
+    {
+      "type": "cell",
+      "x": 5,
+      "y": 6
+    },
+    {
+      "type": "cell",
+      "x": 6,
+      "y": 6
+    }
+  ],
+  "colors": {
+    "id": "cornflower",
+    "name": "Cornflower",
+    "field": "#477ED8",
+    "pale": "#E5EFFF",
+    "deep": "#13284B",
+    "glyph": "#E5EFFF"
+  },
+  "themes": {
+    "light": "wompland-riverwomp-light",
+    "dark": "wompland-riverwomp-dark"
+  },
+  "tokens": {
+    "light": {
+      "primary": "#346AC2",
+      "primaryContent": "#FFFFFF",
+      "secondary": "#141414",
+      "secondaryContent": "#FFFFFF",
+      "accent": "#8F6400",
+      "accentContent": "#FFFFFF"
+    },
+    "dark": {
+      "primary": "#578FEB",
+      "primaryContent": "#141414",
+      "secondary": "#EEECE6",
+      "secondaryContent": "#141414",
+      "accent": "#F2B53A",
+      "accentContent": "#141414"
+    }
+  },
+  "assets": {
+    "mark": "/brands/riverwomp/mark.svg",
+    "horizontal": "/brands/riverwomp/horizontal.svg",
+    "horizontalReverse": "/brands/riverwomp/horizontal-reverse.svg",
+    "stacked": "/brands/riverwomp/stacked.svg",
+    "stackedReverse": "/brands/riverwomp/stacked-reverse.svg",
+    "favicon": "/brands/riverwomp/favicon.svg",
+    "faviconIco": "/brands/riverwomp/favicon.ico",
+    "png16": "/brands/riverwomp/icon-16.png",
+    "png32": "/brands/riverwomp/icon-32.png",
+    "appleTouch": "/brands/riverwomp/apple-touch-icon.png",
+    "png192": "/brands/riverwomp/icon-192.png",
+    "png512": "/brands/riverwomp/icon-512.png",
+    "theme": "/brands/riverwomp/daisyui-theme.css",
+    "brand": "/brands/riverwomp/brand.json"
+  }
+}

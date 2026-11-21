@@ -1,0 +1,59 @@
+@import "./base.css";
+@import "./sheet.css";
+
+/* Master: the largest lockup on the page. Art on 5 columns, facts on the last 3. */
+.master-card { align-items: center; }
+.master-art { border: 2px solid var(--rule); padding: calc(var(--u) * 5) calc(var(--u) * 3); display: grid; place-items: center start; background: var(--color-base-100); }
+.master-art svg { display: block; width: 100%; max-width: 560px; height: auto; }
+.master-info { display: grid; gap: 10px; }
+.master-info h3 { font-size: var(--t-h3); display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.role { font-size: var(--t-label); font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
+@media (min-width: 760px) {
+  .master-card > .master-art { grid-column: 1 / span 5; }
+  .master-card > .master-info { grid-column: 6 / -1; }
+}
+
+.meta { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.dot { display: inline-block; width: 14px; height: 14px; border: 1px solid var(--grid-strong); flex: none; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; }
+
+/* Subs: one row each, lockups at one scale, on the same 5 + 3 split as the master. */
+.subs { border-top: 2px solid var(--rule); row-gap: 0; }
+.sub { row-gap: 12px; padding-block: 20px; border-bottom: 2px solid var(--rule); align-items: center; }
+.sub-art svg { display: block; height: 48px; width: auto; max-width: 100%; }
+.sub-info { display: grid; gap: 10px; }
+@media (min-width: 760px) {
+  .sub > .sub-art { grid-column: 1 / span 5; }
+  .sub > .sub-info { grid-column: 6 / -1; }
+}
+.empty { padding-block: 20px; }
+
+/* New Womp */
+.newwomp { row-gap: 0; }
+.newwomp > .btn { justify-self: start; }
+.job-input { display: flex; align-items: stretch; }
+.job-input .input { flex: 1; min-width: 0; border-right: 0; }
+.job-suffix { display: grid; place-items: center; padding-inline: 12px; border: 2px solid var(--color-base-content); background: var(--color-base-200); font-weight: 600; font-size: 1rem; }
+.job-input:focus-within { outline: 3px solid var(--color-primary); outline-offset: 2px; }
+.job-input .input:focus { outline: none; }
+.job-error { color: var(--color-error); font-weight: 600; }
+.job-error:empty { display: none; }
+.input[aria-invalid="true"] { border-color: var(--color-error); }
+.preview-box { border: 2px dashed var(--grid-strong); padding: 16px; min-height: 80px; display: flex; align-items: center; }
+.preview-box svg { display: block; height: 48px; width: auto; max-width: 100%; }
+
+/* Palette: one card per half; the ratio table runs the card's full width. */
+.palette { row-gap: 0; }
+.pal { display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 16px; align-content: start; padding-block: 16px 24px; border-top: 2px solid var(--rule); }
+.pal-field { position: relative; display: block; width: 72px; height: 72px; border: 1px solid var(--grid-strong); }
+.pal-field span { position: absolute; width: 24px; height: 24px; bottom: 8px; }
+.pal-field span:first-child { left: 8px; }
+.pal-field span:last-child { left: 40px; }
+.pal-name { font-size: var(--t-h3); letter-spacing: -0.01em; }
+.pal-hex { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 6px; }
+.pal-hex div { display: flex; gap: 6px; }
+.pal-hex dt { color: var(--muted); }
+.pal-ratios { grid-column: 1 / -1; width: 100%; }
+.pal .pal-ratios th, .pal .pal-ratios td { padding: 6px 0; }
+.pal .pal-ratios td.r { padding-left: 12px; }
+.pal-ratios th { font-weight: 400; white-space: nowrap; }

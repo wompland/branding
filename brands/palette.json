@@ -1,0 +1,14 @@
+[
+  { "id": "rose", "name": "Rose", "field": "#C5547C", "pale": "#FFE7EE", "deep": "#431827" },
+  { "id": "vermilion", "name": "Vermilion", "field": "#CA5843", "pale": "#FFE9E4", "deep": "#451911" },
+  { "id": "copper", "name": "Copper", "field": "#BE6600", "pale": "#FFEADB", "deep": "#411F00" },
+  { "id": "ochre", "name": "Ochre", "field": "#A37900", "pale": "#FAEDD5", "deep": "#362600" },
+  { "id": "olive", "name": "Olive", "field": "#888500", "pale": "#F0F1D6", "deep": "#2C2B00" },
+  { "id": "fern", "name": "Fern", "field": "#43963C", "pale": "#E2F5DF", "deep": "#11310E" },
+  { "id": "jade", "name": "Jade", "field": "#009867", "pale": "#DBF6E7", "deep": "#00321F" },
+  { "id": "teal", "name": "Teal", "field": "#00948C", "pale": "#D5F7F3", "deep": "#00302D" },
+  { "id": "cornflower", "name": "Cornflower", "field": "#477ED8", "pale": "#E5EFFF", "deep": "#13284B" },
+  { "id": "iris", "name": "Iris", "field": "#7E6ED3", "pale": "#EDECFF", "deep": "#282249" },
+  { "id": "violet", "name": "Violet", "field": "#A061BE", "pale": "#F7E8FF", "deep": "#351D41" },
+  { "id": "plum", "name": "Plum", "field": "#B7589F", "pale": "#FFE6F7", "deep": "#3E1935" }
+]

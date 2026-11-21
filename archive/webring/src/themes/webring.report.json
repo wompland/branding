@@ -1,0 +1,1286 @@
+[
+  {
+    "theme": "webring-womp-light",
+    "brand": "womp",
+    "mode": "light",
+    "colors": {
+      "base100": "#fdfcf8",
+      "base200": "#f2f0ea",
+      "base300": "#e4e1d8",
+      "baseContent": "#110e18",
+      "muted": "#4f4960",
+      "neutral": "#1c1828",
+      "neutralContent": "#fdfcf8",
+      "info": "#0b5d8c",
+      "infoContent": "#fdfcf8",
+      "success": "#1c6b37",
+      "successContent": "#fdfcf8",
+      "warning": "#7d5700",
+      "warningContent": "#fdfcf8",
+      "error": "#b3261e",
+      "errorContent": "#fdfcf8",
+      "primary": "#5a1fd1",
+      "primaryContent": "#fdfcf8",
+      "secondary": "#3a1690",
+      "secondaryContent": "#fdfcf8",
+      "accent": "#7d5700",
+      "accentContent": "#fdfcf8"
+    },
+    "checks": [
+      {
+        "label": "base-content on base100",
+        "fg": "#110e18",
+        "bg": "#fdfcf8",
+        "ratio": 18.6,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "base-content on base200",
+        "fg": "#110e18",
+        "bg": "#f2f0ea",
+        "ratio": 16.75,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "base-content on base300",
+        "fg": "#110e18",
+        "bg": "#e4e1d8",
+        "ratio": 14.6,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "muted on base100",
+        "fg": "#4f4960",
+        "bg": "#fdfcf8",
+        "ratio": 8.33,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "muted on base200",
+        "fg": "#4f4960",
+        "bg": "#f2f0ea",
+        "ratio": 7.51,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary-content on primary",
+        "fg": "#fdfcf8",
+        "bg": "#5a1fd1",
+        "ratio": 8.02,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "secondary-content on secondary",
+        "fg": "#fdfcf8",
+        "bg": "#3a1690",
+        "ratio": 12.05,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "accent-content on accent",
+        "fg": "#fdfcf8",
+        "bg": "#7d5700",
+        "ratio": 6.32,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "neutral-content on neutral",
+        "fg": "#fdfcf8",
+        "bg": "#1c1828",
+        "ratio": 16.9,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "info-content on info",
+        "fg": "#fdfcf8",
+        "bg": "#0b5d8c",
+        "ratio": 6.91,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "success-content on success",
+        "fg": "#fdfcf8",
+        "bg": "#1c6b37",
+        "ratio": 6.38,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "warning-content on warning",
+        "fg": "#fdfcf8",
+        "bg": "#7d5700",
+        "ratio": 6.32,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "error-content on error",
+        "fg": "#fdfcf8",
+        "bg": "#b3261e",
+        "ratio": 6.37,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary on base100",
+        "fg": "#5a1fd1",
+        "bg": "#fdfcf8",
+        "ratio": 8.02,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary on base200",
+        "fg": "#5a1fd1",
+        "bg": "#f2f0ea",
+        "ratio": 7.22,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "secondary on base-100",
+        "fg": "#3a1690",
+        "bg": "#fdfcf8",
+        "ratio": 12.05,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "accent on base-100",
+        "fg": "#7d5700",
+        "bg": "#fdfcf8",
+        "ratio": 6.32,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "info on base-100",
+        "fg": "#0b5d8c",
+        "bg": "#fdfcf8",
+        "ratio": 6.91,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "success on base-100",
+        "fg": "#1c6b37",
+        "bg": "#fdfcf8",
+        "ratio": 6.38,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "warning on base-100",
+        "fg": "#7d5700",
+        "bg": "#fdfcf8",
+        "ratio": 6.32,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "error on base-100",
+        "fg": "#b3261e",
+        "bg": "#fdfcf8",
+        "ratio": 6.37,
+        "min": 3,
+        "pass": true
+      }
+    ]
+  },
+  {
+    "theme": "webring-womp-dark",
+    "brand": "womp",
+    "mode": "dark",
+    "colors": {
+      "base100": "#0c0a12",
+      "base200": "#15121e",
+      "base300": "#211c2e",
+      "baseContent": "#f3effa",
+      "muted": "#b9b0cb",
+      "neutral": "#2b2539",
+      "neutralContent": "#f3effa",
+      "info": "#6cc4ff",
+      "infoContent": "#0c0a12",
+      "success": "#7be08f",
+      "successContent": "#0c0a12",
+      "warning": "#ffd21f",
+      "warningContent": "#0c0a12",
+      "error": "#ff7a7a",
+      "errorContent": "#0c0a12",
+      "primary": "#b897ff",
+      "primaryContent": "#0c0a12",
+      "secondary": "#d9c8ff",
+      "secondaryContent": "#0c0a12",
+      "accent": "#ffd21f",
+      "accentContent": "#0c0a12"
+    },
+    "checks": [
+      {
+        "label": "base-content on base100",
+        "fg": "#f3effa",
+        "bg": "#0c0a12",
+        "ratio": 17.36,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "base-content on base200",
+        "fg": "#f3effa",
+        "bg": "#15121e",
+        "ratio": 16.3,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "base-content on base300",
+        "fg": "#f3effa",
+        "bg": "#211c2e",
+        "ratio": 14.59,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "muted on base100",
+        "fg": "#b9b0cb",
+        "bg": "#0c0a12",
+        "ratio": 9.49,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "muted on base200",
+        "fg": "#b9b0cb",
+        "bg": "#15121e",
+        "ratio": 8.91,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary-content on primary",
+        "fg": "#0c0a12",
+        "bg": "#b897ff",
+        "ratio": 8.34,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "secondary-content on secondary",
+        "fg": "#0c0a12",
+        "bg": "#d9c8ff",
+        "ratio": 12.79,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "accent-content on accent",
+        "fg": "#0c0a12",
+        "bg": "#ffd21f",
+        "ratio": 13.57,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "neutral-content on neutral",
+        "fg": "#f3effa",
+        "bg": "#2b2539",
+        "ratio": 13,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "info-content on info",
+        "fg": "#0c0a12",
+        "bg": "#6cc4ff",
+        "ratio": 10.28,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "success-content on success",
+        "fg": "#0c0a12",
+        "bg": "#7be08f",
+        "ratio": 12.08,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "warning-content on warning",
+        "fg": "#0c0a12",
+        "bg": "#ffd21f",
+        "ratio": 13.57,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "error-content on error",
+        "fg": "#0c0a12",
+        "bg": "#ff7a7a",
+        "ratio": 7.79,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary on base100",
+        "fg": "#b897ff",
+        "bg": "#0c0a12",
+        "ratio": 8.34,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary on base200",
+        "fg": "#b897ff",
+        "bg": "#15121e",
+        "ratio": 7.83,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "secondary on base-100",
+        "fg": "#d9c8ff",
+        "bg": "#0c0a12",
+        "ratio": 12.79,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "accent on base-100",
+        "fg": "#ffd21f",
+        "bg": "#0c0a12",
+        "ratio": 13.57,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "info on base-100",
+        "fg": "#6cc4ff",
+        "bg": "#0c0a12",
+        "ratio": 10.28,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "success on base-100",
+        "fg": "#7be08f",
+        "bg": "#0c0a12",
+        "ratio": 12.08,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "warning on base-100",
+        "fg": "#ffd21f",
+        "bg": "#0c0a12",
+        "ratio": 13.57,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "error on base-100",
+        "fg": "#ff7a7a",
+        "bg": "#0c0a12",
+        "ratio": 7.79,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "info frame/icon on base-200",
+        "fg": "#6cc4ff",
+        "bg": "#15121e",
+        "ratio": 9.65,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "success frame/icon on base-200",
+        "fg": "#7be08f",
+        "bg": "#15121e",
+        "ratio": 11.35,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "warning frame/icon on base-200",
+        "fg": "#ffd21f",
+        "bg": "#15121e",
+        "ratio": 12.74,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "error frame/icon on base-200",
+        "fg": "#ff7a7a",
+        "bg": "#15121e",
+        "ratio": 7.31,
+        "min": 3,
+        "pass": true
+      }
+    ]
+  },
+  {
+    "theme": "webring-blog-light",
+    "brand": "blog",
+    "mode": "light",
+    "colors": {
+      "base100": "#fdfcf8",
+      "base200": "#f2f0ea",
+      "base300": "#e4e1d8",
+      "baseContent": "#110e18",
+      "muted": "#4f4960",
+      "neutral": "#1c1828",
+      "neutralContent": "#fdfcf8",
+      "info": "#0b5d8c",
+      "infoContent": "#fdfcf8",
+      "success": "#1c6b37",
+      "successContent": "#fdfcf8",
+      "warning": "#7d5700",
+      "warningContent": "#fdfcf8",
+      "error": "#b3261e",
+      "errorContent": "#fdfcf8",
+      "primary": "#b8321f",
+      "primaryContent": "#fdfcf8",
+      "secondary": "#7f2114",
+      "secondaryContent": "#fdfcf8",
+      "accent": "#7d5700",
+      "accentContent": "#fdfcf8"
+    },
+    "checks": [
+      {
+        "label": "base-content on base100",
+        "fg": "#110e18",
+        "bg": "#fdfcf8",
+        "ratio": 18.6,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "base-content on base200",
+        "fg": "#110e18",
+        "bg": "#f2f0ea",
+        "ratio": 16.75,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "base-content on base300",
+        "fg": "#110e18",
+        "bg": "#e4e1d8",
+        "ratio": 14.6,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "muted on base100",
+        "fg": "#4f4960",
+        "bg": "#fdfcf8",
+        "ratio": 8.33,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "muted on base200",
+        "fg": "#4f4960",
+        "bg": "#f2f0ea",
+        "ratio": 7.51,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary-content on primary",
+        "fg": "#fdfcf8",
+        "bg": "#b8321f",
+        "ratio": 5.82,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "secondary-content on secondary",
+        "fg": "#fdfcf8",
+        "bg": "#7f2114",
+        "ratio": 9.6,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "accent-content on accent",
+        "fg": "#fdfcf8",
+        "bg": "#7d5700",
+        "ratio": 6.32,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "neutral-content on neutral",
+        "fg": "#fdfcf8",
+        "bg": "#1c1828",
+        "ratio": 16.9,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "info-content on info",
+        "fg": "#fdfcf8",
+        "bg": "#0b5d8c",
+        "ratio": 6.91,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "success-content on success",
+        "fg": "#fdfcf8",
+        "bg": "#1c6b37",
+        "ratio": 6.38,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "warning-content on warning",
+        "fg": "#fdfcf8",
+        "bg": "#7d5700",
+        "ratio": 6.32,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "error-content on error",
+        "fg": "#fdfcf8",
+        "bg": "#b3261e",
+        "ratio": 6.37,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary on base100",
+        "fg": "#b8321f",
+        "bg": "#fdfcf8",
+        "ratio": 5.82,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary on base200",
+        "fg": "#b8321f",
+        "bg": "#f2f0ea",
+        "ratio": 5.24,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "secondary on base-100",
+        "fg": "#7f2114",
+        "bg": "#fdfcf8",
+        "ratio": 9.6,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "accent on base-100",
+        "fg": "#7d5700",
+        "bg": "#fdfcf8",
+        "ratio": 6.32,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "info on base-100",
+        "fg": "#0b5d8c",
+        "bg": "#fdfcf8",
+        "ratio": 6.91,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "success on base-100",
+        "fg": "#1c6b37",
+        "bg": "#fdfcf8",
+        "ratio": 6.38,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "warning on base-100",
+        "fg": "#7d5700",
+        "bg": "#fdfcf8",
+        "ratio": 6.32,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "error on base-100",
+        "fg": "#b3261e",
+        "bg": "#fdfcf8",
+        "ratio": 6.37,
+        "min": 3,
+        "pass": true
+      }
+    ]
+  },
+  {
+    "theme": "webring-blog-dark",
+    "brand": "blog",
+    "mode": "dark",
+    "colors": {
+      "base100": "#0c0a12",
+      "base200": "#15121e",
+      "base300": "#211c2e",
+      "baseContent": "#f3effa",
+      "muted": "#b9b0cb",
+      "neutral": "#2b2539",
+      "neutralContent": "#f3effa",
+      "info": "#6cc4ff",
+      "infoContent": "#0c0a12",
+      "success": "#7be08f",
+      "successContent": "#0c0a12",
+      "warning": "#ffd21f",
+      "warningContent": "#0c0a12",
+      "error": "#ff7a7a",
+      "errorContent": "#0c0a12",
+      "primary": "#ff8a78",
+      "primaryContent": "#0c0a12",
+      "secondary": "#ffc2b8",
+      "secondaryContent": "#0c0a12",
+      "accent": "#ffd21f",
+      "accentContent": "#0c0a12"
+    },
+    "checks": [
+      {
+        "label": "base-content on base100",
+        "fg": "#f3effa",
+        "bg": "#0c0a12",
+        "ratio": 17.36,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "base-content on base200",
+        "fg": "#f3effa",
+        "bg": "#15121e",
+        "ratio": 16.3,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "base-content on base300",
+        "fg": "#f3effa",
+        "bg": "#211c2e",
+        "ratio": 14.59,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "muted on base100",
+        "fg": "#b9b0cb",
+        "bg": "#0c0a12",
+        "ratio": 9.49,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "muted on base200",
+        "fg": "#b9b0cb",
+        "bg": "#15121e",
+        "ratio": 8.91,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary-content on primary",
+        "fg": "#0c0a12",
+        "bg": "#ff8a78",
+        "ratio": 8.58,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "secondary-content on secondary",
+        "fg": "#0c0a12",
+        "bg": "#ffc2b8",
+        "ratio": 12.79,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "accent-content on accent",
+        "fg": "#0c0a12",
+        "bg": "#ffd21f",
+        "ratio": 13.57,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "neutral-content on neutral",
+        "fg": "#f3effa",
+        "bg": "#2b2539",
+        "ratio": 13,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "info-content on info",
+        "fg": "#0c0a12",
+        "bg": "#6cc4ff",
+        "ratio": 10.28,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "success-content on success",
+        "fg": "#0c0a12",
+        "bg": "#7be08f",
+        "ratio": 12.08,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "warning-content on warning",
+        "fg": "#0c0a12",
+        "bg": "#ffd21f",
+        "ratio": 13.57,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "error-content on error",
+        "fg": "#0c0a12",
+        "bg": "#ff7a7a",
+        "ratio": 7.79,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary on base100",
+        "fg": "#ff8a78",
+        "bg": "#0c0a12",
+        "ratio": 8.58,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary on base200",
+        "fg": "#ff8a78",
+        "bg": "#15121e",
+        "ratio": 8.05,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "secondary on base-100",
+        "fg": "#ffc2b8",
+        "bg": "#0c0a12",
+        "ratio": 12.79,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "accent on base-100",
+        "fg": "#ffd21f",
+        "bg": "#0c0a12",
+        "ratio": 13.57,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "info on base-100",
+        "fg": "#6cc4ff",
+        "bg": "#0c0a12",
+        "ratio": 10.28,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "success on base-100",
+        "fg": "#7be08f",
+        "bg": "#0c0a12",
+        "ratio": 12.08,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "warning on base-100",
+        "fg": "#ffd21f",
+        "bg": "#0c0a12",
+        "ratio": 13.57,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "error on base-100",
+        "fg": "#ff7a7a",
+        "bg": "#0c0a12",
+        "ratio": 7.79,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "info frame/icon on base-200",
+        "fg": "#6cc4ff",
+        "bg": "#15121e",
+        "ratio": 9.65,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "success frame/icon on base-200",
+        "fg": "#7be08f",
+        "bg": "#15121e",
+        "ratio": 11.35,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "warning frame/icon on base-200",
+        "fg": "#ffd21f",
+        "bg": "#15121e",
+        "ratio": 12.74,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "error frame/icon on base-200",
+        "fg": "#ff7a7a",
+        "bg": "#15121e",
+        "ratio": 7.31,
+        "min": 3,
+        "pass": true
+      }
+    ]
+  },
+  {
+    "theme": "webring-wiki-light",
+    "brand": "wiki",
+    "mode": "light",
+    "colors": {
+      "base100": "#fdfcf8",
+      "base200": "#f2f0ea",
+      "base300": "#e4e1d8",
+      "baseContent": "#110e18",
+      "muted": "#4f4960",
+      "neutral": "#1c1828",
+      "neutralContent": "#fdfcf8",
+      "info": "#0b5d8c",
+      "infoContent": "#fdfcf8",
+      "success": "#1c6b37",
+      "successContent": "#fdfcf8",
+      "warning": "#7d5700",
+      "warningContent": "#fdfcf8",
+      "error": "#b3261e",
+      "errorContent": "#fdfcf8",
+      "primary": "#00686f",
+      "primaryContent": "#fdfcf8",
+      "secondary": "#004a4f",
+      "secondaryContent": "#fdfcf8",
+      "accent": "#7d5700",
+      "accentContent": "#fdfcf8"
+    },
+    "checks": [
+      {
+        "label": "base-content on base100",
+        "fg": "#110e18",
+        "bg": "#fdfcf8",
+        "ratio": 18.6,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "base-content on base200",
+        "fg": "#110e18",
+        "bg": "#f2f0ea",
+        "ratio": 16.75,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "base-content on base300",
+        "fg": "#110e18",
+        "bg": "#e4e1d8",
+        "ratio": 14.6,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "muted on base100",
+        "fg": "#4f4960",
+        "bg": "#fdfcf8",
+        "ratio": 8.33,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "muted on base200",
+        "fg": "#4f4960",
+        "bg": "#f2f0ea",
+        "ratio": 7.51,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary-content on primary",
+        "fg": "#fdfcf8",
+        "bg": "#00686f",
+        "ratio": 6.37,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "secondary-content on secondary",
+        "fg": "#fdfcf8",
+        "bg": "#004a4f",
+        "ratio": 9.78,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "accent-content on accent",
+        "fg": "#fdfcf8",
+        "bg": "#7d5700",
+        "ratio": 6.32,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "neutral-content on neutral",
+        "fg": "#fdfcf8",
+        "bg": "#1c1828",
+        "ratio": 16.9,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "info-content on info",
+        "fg": "#fdfcf8",
+        "bg": "#0b5d8c",
+        "ratio": 6.91,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "success-content on success",
+        "fg": "#fdfcf8",
+        "bg": "#1c6b37",
+        "ratio": 6.38,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "warning-content on warning",
+        "fg": "#fdfcf8",
+        "bg": "#7d5700",
+        "ratio": 6.32,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "error-content on error",
+        "fg": "#fdfcf8",
+        "bg": "#b3261e",
+        "ratio": 6.37,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary on base100",
+        "fg": "#00686f",
+        "bg": "#fdfcf8",
+        "ratio": 6.37,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary on base200",
+        "fg": "#00686f",
+        "bg": "#f2f0ea",
+        "ratio": 5.74,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "secondary on base-100",
+        "fg": "#004a4f",
+        "bg": "#fdfcf8",
+        "ratio": 9.78,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "accent on base-100",
+        "fg": "#7d5700",
+        "bg": "#fdfcf8",
+        "ratio": 6.32,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "info on base-100",
+        "fg": "#0b5d8c",
+        "bg": "#fdfcf8",
+        "ratio": 6.91,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "success on base-100",
+        "fg": "#1c6b37",
+        "bg": "#fdfcf8",
+        "ratio": 6.38,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "warning on base-100",
+        "fg": "#7d5700",
+        "bg": "#fdfcf8",
+        "ratio": 6.32,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "error on base-100",
+        "fg": "#b3261e",
+        "bg": "#fdfcf8",
+        "ratio": 6.37,
+        "min": 3,
+        "pass": true
+      }
+    ]
+  },
+  {
+    "theme": "webring-wiki-dark",
+    "brand": "wiki",
+    "mode": "dark",
+    "colors": {
+      "base100": "#0c0a12",
+      "base200": "#15121e",
+      "base300": "#211c2e",
+      "baseContent": "#f3effa",
+      "muted": "#b9b0cb",
+      "neutral": "#2b2539",
+      "neutralContent": "#f3effa",
+      "info": "#6cc4ff",
+      "infoContent": "#0c0a12",
+      "success": "#7be08f",
+      "successContent": "#0c0a12",
+      "warning": "#ffd21f",
+      "warningContent": "#0c0a12",
+      "error": "#ff7a7a",
+      "errorContent": "#0c0a12",
+      "primary": "#4fe0d4",
+      "primaryContent": "#0c0a12",
+      "secondary": "#b0f3ee",
+      "secondaryContent": "#0c0a12",
+      "accent": "#ffd21f",
+      "accentContent": "#0c0a12"
+    },
+    "checks": [
+      {
+        "label": "base-content on base100",
+        "fg": "#f3effa",
+        "bg": "#0c0a12",
+        "ratio": 17.36,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "base-content on base200",
+        "fg": "#f3effa",
+        "bg": "#15121e",
+        "ratio": 16.3,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "base-content on base300",
+        "fg": "#f3effa",
+        "bg": "#211c2e",
+        "ratio": 14.59,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "muted on base100",
+        "fg": "#b9b0cb",
+        "bg": "#0c0a12",
+        "ratio": 9.49,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "muted on base200",
+        "fg": "#b9b0cb",
+        "bg": "#15121e",
+        "ratio": 8.91,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary-content on primary",
+        "fg": "#0c0a12",
+        "bg": "#4fe0d4",
+        "ratio": 12.12,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "secondary-content on secondary",
+        "fg": "#0c0a12",
+        "bg": "#b0f3ee",
+        "ratio": 15.83,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "accent-content on accent",
+        "fg": "#0c0a12",
+        "bg": "#ffd21f",
+        "ratio": 13.57,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "neutral-content on neutral",
+        "fg": "#f3effa",
+        "bg": "#2b2539",
+        "ratio": 13,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "info-content on info",
+        "fg": "#0c0a12",
+        "bg": "#6cc4ff",
+        "ratio": 10.28,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "success-content on success",
+        "fg": "#0c0a12",
+        "bg": "#7be08f",
+        "ratio": 12.08,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "warning-content on warning",
+        "fg": "#0c0a12",
+        "bg": "#ffd21f",
+        "ratio": 13.57,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "error-content on error",
+        "fg": "#0c0a12",
+        "bg": "#ff7a7a",
+        "ratio": 7.79,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary on base100",
+        "fg": "#4fe0d4",
+        "bg": "#0c0a12",
+        "ratio": 12.12,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary on base200",
+        "fg": "#4fe0d4",
+        "bg": "#15121e",
+        "ratio": 11.38,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "secondary on base-100",
+        "fg": "#b0f3ee",
+        "bg": "#0c0a12",
+        "ratio": 15.83,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "accent on base-100",
+        "fg": "#ffd21f",
+        "bg": "#0c0a12",
+        "ratio": 13.57,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "info on base-100",
+        "fg": "#6cc4ff",
+        "bg": "#0c0a12",
+        "ratio": 10.28,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "success on base-100",
+        "fg": "#7be08f",
+        "bg": "#0c0a12",
+        "ratio": 12.08,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "warning on base-100",
+        "fg": "#ffd21f",
+        "bg": "#0c0a12",
+        "ratio": 13.57,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "error on base-100",
+        "fg": "#ff7a7a",
+        "bg": "#0c0a12",
+        "ratio": 7.79,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "info frame/icon on base-200",
+        "fg": "#6cc4ff",
+        "bg": "#15121e",
+        "ratio": 9.65,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "success frame/icon on base-200",
+        "fg": "#7be08f",
+        "bg": "#15121e",
+        "ratio": 11.35,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "warning frame/icon on base-200",
+        "fg": "#ffd21f",
+        "bg": "#15121e",
+        "ratio": 12.74,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "error frame/icon on base-200",
+        "fg": "#ff7a7a",
+        "bg": "#15121e",
+        "ratio": 7.31,
+        "min": 3,
+        "pass": true
+      }
+    ]
+  }
+]

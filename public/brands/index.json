@@ -1,0 +1,128 @@
+{
+  "brands": [
+    {
+      "slug": "wompland",
+      "name": "WompLand",
+      "role": "master",
+      "color": "rose",
+      "glyph": "pale",
+      "colors": {
+        "id": "rose",
+        "name": "Rose",
+        "field": "#C5547C",
+        "pale": "#FFE7EE",
+        "deep": "#431827",
+        "glyph": "#FFE7EE"
+      },
+      "assets": {
+        "mark": "/brands/wompland/mark.svg",
+        "horizontal": "/brands/wompland/horizontal.svg",
+        "horizontalReverse": "/brands/wompland/horizontal-reverse.svg",
+        "stacked": "/brands/wompland/stacked.svg",
+        "stackedReverse": "/brands/wompland/stacked-reverse.svg",
+        "favicon": "/brands/wompland/favicon.svg",
+        "faviconIco": "/brands/wompland/favicon.ico",
+        "png16": "/brands/wompland/icon-16.png",
+        "png32": "/brands/wompland/icon-32.png",
+        "appleTouch": "/brands/wompland/apple-touch-icon.png",
+        "png192": "/brands/wompland/icon-192.png",
+        "png512": "/brands/wompland/icon-512.png",
+        "theme": "/brands/wompland/daisyui-theme.css",
+        "brand": "/brands/wompland/brand.json"
+      }
+    },
+    {
+      "slug": "blogwomp",
+      "name": "blogWomp",
+      "role": "sub",
+      "color": "vermilion",
+      "glyph": "pale",
+      "colors": {
+        "id": "vermilion",
+        "name": "Vermilion",
+        "field": "#CA5843",
+        "pale": "#FFE9E4",
+        "deep": "#451911",
+        "glyph": "#FFE9E4"
+      },
+      "assets": {
+        "mark": "/brands/blogwomp/mark.svg",
+        "horizontal": "/brands/blogwomp/horizontal.svg",
+        "horizontalReverse": "/brands/blogwomp/horizontal-reverse.svg",
+        "stacked": "/brands/blogwomp/stacked.svg",
+        "stackedReverse": "/brands/blogwomp/stacked-reverse.svg",
+        "favicon": "/brands/blogwomp/favicon.svg",
+        "faviconIco": "/brands/blogwomp/favicon.ico",
+        "png16": "/brands/blogwomp/icon-16.png",
+        "png32": "/brands/blogwomp/icon-32.png",
+        "appleTouch": "/brands/blogwomp/apple-touch-icon.png",
+        "png192": "/brands/blogwomp/icon-192.png",
+        "png512": "/brands/blogwomp/icon-512.png",
+        "theme": "/brands/blogwomp/daisyui-theme.css",
+        "brand": "/brands/blogwomp/brand.json"
+      }
+    },
+    {
+      "slug": "riverwomp",
+      "name": "riverWomp",
+      "role": "sub",
+      "color": "cornflower",
+      "glyph": "pale",
+      "colors": {
+        "id": "cornflower",
+        "name": "Cornflower",
+        "field": "#477ED8",
+        "pale": "#E5EFFF",
+        "deep": "#13284B",
+        "glyph": "#E5EFFF"
+      },
+      "assets": {
+        "mark": "/brands/riverwomp/mark.svg",
+        "horizontal": "/brands/riverwomp/horizontal.svg",
+        "horizontalReverse": "/brands/riverwomp/horizontal-reverse.svg",
+        "stacked": "/brands/riverwomp/stacked.svg",
+        "stackedReverse": "/brands/riverwomp/stacked-reverse.svg",
+        "favicon": "/brands/riverwomp/favicon.svg",
+        "faviconIco": "/brands/riverwomp/favicon.ico",
+        "png16": "/brands/riverwomp/icon-16.png",
+        "png32": "/brands/riverwomp/icon-32.png",
+        "appleTouch": "/brands/riverwomp/apple-touch-icon.png",
+        "png192": "/brands/riverwomp/icon-192.png",
+        "png512": "/brands/riverwomp/icon-512.png",
+        "theme": "/brands/riverwomp/daisyui-theme.css",
+        "brand": "/brands/riverwomp/brand.json"
+      }
+    },
+    {
+      "slug": "wikiwomp",
+      "name": "wikiWomp",
+      "role": "sub",
+      "color": "teal",
+      "glyph": "pale",
+      "colors": {
+        "id": "teal",
+        "name": "Teal",
+        "field": "#00948C",
+        "pale": "#D5F7F3",
+        "deep": "#00302D",
+        "glyph": "#D5F7F3"
+      },
+      "assets": {
+        "mark": "/brands/wikiwomp/mark.svg",
+        "horizontal": "/brands/wikiwomp/horizontal.svg",
+        "horizontalReverse": "/brands/wikiwomp/horizontal-reverse.svg",
+        "stacked": "/brands/wikiwomp/stacked.svg",
+        "stackedReverse": "/brands/wikiwomp/stacked-reverse.svg",
+        "favicon": "/brands/wikiwomp/favicon.svg",
+        "faviconIco": "/brands/wikiwomp/favicon.ico",
+        "png16": "/brands/wikiwomp/icon-16.png",
+        "png32": "/brands/wikiwomp/icon-32.png",
+        "appleTouch": "/brands/wikiwomp/apple-touch-icon.png",
+        "png192": "/brands/wikiwomp/icon-192.png",
+        "png512": "/brands/wikiwomp/icon-512.png",
+        "theme": "/brands/wikiwomp/daisyui-theme.css",
+        "brand": "/brands/wikiwomp/brand.json"
+      }
+    }
+  ]
+}

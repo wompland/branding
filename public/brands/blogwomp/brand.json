@@ -1,0 +1,225 @@
+{
+  "slug": "blogwomp",
+  "name": "blogWomp",
+  "role": "sub",
+  "color": "vermilion",
+  "glyph": "pale",
+  "shapes": [
+    {
+      "type": "cell",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "type": "cell",
+      "x": 1,
+      "y": 0
+    },
+    {
+      "type": "cell",
+      "x": 2,
+      "y": 0
+    },
+    {
+      "type": "cell",
+      "x": 3,
+      "y": 0
+    },
+    {
+      "type": "cell",
+      "x": 4,
+      "y": 0
+    },
+    {
+      "type": "cell",
+      "x": 5,
+      "y": 0
+    },
+    {
+      "type": "cell",
+      "x": 6,
+      "y": 0
+    },
+    {
+      "type": "cell",
+      "x": 0,
+      "y": 1
+    },
+    {
+      "type": "cell",
+      "x": 2,
+      "y": 1
+    },
+    {
+      "type": "cell",
+      "x": 3,
+      "y": 1
+    },
+    {
+      "type": "cell",
+      "x": 4,
+      "y": 1
+    },
+    {
+      "type": "cell",
+      "x": 5,
+      "y": 1
+    },
+    {
+      "type": "cell",
+      "x": 6,
+      "y": 1
+    },
+    {
+      "type": "cell",
+      "x": 0,
+      "y": 2
+    },
+    {
+      "type": "cell",
+      "x": 1,
+      "y": 2
+    },
+    {
+      "type": "cell",
+      "x": 2,
+      "y": 2
+    },
+    {
+      "type": "cell",
+      "x": 3,
+      "y": 2
+    },
+    {
+      "type": "cell",
+      "x": 4,
+      "y": 2
+    },
+    {
+      "type": "cell",
+      "x": 5,
+      "y": 2
+    },
+    {
+      "type": "cell",
+      "x": 6,
+      "y": 2
+    },
+    {
+      "type": "cell",
+      "x": 0,
+      "y": 4
+    },
+    {
+      "type": "cell",
+      "x": 1,
+      "y": 4
+    },
+    {
+      "type": "cell",
+      "x": 2,
+      "y": 4
+    },
+    {
+      "type": "cell",
+      "x": 3,
+      "y": 4
+    },
+    {
+      "type": "cell",
+      "x": 4,
+      "y": 4
+    },
+    {
+      "type": "cell",
+      "x": 5,
+      "y": 4
+    },
+    {
+      "type": "cell",
+      "x": 6,
+      "y": 4
+    },
+    {
+      "type": "cell",
+      "x": 0,
+      "y": 6
+    },
+    {
+      "type": "cell",
+      "x": 1,
+      "y": 6
+    },
+    {
+      "type": "cell",
+      "x": 2,
+      "y": 6
+    },
+    {
+      "type": "cell",
+      "x": 3,
+      "y": 6
+    },
+    {
+      "type": "cell",
+      "x": 4,
+      "y": 6
+    },
+    {
+      "type": "cell",
+      "x": 5,
+      "y": 6
+    },
+    {
+      "type": "cell",
+      "x": 6,
+      "y": 6
+    }
+  ],
+  "colors": {
+    "id": "vermilion",
+    "name": "Vermilion",
+    "field": "#CA5843",
+    "pale": "#FFE9E4",
+    "deep": "#451911",
+    "glyph": "#FFE9E4"
+  },
+  "themes": {
+    "light": "wompland-blogwomp-light",
+    "dark": "wompland-blogwomp-dark"
+  },
+  "tokens": {
+    "light": {
+      "primary": "#B94834",
+      "primaryContent": "#FFFFFF",
+      "secondary": "#141414",
+      "secondaryContent": "#FFFFFF",
+      "accent": "#8F6400",
+      "accentContent": "#FFFFFF"
+    },
+    "dark": {
+      "primary": "#E16C56",
+      "primaryContent": "#141414",
+      "secondary": "#EEECE6",
+      "secondaryContent": "#141414",
+      "accent": "#F2B53A",
+      "accentContent": "#141414"
+    }
+  },
+  "assets": {
+    "mark": "/brands/blogwomp/mark.svg",
+    "horizontal": "/brands/blogwomp/horizontal.svg",
+    "horizontalReverse": "/brands/blogwomp/horizontal-reverse.svg",
+    "stacked": "/brands/blogwomp/stacked.svg",
+    "stackedReverse": "/brands/blogwomp/stacked-reverse.svg",
+    "favicon": "/brands/blogwomp/favicon.svg",
+    "faviconIco": "/brands/blogwomp/favicon.ico",
+    "png16": "/brands/blogwomp/icon-16.png",
+    "png32": "/brands/blogwomp/icon-32.png",
+    "appleTouch": "/brands/blogwomp/apple-touch-icon.png",
+    "png192": "/brands/blogwomp/icon-192.png",
+    "png512": "/brands/blogwomp/icon-512.png",
+    "theme": "/brands/blogwomp/daisyui-theme.css",
+    "brand": "/brands/blogwomp/brand.json"
+  }
+}

@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en" data-identity="wompland" data-default-mode="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>System guide · WompLand</title>
+  <link rel="icon" href="/brands/wompland/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/src/toolkit/system.css">
+  <script type="module" src="/src/shared/mode.js"></script>
+</head>
+<body data-brand="wompland">
+<div class="sheet">
+
+  <header class="masthead cols">
+    <a class="brandmark" href="/" aria-label="WompLand branding toolkit, home" data-masthead-lockup></a>
+    <p class="purpose">Branding toolkit for WompLand and its Womps</p>
+    <nav aria-label="Toolkit">
+      <ul>
+        <li><a href="/">Brands</a></li>
+        <li><a href="/toolkit/system.html" aria-current="page">System guide</a></li>
+      </ul>
+    </nav>
+    <div class="toggle-cell">
+      <button class="mode-btn" type="button" data-mode-toggle aria-label="Dark mode">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="1" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 1v14h7V1Z" fill="currentColor"/></svg>
+        <span>Dark<span class="t-word"> mode</span></span><span class="t-state t-light">Off</span><span class="t-state t-dark">On</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="opener cols sys-hero" aria-labelledby="page-title">
+      <div class="hero-mark" id="hero-mark"></div>
+      <div class="lede">
+        <h1 id="page-title" class="h-display">Three modules. One mark. Every Womp.</h1>
+        <p>WompLand is a family of small publishing apps you run yourself. Its identity is a kit: a square cell, a quarter ring and a filled quarter circle, placed on a 7 × 7 field inside a 9 × 9 tile. The WompLand icon and every app icon are built from those pieces; the names beside them are set in plain Archivo.</p>
+      </div>
+      <nav class="pagenav" aria-label="On this page">
+        <ol>
+          <li><a href="#kit">Module kit</a></li>
+          <li><a href="#icon">The icon</a></li>
+          <li><a href="#lockup">Lockup spec</a></li>
+          <li><a href="#rule">Sub-brand rule</a></li>
+          <li><a href="#palette">Palette</a></li>
+          <li><a href="#donts">Don'ts</a></li>
+          <li><a href="#type">Type scale</a></li>
+        </ol>
+      </nav>
+    </section>
+
+    <section class="plate cols" id="kit" aria-labelledby="kit-title">
+      <div class="plate-head">
+        <h2 id="kit-title">The module kit</h2>
+        <p>One module is one ninth of the tile. Every curve is exactly one module thick, so rings and stems carry the same stroke.</p>
+        <p><code>rot</code> names the corner of the box that holds the circle's centre, clockwise from top-left: 0, 1, 2, 3.</p>
+      </div>
+      <div class="plate-body">
+        <ul class="kit subgrid" id="kit-modules"></ul>
+        <h3 class="mt-10">Turning a module</h3>
+        <ul class="kit subgrid mt-4" id="kit-rot"></ul>
+        <h3 class="mt-10">Combinations</h3>
+        <p class="small muted mt-2 measure">Stems and half circles are not modules of their own. They are cells and quarters placed side by side, and they union into one shape.</p>
+        <ul class="kit subgrid mt-4" id="kit-combos"></ul>
+      </div>
+    </section>
+
+    <section class="plate cols" id="icon" aria-labelledby="w-title">
+      <div class="plate-head">
+        <h2 id="w-title">The icon's construction</h2>
+        <p>The master icon on its construction grid. Thin seams show where one module ends and the next begins.</p>
+      </div>
+      <div class="plate-body w-body">
+        <figure class="w-art half" id="w-art"></figure>
+        <div class="w-notes half">
+          <p class="measure">Like every Womp, WompLand is marked by an icon, not a letter: a picture built from the module kit on the 7 × 7 field, with every stroke one module thick. The table counts its pieces. Nothing is drawn freehand: change a shape in the editor and this drawing changes with it.</p>
+          <table class="data mt-6" id="w-table"></table>
+        </div>
+      </div>
+    </section>
+
+    <section class="plate cols" id="lockup" aria-labelledby="lockup-title">
+      <div class="plate-head">
+        <h2 id="lockup-title">The lockup spec</h2>
+        <p>A lockup is the tile plus the name in Archivo 600, measured in modules of the tile (u = 1/9 of the tile).</p>
+      </div>
+      <div class="plate-body">
+        <figure class="spec">
+          <div class="spec-art" id="spec-h"></div>
+          <figcaption class="spec-cap"><span>Horizontal: the name starts <b id="gap-u"></b> from the tile; its caps are <b class="cap-u"></b> tall and centred on the tile.</span><span class="num" id="spec-line"></span></figcaption>
+        </figure>
+        <figure class="spec mt-6 stacked-spec">
+          <div class="spec-art" id="spec-s"></div>
+          <figcaption class="spec-cap"><span>Stacked: the tile is centred over the name, <b id="stack-u"></b> from the tile to the cap top.</span><span class="num">Clear space 2u on every side</span></figcaption>
+        </figure>
+        <p class="small muted mt-4 measure">Names are camelCase as written (<i>job</i> + Womp), tracked −0.01em, and outlined in every logo file, so no file depends on the font. The tile never changes between grounds; only the name switches from ink to paper.</p>
+      </div>
+    </section>
+
+    <section class="plate cols" id="rule" aria-labelledby="rule-title">
+      <div class="plate-head">
+        <h2 id="rule-title">One rule for every Womp</h2>
+        <p>No new design work per app. Pick the object the app is about, draw it, choose a color. The theme follows from the color.</p>
+      </div>
+      <div class="plate-body">
+        <p class="rule-text measure">A Womp's glyph is the core object of its job, built from the module kit inside the 7 × 7 field, set on one palette color with that color's pale or deep partner, and followed by its name in Archivo 600.</p>
+        <ul class="womps subgrid mt-10" id="womps"></ul>
+        <div class="howto mt-10">
+          <h3>Making one in the editor</h3>
+          <ol class="howto-steps mt-4">
+            <li>On the <a href="/">Brands</a> page, type the job word under New Womp (<i>list</i> makes listWomp) and create it. The editor opens with an empty field.</li>
+            <li>Name the one object the app publishes or manages, and draw it with cells, quarter rings and filled quarters. Keep every stroke one module thick.</li>
+            <li>Pick a palette color that no other Womp uses, then choose the pale or deep glyph, whichever reads better and stays clear of other brands' icons.</li>
+            <li>Save. The editor checks the shapes and the contrast gate, then writes the logo files, icons and DaisyUI themes. The brand guide updates on its own.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="plate cols" id="palette" aria-labelledby="palette-title">
+      <div class="plate-head">
+        <h2 id="palette-title">The palette rules</h2>
+        <p>Every Womp draws its tile from one curated collection, so the family stays one family.</p>
+        <p>Edit the collection in <code>scripts/palette.mjs</code>; <code>npm run palette</code> fails on any miss.</p>
+      </div>
+      <div class="plate-body">
+        <ol class="rules" id="palette-rules"></ol>
+        <div class="grounds subgrid mt-8" id="palette-grounds"></div>
+      </div>
+    </section>
+
+    <section class="plate cols" id="donts" aria-labelledby="donts-title">
+      <div class="plate-head">
+        <h2 id="donts-title">Don'ts</h2>
+        <p>Each of these breaks the system. Every example is drawn from the real brand data, then misused on purpose.</p>
+      </div>
+      <div class="plate-body">
+        <ul class="donts subgrid" id="dont-list"></ul>
+      </div>
+    </section>
+
+    <section class="plate cols" id="type" aria-labelledby="type-title">
+      <div class="plate-head">
+        <h2 id="type-title">The type scale</h2>
+        <p>Archivo for everything people read: one family, seven sizes, tabular figures wherever numbers line up. JetBrains Mono is for code only.</p>
+      </div>
+      <div class="plate-body">
+        <p class="specimen">Aa Gg <span class="whitespace-nowrap">0123456789</span></p>
+        <div class="spec mt-8">
+          <table>
+            <caption class="sr-only">Type scale</caption>
+            <thead><tr><th scope="col">Role</th><th scope="col" class="r">Size</th><th scope="col" class="r">Leading</th><th scope="col" class="r">Weight</th><th scope="col">Sample</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Wordmark</th><td class="r num">cap 5u</td><td class="r num">—</td><td class="r num">600</td><td><span class="ts-word">blogWomp</span> <span class="small muted">camelCase, −0.01em, outlined in files</span></td></tr>
+              <tr><th scope="row">Display</th><td class="r num">64 px</td><td class="r num">0.98</td><td class="r num">800</td><td><span class="ts-display">Own your words</span></td></tr>
+              <tr><th scope="row">Heading 1</th><td class="r num">40 px</td><td class="r num">1.10</td><td class="r num">700</td><td><span class="ts-h1">Own your words</span></td></tr>
+              <tr><th scope="row">Heading 2</th><td class="r num">28 px</td><td class="r num">1.10</td><td class="r num">700</td><td><span class="ts-h2">Own your words</span></td></tr>
+              <tr><th scope="row">Heading 3</th><td class="r num">22 px</td><td class="r num">1.10</td><td class="r num">700</td><td><span class="ts-h3">Own your words</span></td></tr>
+              <tr><th scope="row">Body</th><td class="r num">18 px</td><td class="r num">1.60</td><td class="r num">400</td><td>Your server, your words, your readers.</td></tr>
+              <tr><th scope="row">Small</th><td class="r num">15 px</td><td class="r num">1.50</td><td class="r num">400</td><td class="small">Captions, metadata, table cells.</td></tr>
+              <tr><th scope="row">Label</th><td class="r num">13 px</td><td class="r num">1.30</td><td class="r num">600</td><td><span class="cap">Spec labels only</span></td></tr>
+              <tr><th scope="row">Code</th><td class="r num">14 px</td><td class="r num">1.60</td><td class="r num">400</td><td><code>npm run palette</code></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mt-8 measure">Reading text is 18 pixels on a 68-character measure. Headings stay tight (−2%), labels open up (+4%) and run in capitals, and nothing is set below 13 pixels.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot cols">
+    <div>
+      <p>Every logo and tile on this page is drawn at runtime from <code>brands/*.json</code> through <code>src/brand/</code>.</p>
+      <ul class="dlist"><li><a href="/">All brands</a></li><li><a href="#page-title">Back to top</a></li></ul>
+    </div>
+  </footer>
+</div>
+<script type="module" src="/src/toolkit/system.js"></script>
+</body>
+</html>

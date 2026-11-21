@@ -1,0 +1,27 @@
+{
+  "slug": "wompland",
+  "name": "WompLand",
+  "role": "master",
+  "color": "rose",
+  "glyph": "pale",
+  "shapes": [
+    { "type": "cell", "x": 2, "y": 0 },
+    { "type": "cell", "x": 3, "y": 0 },
+    { "type": "cell", "x": 4, "y": 0 },
+    { "type": "cell", "x": 0, "y": 2 },
+    { "type": "cell", "x": 3, "y": 2 },
+    { "type": "cell", "x": 6, "y": 2 },
+    { "type": "cell", "x": 2, "y": 4 },
+    { "type": "cell", "x": 3, "y": 4 },
+    { "type": "cell", "x": 4, "y": 4 },
+    { "type": "cell", "x": 3, "y": 5 },
+    { "type": "cell", "x": 1, "y": 6 },
+    { "type": "cell", "x": 2, "y": 6 },
+    { "type": "cell", "x": 4, "y": 6 },
+    { "type": "cell", "x": 5, "y": 6 },
+    { "type": "ring", "x": 0, "y": 0, "size": 2, "rot": 2 },
+    { "type": "ring", "x": 5, "y": 0, "size": 2, "rot": 3 },
+    { "type": "ring", "x": 0, "y": 3, "size": 2, "rot": 1 },
+    { "type": "ring", "x": 5, "y": 3, "size": 2, "rot": 0 }
+  ]
+}

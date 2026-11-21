@@ -1,0 +1,76 @@
+@import "./base.css";
+@import "./sheet.css";
+
+/* Opener: the master mark on its construction grid beside the display line. */
+.sys-hero .hero-mark { grid-column: 1 / -1; }
+.sys-hero .hero-mark svg { display: block; width: 100%; max-width: min(100%, 60svh); height: auto; }
+@media (min-width: 760px) {
+  .sys-hero .hero-mark { grid-column: 1 / span 3; }
+  .sys-hero > .lede { grid-column: 4 / -1; align-self: center; }
+}
+@media (min-width: 1100px) {
+  .sys-hero .hero-mark { grid-column: 1 / span 4; }
+  .sys-hero > .lede { grid-column: 5 / -1; }
+  .sys-hero .pagenav { grid-column: 1 / -1; }
+}
+.sys-hero .pagenav { border-top: 2px solid var(--rule); padding-top: 12px; }
+.on-field .g-line { stroke: rgb(0 0 0 / 0.16); }
+.construct.on-field .mod { stroke-width: 2px; }
+
+/* Kit plates */
+.kit { row-gap: calc(var(--u) * 3); }
+.kit-art { border: 2px solid var(--rule); padding: 20px; display: grid; place-items: center; aspect-ratio: 4 / 3; }
+.kit-art svg { width: auto; max-width: 100%; max-height: 100px; }
+.kit-name { margin-top: 10px; font-weight: 700; font-size: var(--t-small); }
+.kit .small { line-height: 1.4; }
+
+/* The W */
+.w-body { row-gap: calc(var(--u) * 4); align-items: start; }
+.w-grid .g-line { stroke: rgb(0 0 0 / 0.18); }
+.w-grid .mod { stroke-width: 2px; }
+.w-grid .guide { stroke-dasharray: 6 4; stroke-width: 1.5px; }
+#w-table { max-width: 28rem; }
+
+/* Lockup spec */
+.lockspec { width: 100%; max-width: 920px; margin-inline: auto; }
+/* Callouts stay readable as the drawing scales with the column; below 500px they drop and the caption carries the numbers. */
+@media (max-width: 759px) { .lockspec .dim-t { font-size: 20px; } #spec-h { padding: 16px; } }
+@media (max-width: 499px) { .lockspec .dim-t { display: none; } }
+.stackspec { width: 100%; max-width: 480px; }
+.stackspec .dim-t { font-size: 18px; }
+@media (max-width: 759px) { .stackspec .dim-t { font-size: 26px; } }
+
+/* Sub-brand rule */
+.rule-text { font-size: var(--t-h3); font-weight: 600; line-height: 1.35; letter-spacing: -0.01em; }
+.womps { row-gap: calc(var(--u) * 4); }
+.womp { display: grid; gap: 16px; align-content: start; }
+.womp-art svg { max-width: 220px; }
+.womp-art .g-line { stroke: rgb(0 0 0 / 0.16); }
+.womp-lockup svg { display: block; height: 40px; width: auto; max-width: 100%; }
+.howto { border: 2px solid var(--rule); padding: calc(var(--u) * 3); }
+.howto-steps { list-style: decimal; padding-left: 1.4em; display: grid; gap: 10px; max-width: 68ch; }
+.howto-steps a { color: var(--color-primary); }
+
+/* Palette */
+.rules { display: grid; gap: 14px; max-width: 68ch; list-style: decimal; padding-left: 1.4em; }
+.rules b { font-weight: 700; }
+.pal-ground { place-items: stretch; }
+.pal-tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 16px 12px; }
+.pal-tiles li { display: grid; gap: 6px; }
+.pal-pair { display: flex; gap: 6px; }
+.pal-tile { display: block; width: 48px; height: 48px; }
+
+/* Don'ts */
+.donts { row-gap: calc(var(--u) * 3); }
+.dont { color: var(--color-base-content); }
+.dont-art { display: block; width: 100%; height: auto; }
+.x-badge rect { fill: var(--color-error); }
+.x-badge path { stroke: var(--color-error-content); stroke-width: 2.5px; fill: none; }
+
+/* Type */
+.specimen { font-size: clamp(2.5rem, 7vw, 5.5rem); font-weight: 800; line-height: 1; letter-spacing: -0.015em; }
+.ts-word { font-weight: 600; font-size: 2rem; letter-spacing: -0.01em; }
+.ts-display { font-size: 3rem; font-weight: 800; letter-spacing: -0.015em; line-height: 1; }
+.ts-h1 { font-size: var(--t-h1); font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; }
+.ts-h2 { font-size: var(--t-h2); font-weight: 700; letter-spacing: -0.02em; }
+.ts-h3 { font-size: var(--t-h3); font-weight: 700; letter-spacing: -0.01em; }

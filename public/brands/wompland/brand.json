@@ -1,0 +1,153 @@
+{
+  "slug": "wompland",
+  "name": "WompLand",
+  "role": "master",
+  "color": "rose",
+  "glyph": "pale",
+  "shapes": [
+    {
+      "type": "cell",
+      "x": 2,
+      "y": 0
+    },
+    {
+      "type": "cell",
+      "x": 3,
+      "y": 0
+    },
+    {
+      "type": "cell",
+      "x": 4,
+      "y": 0
+    },
+    {
+      "type": "cell",
+      "x": 0,
+      "y": 2
+    },
+    {
+      "type": "cell",
+      "x": 3,
+      "y": 2
+    },
+    {
+      "type": "cell",
+      "x": 6,
+      "y": 2
+    },
+    {
+      "type": "cell",
+      "x": 2,
+      "y": 4
+    },
+    {
+      "type": "cell",
+      "x": 3,
+      "y": 4
+    },
+    {
+      "type": "cell",
+      "x": 4,
+      "y": 4
+    },
+    {
+      "type": "cell",
+      "x": 3,
+      "y": 5
+    },
+    {
+      "type": "cell",
+      "x": 1,
+      "y": 6
+    },
+    {
+      "type": "cell",
+      "x": 2,
+      "y": 6
+    },
+    {
+      "type": "cell",
+      "x": 4,
+      "y": 6
+    },
+    {
+      "type": "cell",
+      "x": 5,
+      "y": 6
+    },
+    {
+      "type": "ring",
+      "x": 0,
+      "y": 0,
+      "size": 2,
+      "rot": 2
+    },
+    {
+      "type": "ring",
+      "x": 5,
+      "y": 0,
+      "size": 2,
+      "rot": 3
+    },
+    {
+      "type": "ring",
+      "x": 0,
+      "y": 3,
+      "size": 2,
+      "rot": 1
+    },
+    {
+      "type": "ring",
+      "x": 5,
+      "y": 3,
+      "size": 2,
+      "rot": 0
+    }
+  ],
+  "colors": {
+    "id": "rose",
+    "name": "Rose",
+    "field": "#C5547C",
+    "pale": "#FFE7EE",
+    "deep": "#431827",
+    "glyph": "#FFE7EE"
+  },
+  "themes": {
+    "light": "wompland-wompland-light",
+    "dark": "wompland-wompland-dark"
+  },
+  "tokens": {
+    "light": {
+      "primary": "#B4456D",
+      "primaryContent": "#FFFFFF",
+      "secondary": "#141414",
+      "secondaryContent": "#FFFFFF",
+      "accent": "#8F6400",
+      "accentContent": "#FFFFFF"
+    },
+    "dark": {
+      "primary": "#DD6A91",
+      "primaryContent": "#141414",
+      "secondary": "#EEECE6",
+      "secondaryContent": "#141414",
+      "accent": "#F2B53A",
+      "accentContent": "#141414"
+    }
+  },
+  "assets": {
+    "mark": "/brands/wompland/mark.svg",
+    "horizontal": "/brands/wompland/horizontal.svg",
+    "horizontalReverse": "/brands/wompland/horizontal-reverse.svg",
+    "stacked": "/brands/wompland/stacked.svg",
+    "stackedReverse": "/brands/wompland/stacked-reverse.svg",
+    "favicon": "/brands/wompland/favicon.svg",
+    "faviconIco": "/brands/wompland/favicon.ico",
+    "png16": "/brands/wompland/icon-16.png",
+    "png32": "/brands/wompland/icon-32.png",
+    "appleTouch": "/brands/wompland/apple-touch-icon.png",
+    "png192": "/brands/wompland/icon-192.png",
+    "png512": "/brands/wompland/icon-512.png",
+    "theme": "/brands/wompland/daisyui-theme.css",
+    "brand": "/brands/wompland/brand.json"
+  }
+}

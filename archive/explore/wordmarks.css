@@ -1,0 +1,48 @@
+/* Font comparison for the Modular and Letterpress wordmarks. Exploration only; not part of the build. */
+@import "@fontsource/archivo/600.css";
+@import "@fontsource/archivo/400.css";
+@import "@fontsource/red-hat-display/600.css";
+@import "@fontsource/schibsted-grotesk/600.css";
+@import "@fontsource/onest/600.css";
+@import "@fontsource/bodoni-moda/500.css";
+@import "@fontsource/bodoni-moda/500-italic.css";
+@import "@fontsource/literata/500.css";
+@import "@fontsource/literata/400-italic.css";
+@import "@fontsource/gloock/400.css";
+@import "@fontsource/source-serif-4/600.css";
+@import "@fontsource/source-serif-4/600-italic.css";
+@import "@fontsource/libre-caslon-display/400.css";
+@import "@fontsource/libre-caslon-text/400.css";
+@import "@fontsource/libre-caslon-text/400-italic.css";
+@import "@fontsource/marcellus/400.css";
+@import "@fontsource/brygada-1918/500.css";
+@import "@fontsource/brygada-1918/500-italic.css";
+
+:root { --ink: #141414; --rule: #d9d9d9; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #fff; color: var(--ink); font: 400 18px/1.6 "Archivo", system-ui, sans-serif; }
+main { max-width: 1240px; margin: 0 auto; padding: 56px 32px 96px; }
+h1 { font-size: 40px; line-height: 1.1; margin: 0 0 12px; }
+h2 { font-size: 28px; margin: 72px 0 8px; }
+p.lede { max-width: 66ch; margin: 0; }
+.opt { display: grid; grid-template-columns: 220px 1fr; gap: 32px; align-items: center; padding: 32px 0; border-top: 1px solid var(--rule); }
+.opt header strong { display: block; font-size: 22px; }
+.opt header span { display: block; color: #4a4a4a; font-size: 16px; }
+.row { display: flex; flex-wrap: wrap; gap: 40px 56px; align-items: center; }
+.small { margin-top: 20px; display: flex; gap: 40px; flex-wrap: wrap; align-items: center; }
+
+/* Modular: real glyph tile + typeset name */
+.mlock { display: inline-flex; align-items: center; gap: 0.3em; font-size: 44px; line-height: 1; letter-spacing: -0.01em; white-space: nowrap; }
+.mlock img { height: 1.1em; width: auto; display: block; }
+.small .mlock { font-size: 22px; }
+
+/* Letterpress: canted double-rule cartouche + monogram + typeset name */
+.llock { display: inline-flex; align-items: center; gap: 0.45em; font-size: 40px; line-height: 1; white-space: nowrap; color: var(--c); }
+.small .llock { font-size: 20px; }
+.cart { position: relative; width: 2.3em; height: 1.55em; display: grid; place-items: center; }
+.cart svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.mono { position: relative; display: inline-flex; align-items: baseline; font-size: 1.05em; }
+.mono .r { font-style: normal; }
+.mono .i { font-style: italic; margin-left: -0.28em; }
+.mono .i.first { margin-left: 0; margin-right: -0.22em; }
+.ink-w { --c: #2a2971; } .ink-b { --c: #004129; } .ink-k { --c: #581745; }

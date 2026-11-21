@@ -1,0 +1,24 @@
+{
+  "name": "wompland-branding",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "palette": "node scripts/palette.mjs",
+    "brands": "node scripts/build-brands.mjs",
+    "themes": "node scripts/build-themes.mjs",
+    "dev": "npm run brands && npm run themes && vite",
+    "build": "npm run brands && npm run themes && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@fontsource/archivo": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0",
+    "@resvg/resvg-js": "^2.6.2",
+    "@tailwindcss/vite": "^4.3.5",
+    "culori": "^4.0.2",
+    "daisyui": "^5.8.2",
+    "opentype.js": "^2.0.0",
+    "tailwindcss": "^4.3.5",
+    "vite": "^8.3.8"
+  }
+}

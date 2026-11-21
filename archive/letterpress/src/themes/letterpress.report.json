@@ -1,0 +1,1286 @@
+[
+  {
+    "theme": "letterpress-womp-light",
+    "brand": "womp",
+    "mode": "light",
+    "colors": {
+      "base100": "#fafbfd",
+      "base200": "#f1f4f7",
+      "base300": "#e1e4e9",
+      "baseContent": "#161a25",
+      "muted": "#4a505c",
+      "neutral": "#1b1f29",
+      "neutralContent": "#f5f7f9",
+      "info": "#24577e",
+      "infoContent": "#f8fafd",
+      "success": "#1e5a38",
+      "successContent": "#f8fafd",
+      "warning": "#7f5314",
+      "warningContent": "#fdfcf9",
+      "error": "#a1252f",
+      "errorContent": "#fafcfe",
+      "primary": "#2a2971",
+      "primaryContent": "#fafbfd",
+      "secondary": "#464d5b",
+      "secondaryContent": "#fafbfd",
+      "accent": "#565c9c",
+      "accentContent": "#fafbfd"
+    },
+    "checks": [
+      {
+        "label": "base-content on base100",
+        "fg": "oklch(0.22 0.022 268)",
+        "bg": "oklch(0.988 0.003 255)",
+        "ratio": 16.75,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "base-content on base200",
+        "fg": "oklch(0.22 0.022 268)",
+        "bg": "oklch(0.965 0.005 255)",
+        "ratio": 15.66,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "base-content on base300",
+        "fg": "oklch(0.22 0.022 268)",
+        "bg": "oklch(0.918 0.008 258)",
+        "ratio": 13.6,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "muted on base100",
+        "fg": "oklch(0.43 0.022 265)",
+        "bg": "oklch(0.988 0.003 255)",
+        "ratio": 7.84,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "muted on base200",
+        "fg": "oklch(0.43 0.022 265)",
+        "bg": "oklch(0.965 0.005 255)",
+        "ratio": 7.33,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary-content on primary",
+        "fg": "oklch(0.988 0.003 255)",
+        "bg": "oklch(0.33 0.12 278)",
+        "ratio": 12.24,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "secondary-content on secondary",
+        "fg": "oklch(0.988 0.003 255)",
+        "bg": "oklch(0.42 0.025 262)",
+        "ratio": 8.18,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "accent-content on accent",
+        "fg": "oklch(0.988 0.003 255)",
+        "bg": "oklch(0.5 0.102 278)",
+        "ratio": 5.94,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "neutral-content on neutral",
+        "fg": "oklch(0.975 0.004 255)",
+        "bg": "oklch(0.24 0.02 268)",
+        "ratio": 15.32,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "info-content on info",
+        "fg": "oklch(0.985 0.004 255)",
+        "bg": "oklch(0.44 0.085 245)",
+        "ratio": 7.38,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "success-content on success",
+        "fg": "oklch(0.985 0.004 255)",
+        "bg": "oklch(0.42 0.085 155)",
+        "ratio": 7.77,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "warning-content on warning",
+        "fg": "oklch(0.99 0.004 85)",
+        "bg": "oklch(0.48 0.095 70)",
+        "ratio": 6.49,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "error-content on error",
+        "fg": "oklch(0.99 0.004 255)",
+        "bg": "oklch(0.47 0.16 22)",
+        "ratio": 7.22,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary on base100",
+        "fg": "oklch(0.33 0.12 278)",
+        "bg": "oklch(0.988 0.003 255)",
+        "ratio": 12.24,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary on base200",
+        "fg": "oklch(0.33 0.12 278)",
+        "bg": "oklch(0.965 0.005 255)",
+        "ratio": 11.45,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "secondary on base-100",
+        "fg": "oklch(0.42 0.025 262)",
+        "bg": "oklch(0.988 0.003 255)",
+        "ratio": 8.18,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "accent on base-100",
+        "fg": "oklch(0.5 0.102 278)",
+        "bg": "oklch(0.988 0.003 255)",
+        "ratio": 5.94,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "info on base-100",
+        "fg": "oklch(0.44 0.085 245)",
+        "bg": "oklch(0.988 0.003 255)",
+        "ratio": 7.45,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "success on base-100",
+        "fg": "oklch(0.42 0.085 155)",
+        "bg": "oklch(0.988 0.003 255)",
+        "ratio": 7.84,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "warning on base-100",
+        "fg": "oklch(0.48 0.095 70)",
+        "bg": "oklch(0.988 0.003 255)",
+        "ratio": 6.45,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "error on base-100",
+        "fg": "oklch(0.47 0.16 22)",
+        "bg": "oklch(0.988 0.003 255)",
+        "ratio": 7.18,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "muted (reading) on base-100",
+        "fg": "oklch(0.43 0.022 265)",
+        "bg": "oklch(0.988 0.003 255)",
+        "ratio": 7.84,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "muted (reading) on base-200",
+        "fg": "oklch(0.43 0.022 265)",
+        "bg": "oklch(0.965 0.005 255)",
+        "ratio": 7.33,
+        "min": 7,
+        "pass": true
+      }
+    ]
+  },
+  {
+    "theme": "letterpress-womp-dark",
+    "brand": "womp",
+    "mode": "dark",
+    "colors": {
+      "base100": "#0d0e11",
+      "base200": "#15161a",
+      "base300": "#212328",
+      "baseContent": "#e5e8ed",
+      "muted": "#a3a8b1",
+      "neutral": "#cdd1d8",
+      "neutralContent": "#101115",
+      "info": "#95c4e7",
+      "infoContent": "#0f1216",
+      "success": "#94cda7",
+      "successContent": "#0e1310",
+      "warning": "#eac586",
+      "warningContent": "#1b150c",
+      "error": "#f19e9b",
+      "errorContent": "#180f0f",
+      "primary": "#c1c7f2",
+      "primaryContent": "#0e0f13",
+      "secondary": "#9fa5ae",
+      "secondaryContent": "#0e0f13",
+      "accent": "#9fa6dc",
+      "accentContent": "#0e0f13"
+    },
+    "checks": [
+      {
+        "label": "base-content on base100",
+        "fg": "oklch(0.93 0.008 260)",
+        "bg": "oklch(0.165 0.006 270)",
+        "ratio": 15.68,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "base-content on base200",
+        "fg": "oklch(0.93 0.008 260)",
+        "bg": "oklch(0.2 0.008 270)",
+        "ratio": 14.74,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "base-content on base300",
+        "fg": "oklch(0.93 0.008 260)",
+        "bg": "oklch(0.255 0.01 270)",
+        "ratio": 12.84,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "muted on base100",
+        "fg": "oklch(0.73 0.014 262)",
+        "bg": "oklch(0.165 0.006 270)",
+        "ratio": 8.06,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "muted on base200",
+        "fg": "oklch(0.73 0.014 262)",
+        "bg": "oklch(0.2 0.008 270)",
+        "ratio": 7.57,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary-content on primary",
+        "fg": "oklch(0.17 0.008 270)",
+        "bg": "oklch(0.84 0.06 278)",
+        "ratio": 11.62,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "secondary-content on secondary",
+        "fg": "oklch(0.17 0.008 270)",
+        "bg": "oklch(0.72 0.015 262)",
+        "ratio": 7.71,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "accent-content on accent",
+        "fg": "oklch(0.17 0.008 270)",
+        "bg": "oklch(0.74 0.078 278)",
+        "ratio": 8.19,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "neutral-content on neutral",
+        "fg": "oklch(0.18 0.008 270)",
+        "bg": "oklch(0.86 0.01 262)",
+        "ratio": 12.29,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "info-content on info",
+        "fg": "oklch(0.18 0.01 260)",
+        "bg": "oklch(0.8 0.07 240)",
+        "ratio": 10.17,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "success-content on success",
+        "fg": "oklch(0.18 0.01 160)",
+        "bg": "oklch(0.8 0.08 155)",
+        "ratio": 10.37,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "warning-content on warning",
+        "fg": "oklch(0.2 0.02 75)",
+        "bg": "oklch(0.84 0.09 80)",
+        "ratio": 11.03,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "error-content on error",
+        "fg": "oklch(0.18 0.015 20)",
+        "bg": "oklch(0.78 0.1 22)",
+        "ratio": 9.05,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary on base100",
+        "fg": "oklch(0.84 0.06 278)",
+        "bg": "oklch(0.165 0.006 270)",
+        "ratio": 11.71,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary on base200",
+        "fg": "oklch(0.84 0.06 278)",
+        "bg": "oklch(0.2 0.008 270)",
+        "ratio": 11,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "secondary on base-100",
+        "fg": "oklch(0.72 0.015 262)",
+        "bg": "oklch(0.165 0.006 270)",
+        "ratio": 7.77,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "accent on base-100",
+        "fg": "oklch(0.74 0.078 278)",
+        "bg": "oklch(0.165 0.006 270)",
+        "ratio": 8.25,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "info on base-100",
+        "fg": "oklch(0.8 0.07 240)",
+        "bg": "oklch(0.165 0.006 270)",
+        "ratio": 10.42,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "success on base-100",
+        "fg": "oklch(0.8 0.08 155)",
+        "bg": "oklch(0.165 0.006 270)",
+        "ratio": 10.65,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "warning on base-100",
+        "fg": "oklch(0.84 0.09 80)",
+        "bg": "oklch(0.165 0.006 270)",
+        "ratio": 11.72,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "error on base-100",
+        "fg": "oklch(0.78 0.1 22)",
+        "bg": "oklch(0.165 0.006 270)",
+        "ratio": 9.24,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "muted (reading) on base-100",
+        "fg": "oklch(0.73 0.014 262)",
+        "bg": "oklch(0.165 0.006 270)",
+        "ratio": 8.06,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "muted (reading) on base-200",
+        "fg": "oklch(0.73 0.014 262)",
+        "bg": "oklch(0.2 0.008 270)",
+        "ratio": 7.57,
+        "min": 7,
+        "pass": true
+      }
+    ]
+  },
+  {
+    "theme": "letterpress-blog-light",
+    "brand": "blog",
+    "mode": "light",
+    "colors": {
+      "base100": "#fafbfd",
+      "base200": "#f1f4f7",
+      "base300": "#e1e4e9",
+      "baseContent": "#161a25",
+      "muted": "#4a505c",
+      "neutral": "#1b1f29",
+      "neutralContent": "#f5f7f9",
+      "info": "#24577e",
+      "infoContent": "#f8fafd",
+      "success": "#1e5a38",
+      "successContent": "#f8fafd",
+      "warning": "#7f5314",
+      "warningContent": "#fdfcf9",
+      "error": "#a1252f",
+      "errorContent": "#fafcfe",
+      "primary": "#004129",
+      "primaryContent": "#fafbfd",
+      "secondary": "#464d5b",
+      "secondaryContent": "#fafbfd",
+      "accent": "#406f58",
+      "accentContent": "#fafbfd"
+    },
+    "checks": [
+      {
+        "label": "base-content on base100",
+        "fg": "oklch(0.22 0.022 268)",
+        "bg": "oklch(0.988 0.003 255)",
+        "ratio": 16.75,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "base-content on base200",
+        "fg": "oklch(0.22 0.022 268)",
+        "bg": "oklch(0.965 0.005 255)",
+        "ratio": 15.66,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "base-content on base300",
+        "fg": "oklch(0.22 0.022 268)",
+        "bg": "oklch(0.918 0.008 258)",
+        "ratio": 13.6,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "muted on base100",
+        "fg": "oklch(0.43 0.022 265)",
+        "bg": "oklch(0.988 0.003 255)",
+        "ratio": 7.84,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "muted on base200",
+        "fg": "oklch(0.43 0.022 265)",
+        "bg": "oklch(0.965 0.005 255)",
+        "ratio": 7.33,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary-content on primary",
+        "fg": "oklch(0.988 0.003 255)",
+        "bg": "oklch(0.33 0.075 162)",
+        "ratio": 11.4,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "secondary-content on secondary",
+        "fg": "oklch(0.988 0.003 255)",
+        "bg": "oklch(0.42 0.025 262)",
+        "ratio": 8.18,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "accent-content on accent",
+        "fg": "oklch(0.988 0.003 255)",
+        "bg": "oklch(0.5 0.06375 162)",
+        "ratio": 5.61,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "neutral-content on neutral",
+        "fg": "oklch(0.975 0.004 255)",
+        "bg": "oklch(0.24 0.02 268)",
+        "ratio": 15.32,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "info-content on info",
+        "fg": "oklch(0.985 0.004 255)",
+        "bg": "oklch(0.44 0.085 245)",
+        "ratio": 7.38,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "success-content on success",
+        "fg": "oklch(0.985 0.004 255)",
+        "bg": "oklch(0.42 0.085 155)",
+        "ratio": 7.77,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "warning-content on warning",
+        "fg": "oklch(0.99 0.004 85)",
+        "bg": "oklch(0.48 0.095 70)",
+        "ratio": 6.49,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "error-content on error",
+        "fg": "oklch(0.99 0.004 255)",
+        "bg": "oklch(0.47 0.16 22)",
+        "ratio": 7.22,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary on base100",
+        "fg": "oklch(0.33 0.075 162)",
+        "bg": "oklch(0.988 0.003 255)",
+        "ratio": 11.4,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary on base200",
+        "fg": "oklch(0.33 0.075 162)",
+        "bg": "oklch(0.965 0.005 255)",
+        "ratio": 10.66,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "secondary on base-100",
+        "fg": "oklch(0.42 0.025 262)",
+        "bg": "oklch(0.988 0.003 255)",
+        "ratio": 8.18,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "accent on base-100",
+        "fg": "oklch(0.5 0.06375 162)",
+        "bg": "oklch(0.988 0.003 255)",
+        "ratio": 5.61,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "info on base-100",
+        "fg": "oklch(0.44 0.085 245)",
+        "bg": "oklch(0.988 0.003 255)",
+        "ratio": 7.45,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "success on base-100",
+        "fg": "oklch(0.42 0.085 155)",
+        "bg": "oklch(0.988 0.003 255)",
+        "ratio": 7.84,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "warning on base-100",
+        "fg": "oklch(0.48 0.095 70)",
+        "bg": "oklch(0.988 0.003 255)",
+        "ratio": 6.45,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "error on base-100",
+        "fg": "oklch(0.47 0.16 22)",
+        "bg": "oklch(0.988 0.003 255)",
+        "ratio": 7.18,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "muted (reading) on base-100",
+        "fg": "oklch(0.43 0.022 265)",
+        "bg": "oklch(0.988 0.003 255)",
+        "ratio": 7.84,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "muted (reading) on base-200",
+        "fg": "oklch(0.43 0.022 265)",
+        "bg": "oklch(0.965 0.005 255)",
+        "ratio": 7.33,
+        "min": 7,
+        "pass": true
+      }
+    ]
+  },
+  {
+    "theme": "letterpress-blog-dark",
+    "brand": "blog",
+    "mode": "dark",
+    "colors": {
+      "base100": "#0d0e11",
+      "base200": "#15161a",
+      "base300": "#212328",
+      "baseContent": "#e5e8ed",
+      "muted": "#a3a8b1",
+      "neutral": "#cdd1d8",
+      "neutralContent": "#101115",
+      "info": "#95c4e7",
+      "infoContent": "#0f1216",
+      "success": "#94cda7",
+      "successContent": "#0e1310",
+      "warning": "#eac586",
+      "warningContent": "#1b150c",
+      "error": "#f19e9b",
+      "errorContent": "#180f0f",
+      "primary": "#a2d9bd",
+      "primaryContent": "#0e0f13",
+      "secondary": "#9fa5ae",
+      "secondaryContent": "#0e0f13",
+      "accent": "#73bd99",
+      "accentContent": "#0e0f13"
+    },
+    "checks": [
+      {
+        "label": "base-content on base100",
+        "fg": "oklch(0.93 0.008 260)",
+        "bg": "oklch(0.165 0.006 270)",
+        "ratio": 15.68,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "base-content on base200",
+        "fg": "oklch(0.93 0.008 260)",
+        "bg": "oklch(0.2 0.008 270)",
+        "ratio": 14.74,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "base-content on base300",
+        "fg": "oklch(0.93 0.008 260)",
+        "bg": "oklch(0.255 0.01 270)",
+        "ratio": 12.84,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "muted on base100",
+        "fg": "oklch(0.73 0.014 262)",
+        "bg": "oklch(0.165 0.006 270)",
+        "ratio": 8.06,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "muted on base200",
+        "fg": "oklch(0.73 0.014 262)",
+        "bg": "oklch(0.2 0.008 270)",
+        "ratio": 7.57,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary-content on primary",
+        "fg": "oklch(0.17 0.008 270)",
+        "bg": "oklch(0.84 0.07 162)",
+        "ratio": 12.04,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "secondary-content on secondary",
+        "fg": "oklch(0.17 0.008 270)",
+        "bg": "oklch(0.72 0.015 262)",
+        "ratio": 7.71,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "accent-content on accent",
+        "fg": "oklch(0.17 0.008 270)",
+        "bg": "oklch(0.74 0.09100000000000001 162)",
+        "ratio": 8.63,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "neutral-content on neutral",
+        "fg": "oklch(0.18 0.008 270)",
+        "bg": "oklch(0.86 0.01 262)",
+        "ratio": 12.29,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "info-content on info",
+        "fg": "oklch(0.18 0.01 260)",
+        "bg": "oklch(0.8 0.07 240)",
+        "ratio": 10.17,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "success-content on success",
+        "fg": "oklch(0.18 0.01 160)",
+        "bg": "oklch(0.8 0.08 155)",
+        "ratio": 10.37,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "warning-content on warning",
+        "fg": "oklch(0.2 0.02 75)",
+        "bg": "oklch(0.84 0.09 80)",
+        "ratio": 11.03,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "error-content on error",
+        "fg": "oklch(0.18 0.015 20)",
+        "bg": "oklch(0.78 0.1 22)",
+        "ratio": 9.05,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary on base100",
+        "fg": "oklch(0.84 0.07 162)",
+        "bg": "oklch(0.165 0.006 270)",
+        "ratio": 12.14,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary on base200",
+        "fg": "oklch(0.84 0.07 162)",
+        "bg": "oklch(0.2 0.008 270)",
+        "ratio": 11.4,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "secondary on base-100",
+        "fg": "oklch(0.72 0.015 262)",
+        "bg": "oklch(0.165 0.006 270)",
+        "ratio": 7.77,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "accent on base-100",
+        "fg": "oklch(0.74 0.09100000000000001 162)",
+        "bg": "oklch(0.165 0.006 270)",
+        "ratio": 8.7,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "info on base-100",
+        "fg": "oklch(0.8 0.07 240)",
+        "bg": "oklch(0.165 0.006 270)",
+        "ratio": 10.42,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "success on base-100",
+        "fg": "oklch(0.8 0.08 155)",
+        "bg": "oklch(0.165 0.006 270)",
+        "ratio": 10.65,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "warning on base-100",
+        "fg": "oklch(0.84 0.09 80)",
+        "bg": "oklch(0.165 0.006 270)",
+        "ratio": 11.72,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "error on base-100",
+        "fg": "oklch(0.78 0.1 22)",
+        "bg": "oklch(0.165 0.006 270)",
+        "ratio": 9.24,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "muted (reading) on base-100",
+        "fg": "oklch(0.73 0.014 262)",
+        "bg": "oklch(0.165 0.006 270)",
+        "ratio": 8.06,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "muted (reading) on base-200",
+        "fg": "oklch(0.73 0.014 262)",
+        "bg": "oklch(0.2 0.008 270)",
+        "ratio": 7.57,
+        "min": 7,
+        "pass": true
+      }
+    ]
+  },
+  {
+    "theme": "letterpress-wiki-light",
+    "brand": "wiki",
+    "mode": "light",
+    "colors": {
+      "base100": "#fafbfd",
+      "base200": "#f1f4f7",
+      "base300": "#e1e4e9",
+      "baseContent": "#161a25",
+      "muted": "#4a505c",
+      "neutral": "#1b1f29",
+      "neutralContent": "#f5f7f9",
+      "info": "#24577e",
+      "infoContent": "#f8fafd",
+      "success": "#1e5a38",
+      "successContent": "#f8fafd",
+      "warning": "#7f5314",
+      "warningContent": "#fdfcf9",
+      "error": "#a1252f",
+      "errorContent": "#fafcfe",
+      "primary": "#581745",
+      "primaryContent": "#fafbfd",
+      "secondary": "#464d5b",
+      "secondaryContent": "#fafbfd",
+      "accent": "#874d72",
+      "accentContent": "#fafbfd"
+    },
+    "checks": [
+      {
+        "label": "base-content on base100",
+        "fg": "oklch(0.22 0.022 268)",
+        "bg": "oklch(0.988 0.003 255)",
+        "ratio": 16.75,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "base-content on base200",
+        "fg": "oklch(0.22 0.022 268)",
+        "bg": "oklch(0.965 0.005 255)",
+        "ratio": 15.66,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "base-content on base300",
+        "fg": "oklch(0.22 0.022 268)",
+        "bg": "oklch(0.918 0.008 258)",
+        "ratio": 13.6,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "muted on base100",
+        "fg": "oklch(0.43 0.022 265)",
+        "bg": "oklch(0.988 0.003 255)",
+        "ratio": 7.84,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "muted on base200",
+        "fg": "oklch(0.43 0.022 265)",
+        "bg": "oklch(0.965 0.005 255)",
+        "ratio": 7.33,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary-content on primary",
+        "fg": "oklch(0.988 0.003 255)",
+        "bg": "oklch(0.33 0.11 342)",
+        "ratio": 12.46,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "secondary-content on secondary",
+        "fg": "oklch(0.988 0.003 255)",
+        "bg": "oklch(0.42 0.025 262)",
+        "ratio": 8.18,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "accent-content on accent",
+        "fg": "oklch(0.988 0.003 255)",
+        "bg": "oklch(0.5 0.0935 342)",
+        "ratio": 6.11,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "neutral-content on neutral",
+        "fg": "oklch(0.975 0.004 255)",
+        "bg": "oklch(0.24 0.02 268)",
+        "ratio": 15.32,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "info-content on info",
+        "fg": "oklch(0.985 0.004 255)",
+        "bg": "oklch(0.44 0.085 245)",
+        "ratio": 7.38,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "success-content on success",
+        "fg": "oklch(0.985 0.004 255)",
+        "bg": "oklch(0.42 0.085 155)",
+        "ratio": 7.77,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "warning-content on warning",
+        "fg": "oklch(0.99 0.004 85)",
+        "bg": "oklch(0.48 0.095 70)",
+        "ratio": 6.49,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "error-content on error",
+        "fg": "oklch(0.99 0.004 255)",
+        "bg": "oklch(0.47 0.16 22)",
+        "ratio": 7.22,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary on base100",
+        "fg": "oklch(0.33 0.11 342)",
+        "bg": "oklch(0.988 0.003 255)",
+        "ratio": 12.46,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary on base200",
+        "fg": "oklch(0.33 0.11 342)",
+        "bg": "oklch(0.965 0.005 255)",
+        "ratio": 11.66,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "secondary on base-100",
+        "fg": "oklch(0.42 0.025 262)",
+        "bg": "oklch(0.988 0.003 255)",
+        "ratio": 8.18,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "accent on base-100",
+        "fg": "oklch(0.5 0.0935 342)",
+        "bg": "oklch(0.988 0.003 255)",
+        "ratio": 6.11,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "info on base-100",
+        "fg": "oklch(0.44 0.085 245)",
+        "bg": "oklch(0.988 0.003 255)",
+        "ratio": 7.45,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "success on base-100",
+        "fg": "oklch(0.42 0.085 155)",
+        "bg": "oklch(0.988 0.003 255)",
+        "ratio": 7.84,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "warning on base-100",
+        "fg": "oklch(0.48 0.095 70)",
+        "bg": "oklch(0.988 0.003 255)",
+        "ratio": 6.45,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "error on base-100",
+        "fg": "oklch(0.47 0.16 22)",
+        "bg": "oklch(0.988 0.003 255)",
+        "ratio": 7.18,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "muted (reading) on base-100",
+        "fg": "oklch(0.43 0.022 265)",
+        "bg": "oklch(0.988 0.003 255)",
+        "ratio": 7.84,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "muted (reading) on base-200",
+        "fg": "oklch(0.43 0.022 265)",
+        "bg": "oklch(0.965 0.005 255)",
+        "ratio": 7.33,
+        "min": 7,
+        "pass": true
+      }
+    ]
+  },
+  {
+    "theme": "letterpress-wiki-dark",
+    "brand": "wiki",
+    "mode": "dark",
+    "colors": {
+      "base100": "#0d0e11",
+      "base200": "#15161a",
+      "base300": "#212328",
+      "baseContent": "#e5e8ed",
+      "muted": "#a3a8b1",
+      "neutral": "#cdd1d8",
+      "neutralContent": "#101115",
+      "info": "#95c4e7",
+      "infoContent": "#0f1216",
+      "success": "#94cda7",
+      "successContent": "#0e1310",
+      "warning": "#eac586",
+      "warningContent": "#1b150c",
+      "error": "#f19e9b",
+      "errorContent": "#180f0f",
+      "primary": "#e9bad6",
+      "primaryContent": "#0e0f13",
+      "secondary": "#9fa5ae",
+      "secondaryContent": "#0e0f13",
+      "accent": "#d196ba",
+      "accentContent": "#0e0f13"
+    },
+    "checks": [
+      {
+        "label": "base-content on base100",
+        "fg": "oklch(0.93 0.008 260)",
+        "bg": "oklch(0.165 0.006 270)",
+        "ratio": 15.68,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "base-content on base200",
+        "fg": "oklch(0.93 0.008 260)",
+        "bg": "oklch(0.2 0.008 270)",
+        "ratio": 14.74,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "base-content on base300",
+        "fg": "oklch(0.93 0.008 260)",
+        "bg": "oklch(0.255 0.01 270)",
+        "ratio": 12.84,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "muted on base100",
+        "fg": "oklch(0.73 0.014 262)",
+        "bg": "oklch(0.165 0.006 270)",
+        "ratio": 8.06,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "muted on base200",
+        "fg": "oklch(0.73 0.014 262)",
+        "bg": "oklch(0.2 0.008 270)",
+        "ratio": 7.57,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary-content on primary",
+        "fg": "oklch(0.17 0.008 270)",
+        "bg": "oklch(0.84 0.065 342)",
+        "ratio": 11.39,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "secondary-content on secondary",
+        "fg": "oklch(0.17 0.008 270)",
+        "bg": "oklch(0.72 0.015 262)",
+        "ratio": 7.71,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "accent-content on accent",
+        "fg": "oklch(0.17 0.008 270)",
+        "bg": "oklch(0.74 0.0845 342)",
+        "ratio": 7.97,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "neutral-content on neutral",
+        "fg": "oklch(0.18 0.008 270)",
+        "bg": "oklch(0.86 0.01 262)",
+        "ratio": 12.29,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "info-content on info",
+        "fg": "oklch(0.18 0.01 260)",
+        "bg": "oklch(0.8 0.07 240)",
+        "ratio": 10.17,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "success-content on success",
+        "fg": "oklch(0.18 0.01 160)",
+        "bg": "oklch(0.8 0.08 155)",
+        "ratio": 10.37,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "warning-content on warning",
+        "fg": "oklch(0.2 0.02 75)",
+        "bg": "oklch(0.84 0.09 80)",
+        "ratio": 11.03,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "error-content on error",
+        "fg": "oklch(0.18 0.015 20)",
+        "bg": "oklch(0.78 0.1 22)",
+        "ratio": 9.05,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary on base100",
+        "fg": "oklch(0.84 0.065 342)",
+        "bg": "oklch(0.165 0.006 270)",
+        "ratio": 11.48,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "primary on base200",
+        "fg": "oklch(0.84 0.065 342)",
+        "bg": "oklch(0.2 0.008 270)",
+        "ratio": 10.79,
+        "min": 4.5,
+        "pass": true
+      },
+      {
+        "label": "secondary on base-100",
+        "fg": "oklch(0.72 0.015 262)",
+        "bg": "oklch(0.165 0.006 270)",
+        "ratio": 7.77,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "accent on base-100",
+        "fg": "oklch(0.74 0.0845 342)",
+        "bg": "oklch(0.165 0.006 270)",
+        "ratio": 8.04,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "info on base-100",
+        "fg": "oklch(0.8 0.07 240)",
+        "bg": "oklch(0.165 0.006 270)",
+        "ratio": 10.42,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "success on base-100",
+        "fg": "oklch(0.8 0.08 155)",
+        "bg": "oklch(0.165 0.006 270)",
+        "ratio": 10.65,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "warning on base-100",
+        "fg": "oklch(0.84 0.09 80)",
+        "bg": "oklch(0.165 0.006 270)",
+        "ratio": 11.72,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "error on base-100",
+        "fg": "oklch(0.78 0.1 22)",
+        "bg": "oklch(0.165 0.006 270)",
+        "ratio": 9.24,
+        "min": 3,
+        "pass": true
+      },
+      {
+        "label": "muted (reading) on base-100",
+        "fg": "oklch(0.73 0.014 262)",
+        "bg": "oklch(0.165 0.006 270)",
+        "ratio": 8.06,
+        "min": 7,
+        "pass": true
+      },
+      {
+        "label": "muted (reading) on base-200",
+        "fg": "oklch(0.73 0.014 262)",
+        "bg": "oklch(0.2 0.008 270)",
+        "ratio": 7.57,
+        "min": 7,
+        "pass": true
+      }
+    ]
+  }
+]

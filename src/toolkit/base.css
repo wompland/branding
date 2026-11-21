@@ -1,0 +1,49 @@
+/* WompLand toolkit: shared base for every toolkit page (home, editor, brand guide, system guide).
+   Page-specific styles live in their own file that @imports this one. */
+@import "tailwindcss";
+@source "../../index.html";
+@source "../../toolkit";
+@source "../toolkit";
+@plugin "daisyui" { themes: false; }
+@import "../themes/wompland.css";
+@import "@fontsource/archivo/400.css";
+@import "@fontsource/archivo/500.css";
+@import "@fontsource/archivo/600.css";
+@import "@fontsource/archivo/700.css";
+@import "@fontsource/archivo/800.css";
+@import "@fontsource/jetbrains-mono/400.css";
+
+@theme {
+  --font-sans: "Archivo", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+/* Modular scale (px): 13 / 15 / 18 / 22 / 28 / 40 / 64. One 8px unit. */
+:root {
+  --u: 8px;
+  --t-label: 0.8125rem;
+  --t-small: 0.9375rem;
+  --t-body: 1.125rem;
+  --t-h3: 1.375rem;
+  --t-h2: 1.75rem;
+  --t-h1: 2.5rem;
+  --t-display: 4rem;
+  --rule: var(--color-base-content);
+}
+
+@layer base {
+  html { scrollbar-color: var(--color-base-content) var(--color-base-200); }
+  body {
+    font-family: var(--font-sans);
+    font-size: var(--t-body);
+    line-height: 1.6;
+    background: var(--color-base-100);
+    color: var(--color-base-content);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--color-base-content); color: var(--color-base-100); }
+  :focus-visible { outline: 3px solid var(--color-base-content); outline-offset: 2px; }
+  a { text-underline-offset: 0.2em; }
+  table, .num { font-variant-numeric: tabular-nums; }
+  input, textarea { caret-color: var(--color-base-content); }
+}

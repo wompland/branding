@@ -1,0 +1,190 @@
+{
+  "slug": "wikiwomp",
+  "name": "wikiWomp",
+  "role": "sub",
+  "color": "teal",
+  "glyph": "pale",
+  "shapes": [
+    {
+      "type": "cell",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "type": "cell",
+      "x": 1,
+      "y": 0
+    },
+    {
+      "type": "cell",
+      "x": 5,
+      "y": 0
+    },
+    {
+      "type": "cell",
+      "x": 6,
+      "y": 0
+    },
+    {
+      "type": "cell",
+      "x": 0,
+      "y": 1
+    },
+    {
+      "type": "cell",
+      "x": 6,
+      "y": 1
+    },
+    {
+      "type": "cell",
+      "x": 0,
+      "y": 2
+    },
+    {
+      "type": "cell",
+      "x": 2,
+      "y": 2
+    },
+    {
+      "type": "cell",
+      "x": 3,
+      "y": 2
+    },
+    {
+      "type": "cell",
+      "x": 4,
+      "y": 2
+    },
+    {
+      "type": "cell",
+      "x": 6,
+      "y": 2
+    },
+    {
+      "type": "cell",
+      "x": 0,
+      "y": 3
+    },
+    {
+      "type": "cell",
+      "x": 2,
+      "y": 3
+    },
+    {
+      "type": "cell",
+      "x": 3,
+      "y": 3
+    },
+    {
+      "type": "cell",
+      "x": 4,
+      "y": 3
+    },
+    {
+      "type": "cell",
+      "x": 6,
+      "y": 3
+    },
+    {
+      "type": "cell",
+      "x": 0,
+      "y": 4
+    },
+    {
+      "type": "cell",
+      "x": 2,
+      "y": 4
+    },
+    {
+      "type": "cell",
+      "x": 3,
+      "y": 4
+    },
+    {
+      "type": "cell",
+      "x": 4,
+      "y": 4
+    },
+    {
+      "type": "cell",
+      "x": 6,
+      "y": 4
+    },
+    {
+      "type": "cell",
+      "x": 0,
+      "y": 5
+    },
+    {
+      "type": "cell",
+      "x": 6,
+      "y": 5
+    },
+    {
+      "type": "cell",
+      "x": 0,
+      "y": 6
+    },
+    {
+      "type": "cell",
+      "x": 1,
+      "y": 6
+    },
+    {
+      "type": "cell",
+      "x": 5,
+      "y": 6
+    },
+    {
+      "type": "cell",
+      "x": 6,
+      "y": 6
+    }
+  ],
+  "colors": {
+    "id": "teal",
+    "name": "Teal",
+    "field": "#00948C",
+    "pale": "#D5F7F3",
+    "deep": "#00302D",
+    "glyph": "#D5F7F3"
+  },
+  "themes": {
+    "light": "wompland-wikiwomp-light",
+    "dark": "wompland-wikiwomp-dark"
+  },
+  "tokens": {
+    "light": {
+      "primary": "#007973",
+      "primaryContent": "#FFFFFF",
+      "secondary": "#141414",
+      "secondaryContent": "#FFFFFF",
+      "accent": "#8F6400",
+      "accentContent": "#FFFFFF"
+    },
+    "dark": {
+      "primary": "#1E9F97",
+      "primaryContent": "#141414",
+      "secondary": "#EEECE6",
+      "secondaryContent": "#141414",
+      "accent": "#F2B53A",
+      "accentContent": "#141414"
+    }
+  },
+  "assets": {
+    "mark": "/brands/wikiwomp/mark.svg",
+    "horizontal": "/brands/wikiwomp/horizontal.svg",
+    "horizontalReverse": "/brands/wikiwomp/horizontal-reverse.svg",
+    "stacked": "/brands/wikiwomp/stacked.svg",
+    "stackedReverse": "/brands/wikiwomp/stacked-reverse.svg",
+    "favicon": "/brands/wikiwomp/favicon.svg",
+    "faviconIco": "/brands/wikiwomp/favicon.ico",
+    "png16": "/brands/wikiwomp/icon-16.png",
+    "png32": "/brands/wikiwomp/icon-32.png",
+    "appleTouch": "/brands/wikiwomp/apple-touch-icon.png",
+    "png192": "/brands/wikiwomp/icon-192.png",
+    "png512": "/brands/wikiwomp/icon-512.png",
+    "theme": "/brands/wikiwomp/daisyui-theme.css",
+    "brand": "/brands/wikiwomp/brand.json"
+  }
+}
