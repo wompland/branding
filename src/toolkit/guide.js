@@ -6,7 +6,7 @@ import {
   DEV, palette, esc, font, lockup, tile, inlineSVG, fresh, loadBrand, loadIndex,
   renderMasthead, reapplyMode, onBrandsChanged, verdict, ratio, copyText, MIN_SIZES, CLEAR_U,
 } from './site.js';
-import { BRAND_NOTES } from '../brand/notes.js';
+import { BRAND_NOTES, OBJECT_NOTES } from '../brand/notes.js';
 
 const main = document.getElementById('guide');
 const slug = new URLSearchParams(location.search).get('brand') || 'wompland';
@@ -29,6 +29,8 @@ function hero(b, f) {
     <div class="lede">
       <h1 id="page-title" class="h1">${esc(b.name)} brand guide</h1>
       <p class="small muted">${b.role === 'master' ? 'Master brand' : 'Womp'} · ${esc(b.colors.name)} field · ${b.glyph === 'pale' ? 'Pale' : 'Deep'} glyph · themes <code>${b.themes.light}</code> and <code>${b.themes.dark}</code></p>
+      ${OBJECT_NOTES[b.slug] ? `<p>${esc(OBJECT_NOTES[b.slug])}</p>` : ''}
+      <p class="small">Working with a coding agent? Give it <a href="/brands/${b.slug}/guide.md">this guide as markdown</a>, or <a href="/llms.txt">llms.txt</a> for every brand.</p>
       ${edit ? `<div class="hero-actions mt-6">${edit}</div>` : ''}
     </div>
     <nav class="pagenav" aria-label="On this page"><ol>${sections.map(([id, t]) => `<li><a href="#${id}">${t}</a></li>`).join('')}</ol></nav>
@@ -88,8 +90,10 @@ function files(b) {
       <div class="spec-cap"><span><b>${name}</b><span class="block muted">${note}</span></span><a href="${url}" download="${b.slug}-${file(url)}" class="dl">Download<span class="sr-only"> ${name}</span> <code>${file(url)}</code></a></div>
     </li>`;
   };
+  const dl = (key) => `<a href="${b.assets[key]}" download="${b.slug}-${file(b.assets[key])}"><code>${file(b.assets[key])}</code></a>`;
   return plate('files', 'Logo files', [
-    'Every file is generated from the brand data each time it is saved.',
+    `Most sites need six: ${dl('faviconIco')}, ${dl('favicon')} and ${dl('appleTouch')} for the browser tab, ${dl('horizontal')} and ${dl('horizontalReverse')} for the header, and ${dl('theme')} for the theme. Install shows where each one goes.`,
+    'Every file comes from the same brand data, so they always match.',
     'Use the reverse lockups on dark grounds: the tile stays the same, only the name switches to paper.',
   ], ASSETS.map(([group, items]) => `<h3>${group}</h3><ul class="assets subgrid mt-4">${items.map(card).join('')}</ul>`).join('<div class="mt-10"></div>'));
 }
@@ -182,7 +186,7 @@ function colors(b) {
   </div>`;
   const note = BRAND_NOTES[b.slug];
   return plate('colors', 'Colors', [
-    `The tile is the ${esc(c.name)} field with its ${b.glyph} partner as the glyph. Fields are surfaces: they never set text.`,
+    `The tile is the ${esc(c.name)} field with its ${b.glyph} partner as the glyph. Fields are surfaces: text on a field is only ever large (22px bold), because the glyph partner is gated at 3:1, which is AA for large text only.`,
     'Text in the brand color uses the theme primary, which is derived from the field until it reaches 4.5:1 on both page grounds.',
   ], `${note ? `<p class="brand-note"><b>${esc(b.name)} note.</b> ${note}</p>` : ''}
     <h3>Tile colors</h3>
@@ -190,7 +194,7 @@ function colors(b) {
     <h3 class="mt-10">Theme primary</h3>
     <div class="prims subgrid mt-4">${prim}</div>
     <h3 class="mt-10">Contrast gate</h3>
-    <p class="small muted mt-2 measure">The same checks that stop a save: body text 7:1, muted text and every color on its content 4.5:1, primary as text 4.5:1, interface colors 3:1.</p>
+    <p class="small muted mt-2 measure">The checks every theme must pass: body text 7:1, muted text and every color on its content 4.5:1, primary as text 4.5:1, interface colors 3:1.</p>
     <div class="mt-4">${gate}</div>`);
 }
 
@@ -345,13 +349,30 @@ function install(b, themeCSS) {
   const imp = `@import "tailwindcss";
 @plugin "daisyui" { themes: false; }
 @import "./daisyui-theme.css";`;
+  const manifest = JSON.stringify({
+    name: b.name, short_name: b.name, start_url: '/', display: 'standalone',
+    theme_color: b.colors.field, background_color: '#FFFFFF',
+    icons: [192, 512].map((n) => ({ src: `/icon-${n}.png`, sizes: `${n}x${n}`, type: 'image/png', purpose: 'any' })),
+  }, null, 2);
+  const logo = `<img class="logo-light h-8 w-auto" src="/horizontal.svg" alt="${b.name}">
+<img class="logo-dark h-8 w-auto" src="/horizontal-reverse.svg" alt="${b.name}">`;
+  const logoCSS = `.logo-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme$="-light"]) .logo-light { display: none; }
+  :root:not([data-theme$="-light"]) .logo-dark { display: inline; }
+}
+[data-theme$="-dark"] .logo-light { display: none; }
+[data-theme$="-dark"] .logo-dark { display: inline; }`;
   return plate('install', 'Install', [
     'Copy the files into your app, then paste these snippets.',
     `The light theme is the default; the dark theme applies when the visitor prefers dark. Set <code>data-theme="${b.themes.dark}"</code> to force it.`,
   ], `
     ${snippet('snip-links', 'Favicon tags', `Copy <code>favicon.ico</code>, <code>favicon.svg</code> and <code>apple-touch-icon.png</code> to your site root, then add these to the <code>&lt;head&gt;</code>.`, links)}
+    ${snippet('snip-manifest', 'Web app manifest', 'Copy <code>icon-192.png</code> and <code>icon-512.png</code> to your site root, save this as <code>site.webmanifest</code>, and link it with <code>&lt;link rel="manifest" href="/site.webmanifest"&gt;</code>.', manifest)}
+    ${snippet('snip-logo', 'Logo in the header', 'Size the logo with a class, not a <code>height</code> attribute: Tailwind\'s base styles override the attribute. Both images carry the brand name as <code>alt</code>; the CSS below shows the one that matches the theme.', logo)}
+    ${snippet('snip-logo-css', 'Logo, light and dark', `Shows the reverse logo when the visitor prefers dark or the page sets a dark theme. For a remembered light/dark switch, see <a href="/usage.md">the usage notes</a>.`, logoCSS)}
     ${snippet('snip-import', 'DaisyUI theme, as a file', 'Save <code>daisyui-theme.css</code> next to your main stylesheet and import it after DaisyUI.', imp)}
-    ${snippet('snip-blocks', 'DaisyUI theme, pasted', 'Or paste both theme blocks after <code>@plugin "daisyui"</code>.', themeCSS ?? 'Could not load daisyui-theme.css. Download it from Logo files above.')}`);
+    ${snippet('snip-blocks', 'DaisyUI theme, pasted', 'Or paste all of it after <code>@plugin "daisyui"</code>: both theme blocks and the tab fix.', themeCSS ?? 'Could not load daisyui-theme.css. Download it from Logo files above.')}`);
 }
 
 // ---------- Shared plate ----------
@@ -368,7 +389,7 @@ async function notFound() {
   main.innerHTML = `<section class="opener cols" aria-labelledby="page-title">
     <div class="lede">
       <h1 id="page-title" class="h1">No brand called “${esc(slug)}”</h1>
-      <p>There is no saved brand with that name. Check the address, or pick a brand from the list.</p>
+      <p>There is no brand with that name. Check the address, or pick a brand from the list.</p>
       ${index.length ? `<ul class="nf-list mt-6">${index.map((b) => `<li><a href="/toolkit/brand.html?brand=${b.slug}">${esc(b.name)} brand guide</a></li>`).join('')}</ul>` : ''}
       <p class="mt-6"><a class="btn btn-primary" href="/">Back to all brands</a></p>
     </div>
@@ -387,7 +408,7 @@ async function render() {
   alt.href = `/brands/${b.slug}/guide.md`;
   alt.title = `${b.name} brand guide (markdown)`;
   document.getElementById('favicon').href = fresh(b.assets.favicon);
-  document.getElementById('foot-src').textContent = `public/brands/${b.slug}/brand.json`;
+  document.getElementById('foot-src').href = `/brands/${b.slug}/brand.json`;
   const y = scrollY;
   main.innerHTML = hero(b, f) + files(b) + grounds(b, f) + colors(b) + themes(b) + app(b, f) + install(b, themeCSS);
   main.removeAttribute('aria-busy');

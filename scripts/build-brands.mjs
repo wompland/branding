@@ -88,7 +88,7 @@ function writeBrand(brand, palette, font) {
   put('icon-512.png', png(mark, 512));
   put('favicon.ico', packIco([{ size: 16, data: p16 }, { size: 32, data: p32 }]));
 
-  put('daisyui-theme.css', `/* ${brand.name} DaisyUI themes, generated from brands/${brand.slug}.json. Import this file (or paste these blocks) after @plugin "daisyui". */\n\n${brandThemeCSS(brand, palette)}\n`);
+  put('daisyui-theme.css', `/* ${brand.name} DaisyUI themes, generated from brands/${brand.slug}.json. Import this file (or paste all of it) after @plugin "daisyui". */\n\n${brandThemeCSS(brand, palette)}\n`);
   const theme = brandTheme(brand, palette);
   const resolved = {
     ...brand,

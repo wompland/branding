@@ -254,7 +254,7 @@ Below 24 px, use the favicon art: a 1 px margin instead of one module, snapped t
 A Womp's glyph is the core object of its job, built from the module kit inside the 7 × 7 field, set on one palette color with that color's pale or deep partner, and followed by its name in Archivo 600. No new design work per app: pick the object the app is about, draw it, choose a color. The theme follows from the color.
 
 - **blogWomp**: Vermilion field, pale glyph. A feed: the newest post is the big block with the rounded corner; older posts are bars. [Guide](https://brand.wompland.com/brands/blogwomp/guide.md)
-- **riverWomp**: Cornflower field, pale glyph. [Guide](https://brand.wompland.com/brands/riverwomp/guide.md)
+- **riverWomp**: Cornflower field, pale glyph. A river of news: headlines flow down the page, newest first, in batches by source. Each dot starts a new source; the bars beside and below it are its headlines. [Guide](https://brand.wompland.com/brands/riverwomp/guide.md)
 - **wikiWomp**: Teal field, pale glyph. A link target: square brackets around a page block, the way a wiki link wraps the page it points to. [Guide](https://brand.wompland.com/brands/wikiwomp/guide.md)
 
 ## The palette rules
@@ -299,6 +299,8 @@ Reading text is 18 pixels on a 68-character measure. Headings stay tight (−2%)
 
 Master brand of the WompLand family. Rose field, pale glyph. Themes `wompland-wompland-light` and `wompland-wompland-dark`.
 
+**Icon.** A Womp: a made-up little guy.
+
 Visual version: https://brand.wompland.com/toolkit/brand.html?brand=wompland
 
 ## Logo files
@@ -330,7 +332,7 @@ Every file is generated from the brand data. The names in the SVGs are outlined 
 
 ## Colors
 
-The tile is the Rose field with its pale partner as the glyph. Fields are surfaces: they never set text. Text in the brand color uses the theme primary, which is derived from the field until it reaches 4.5:1 on both page grounds.
+The tile is the Rose field with its pale partner as the glyph. Fields are surfaces: text on a field is only ever large (22px bold), because the glyph partner is gated at 3:1, which is AA for large text only. Text in the brand color uses the theme primary, which is derived from the field until it reaches 4.5:1 on both page grounds.
 
 | Role | Hex | OKLCH |
 |---|---|---|
@@ -392,7 +394,7 @@ Save [`daisyui-theme.css`](https://brand.wompland.com/brands/wompland/daisyui-th
 The light theme is the default; the dark theme applies when the visitor prefers dark. Set `data-theme="wompland-wompland-dark"` on `<html>` to force it. Or paste the theme blocks directly:
 
 ```css
-/* WompLand DaisyUI themes, generated from brands/wompland.json. Import this file (or paste these blocks) after @plugin "daisyui". */
+/* WompLand DaisyUI themes, generated from brands/wompland.json. Import this file (or paste all of it) after @plugin "daisyui". */
 
 @plugin "daisyui/theme" {
   name: "wompland-wompland-light";
@@ -469,6 +471,9 @@ The light theme is the default; the dark theme applies when the visitor prefers 
   --field: #C5547C;
   --field-glyph: #FFE7EE;
 }
+
+/* Inactive tabs use the theme's muted color so they pass 4.5:1. */
+.tabs > .tab:not(:hover, .tab-active, [aria-selected="true"], [aria-current]:not([aria-current="false"], [aria-current=""]), .tab-disabled, [disabled]) { color: var(--muted); }
 ```
 
 Full setup, the logo swap for light and dark, and the usage rules: [How to apply a brand](https://brand.wompland.com/usage.md).
@@ -512,7 +517,7 @@ Every file is generated from the brand data. The names in the SVGs are outlined 
 
 ## Colors
 
-The tile is the Vermilion field with its pale partner as the glyph. Fields are surfaces: they never set text. Text in the brand color uses the theme primary, which is derived from the field until it reaches 4.5:1 on both page grounds.
+The tile is the Vermilion field with its pale partner as the glyph. Fields are surfaces: text on a field is only ever large (22px bold), because the glyph partner is gated at 3:1, which is AA for large text only. Text in the brand color uses the theme primary, which is derived from the field until it reaches 4.5:1 on both page grounds.
 
 | Role | Hex | OKLCH |
 |---|---|---|
@@ -574,7 +579,7 @@ Save [`daisyui-theme.css`](https://brand.wompland.com/brands/blogwomp/daisyui-th
 The light theme is the default; the dark theme applies when the visitor prefers dark. Set `data-theme="wompland-blogwomp-dark"` on `<html>` to force it. Or paste the theme blocks directly:
 
 ```css
-/* blogWomp DaisyUI themes, generated from brands/blogwomp.json. Import this file (or paste these blocks) after @plugin "daisyui". */
+/* blogWomp DaisyUI themes, generated from brands/blogwomp.json. Import this file (or paste all of it) after @plugin "daisyui". */
 
 @plugin "daisyui/theme" {
   name: "wompland-blogwomp-light";
@@ -651,6 +656,9 @@ The light theme is the default; the dark theme applies when the visitor prefers 
   --field: #CA5843;
   --field-glyph: #FFE9E4;
 }
+
+/* Inactive tabs use the theme's muted color so they pass 4.5:1. */
+.tabs > .tab:not(:hover, .tab-active, [aria-selected="true"], [aria-current]:not([aria-current="false"], [aria-current=""]), .tab-disabled, [disabled]) { color: var(--muted); }
 ```
 
 Full setup, the logo swap for light and dark, and the usage rules: [How to apply a brand](https://brand.wompland.com/usage.md).
@@ -660,6 +668,8 @@ Full setup, the logo swap for light and dark, and the usage rules: [How to apply
 # riverWomp brand guide
 
 A Womp, part of the [WompLand family](https://brand.wompland.com/index.md). Cornflower field, pale glyph. Themes `wompland-riverwomp-light` and `wompland-riverwomp-dark`.
+
+**Icon.** A river of news: headlines flow down the page, newest first, in batches by source. Each dot starts a new source; the bars beside and below it are its headlines.
 
 Visual version: https://brand.wompland.com/toolkit/brand.html?brand=riverwomp
 
@@ -692,7 +702,7 @@ Every file is generated from the brand data. The names in the SVGs are outlined 
 
 ## Colors
 
-The tile is the Cornflower field with its pale partner as the glyph. Fields are surfaces: they never set text. Text in the brand color uses the theme primary, which is derived from the field until it reaches 4.5:1 on both page grounds.
+The tile is the Cornflower field with its pale partner as the glyph. Fields are surfaces: text on a field is only ever large (22px bold), because the glyph partner is gated at 3:1, which is AA for large text only. Text in the brand color uses the theme primary, which is derived from the field until it reaches 4.5:1 on both page grounds.
 
 | Role | Hex | OKLCH |
 |---|---|---|
@@ -754,7 +764,7 @@ Save [`daisyui-theme.css`](https://brand.wompland.com/brands/riverwomp/daisyui-t
 The light theme is the default; the dark theme applies when the visitor prefers dark. Set `data-theme="wompland-riverwomp-dark"` on `<html>` to force it. Or paste the theme blocks directly:
 
 ```css
-/* riverWomp DaisyUI themes, generated from brands/riverwomp.json. Import this file (or paste these blocks) after @plugin "daisyui". */
+/* riverWomp DaisyUI themes, generated from brands/riverwomp.json. Import this file (or paste all of it) after @plugin "daisyui". */
 
 @plugin "daisyui/theme" {
   name: "wompland-riverwomp-light";
@@ -831,6 +841,9 @@ The light theme is the default; the dark theme applies when the visitor prefers 
   --field: #477ED8;
   --field-glyph: #E5EFFF;
 }
+
+/* Inactive tabs use the theme's muted color so they pass 4.5:1. */
+.tabs > .tab:not(:hover, .tab-active, [aria-selected="true"], [aria-current]:not([aria-current="false"], [aria-current=""]), .tab-disabled, [disabled]) { color: var(--muted); }
 ```
 
 Full setup, the logo swap for light and dark, and the usage rules: [How to apply a brand](https://brand.wompland.com/usage.md).
@@ -874,7 +887,7 @@ Every file is generated from the brand data. The names in the SVGs are outlined 
 
 ## Colors
 
-The tile is the Teal field with its pale partner as the glyph. Fields are surfaces: they never set text. Text in the brand color uses the theme primary, which is derived from the field until it reaches 4.5:1 on both page grounds.
+The tile is the Teal field with its pale partner as the glyph. Fields are surfaces: text on a field is only ever large (22px bold), because the glyph partner is gated at 3:1, which is AA for large text only. Text in the brand color uses the theme primary, which is derived from the field until it reaches 4.5:1 on both page grounds.
 
 | Role | Hex | OKLCH |
 |---|---|---|
@@ -936,7 +949,7 @@ Save [`daisyui-theme.css`](https://brand.wompland.com/brands/wikiwomp/daisyui-th
 The light theme is the default; the dark theme applies when the visitor prefers dark. Set `data-theme="wompland-wikiwomp-dark"` on `<html>` to force it. Or paste the theme blocks directly:
 
 ```css
-/* wikiWomp DaisyUI themes, generated from brands/wikiwomp.json. Import this file (or paste these blocks) after @plugin "daisyui". */
+/* wikiWomp DaisyUI themes, generated from brands/wikiwomp.json. Import this file (or paste all of it) after @plugin "daisyui". */
 
 @plugin "daisyui/theme" {
   name: "wompland-wikiwomp-light";
@@ -1013,6 +1026,9 @@ The light theme is the default; the dark theme applies when the visitor prefers 
   --field: #00948C;
   --field-glyph: #D5F7F3;
 }
+
+/* Inactive tabs use the theme's muted color so they pass 4.5:1. */
+.tabs > .tab:not(:hover, .tab-active, [aria-selected="true"], [aria-current]:not([aria-current="false"], [aria-current=""]), .tab-disabled, [disabled]) { color: var(--muted); }
 ```
 
 Full setup, the logo swap for light and dark, and the usage rules: [How to apply a brand](https://brand.wompland.com/usage.md).

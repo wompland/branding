@@ -47,6 +47,38 @@ docker compose up -d --build
 
 The container serves the site with nginx on `PORT`. Put a reverse proxy such as Caddy in front of it. After changing a brand, commit, pull and rebuild.
 
+### Without Docker
+
+`dist/` is a plain static site, so any web server can serve it. Build it on the server (Node 22 or newer):
+
+```sh
+npm ci
+SITE_URL=https://brand.wompland.com npm run build
+```
+
+Then point Caddy at the folder:
+
+```caddy
+brand.wompland.com {
+	root * /path/to/branding/dist
+	encode zstd gzip
+	file_server
+
+	# Serve the markdown pages as text, not downloads
+	@md path *.md
+	header @md Content-Type "text/markdown; charset=utf-8"
+
+	# Optional: the same caching and CORS as the Docker image
+	header /assets/* Cache-Control "public, max-age=31536000, immutable"
+	@shared path /brands/* *.md
+	header @shared Access-Control-Allow-Origin *
+}
+```
+
+After changing a brand, pull and run the build again. The build clears `dist/` first, so pages may briefly miss files while it runs.
+
+To check the result, look at the `Content-Type` that `curl -sI https://brand.wompland.com/index.md` reports.
+
 ## License
 
 The code is under the [MIT License](LICENSE). The WompLand names, logos and brand marks are not: they are trademarks, and you may use them only to refer to the WompLand projects. See [`LICENSE`](LICENSE) for details.

@@ -35,7 +35,7 @@ Every file is generated from the brand data. The names in the SVGs are outlined 
 
 ## Colors
 
-The tile is the Vermilion field with its pale partner as the glyph. Fields are surfaces: they never set text. Text in the brand color uses the theme primary, which is derived from the field until it reaches 4.5:1 on both page grounds.
+The tile is the Vermilion field with its pale partner as the glyph. Fields are surfaces: text on a field is only ever large (22px bold), because the glyph partner is gated at 3:1, which is AA for large text only. Text in the brand color uses the theme primary, which is derived from the field until it reaches 4.5:1 on both page grounds.
 
 | Role | Hex | OKLCH |
 |---|---|---|
@@ -97,7 +97,7 @@ Save [`daisyui-theme.css`](https://brand.wompland.com/brands/blogwomp/daisyui-th
 The light theme is the default; the dark theme applies when the visitor prefers dark. Set `data-theme="wompland-blogwomp-dark"` on `<html>` to force it. Or paste the theme blocks directly:
 
 ```css
-/* blogWomp DaisyUI themes, generated from brands/blogwomp.json. Import this file (or paste these blocks) after @plugin "daisyui". */
+/* blogWomp DaisyUI themes, generated from brands/blogwomp.json. Import this file (or paste all of it) after @plugin "daisyui". */
 
 @plugin "daisyui/theme" {
   name: "wompland-blogwomp-light";
@@ -174,6 +174,9 @@ The light theme is the default; the dark theme applies when the visitor prefers 
   --field: #CA5843;
   --field-glyph: #FFE9E4;
 }
+
+/* Inactive tabs use the theme's muted color so they pass 4.5:1. */
+.tabs > .tab:not(:hover, .tab-active, [aria-selected="true"], [aria-current]:not([aria-current="false"], [aria-current=""]), .tab-disabled, [disabled]) { color: var(--muted); }
 ```
 
 Full setup, the logo swap for light and dark, and the usage rules: [How to apply a brand](https://brand.wompland.com/usage.md).

@@ -1,7 +1,7 @@
 // System guide: every drawing on the page is built at runtime from brand data and the palette.
 import { shapePath, glyphPath, tileBody, horizontalLockup, stackedLockup, brandColors, entryChecks, contrast, LOCKUP, TILE, MARGIN, FIELD_SIZE, SIZE_RANGE, GATES, WHITE, GRAPHITE } from '../brand/index.js';
 import { OBJECT_NOTES } from '../brand/notes.js';
-import { palette, esc, font, inlineSVG, lockup, loadAllBrands, renderMasthead, reapplyMode, onBrandsChanged, ratio } from './site.js';
+import { palette, esc, font, inlineSVG, lockup, loadAllBrands, renderMasthead, reapplyMode, onBrandsChanged, gateDevOnly, ratio } from './site.js';
 
 const $ = (id) => document.getElementById(id);
 
@@ -203,6 +203,7 @@ async function render() {
   reapplyMode();
 }
 
+gateDevOnly();
 renderMasthead();
 render().catch((e) => {
   document.querySelector('main').insertAdjacentHTML('afterbegin', `<p role="alert" class="devnote">The drawings could not load (${esc(e.message)}). Run <code>npm run brands</code>, then reload.</p>`);

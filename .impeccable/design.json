@@ -1017,21 +1017,28 @@
           "slug": "wompland",
           "name": "WompLand",
           "role": "master",
-          "color": "ochre",
-          "glyph": "deep"
+          "color": "rose",
+          "glyph": "pale"
         },
         {
           "slug": "blogwomp",
           "name": "blogWomp",
           "role": "sub",
           "color": "vermilion",
-          "glyph": "deep"
+          "glyph": "pale"
         },
         {
           "slug": "wikiwomp",
           "name": "wikiWomp",
           "role": "sub",
           "color": "teal",
+          "glyph": "pale"
+        },
+        {
+          "slug": "riverwomp",
+          "name": "riverWomp",
+          "role": "sub",
+          "color": "cornflower",
           "glyph": "pale"
         }
       ],
@@ -1128,7 +1135,7 @@
       "kind": "card",
       "refersTo": "tile-wompland",
       "description": "Art above, caption row below, 2px ink rules; here the WompLand tile.",
-      "html": "<figure class=\"ds-spec\"><div class=\"ds-spec-art\"><svg viewBox=\"0 0 72 72\" width=\"72\" height=\"72\"><rect width=\"72\" height=\"72\" fill=\"#A37900\"/><path fill=\"#362600\" d=\"M8 8h8v40H8zM56 8h8v40h-8zM32 24h8v24h-8z\"/></svg></div><figcaption class=\"ds-spec-cap\"><b>Mark</b><span>mark.svg</span></figcaption></figure>",
+      "html": "<figure class=\"ds-spec\"><div class=\"ds-spec-art\"><svg viewBox=\"0 0 72 72\" width=\"72\" height=\"72\"><rect x=\"0\" y=\"0\" width=\"72\" height=\"72\" fill=\"#C5547C\"/><path fill=\"#FFE7EE\" d=\"M8 24h8v8h-8ZM16 56h16v8h-16ZM24 8h24v8h-24ZM24 40h8v8h-8ZM32 24h8v8h-8ZM32 40h8v16h-8ZM40 40h8v8h-8ZM40 56h16v8h-16ZM56 24h8v8h-8ZM8 24A16 16 0 0 1 24 8L24 16A8 8 0 0 0 16 24ZM48 8A16 16 0 0 1 64 24L56 24A8 8 0 0 0 48 16ZM24 48A16 16 0 0 1 8 32L16 32A8 8 0 0 0 24 40ZM64 32A16 16 0 0 1 48 48L48 40A8 8 0 0 0 56 32Z\"/></svg></div><figcaption class=\"ds-spec-cap\"><b>Mark</b><span>mark.svg</span></figcaption></figure>",
       "css": ".ds-spec{font-family:Archivo,ui-sans-serif,system-ui,sans-serif;margin:0;border:2px solid #141414;background:#fff;color:#141414}.ds-spec-art{padding:24px;display:grid;place-items:center;min-height:140px}.ds-spec-cap{display:flex;justify-content:space-between;gap:12px;border-top:2px solid #141414;padding:8px 12px;font-size:.9375rem}.ds-spec-cap b{font-weight:600}"
     },
     {
@@ -1207,7 +1214,6 @@
       "Don't set the name in another face, or build it from modules.",
       "Don't use a color outside the palette, even a familiar one.",
       "Don't put a W, or any letter or circled mark, on a blue tile. Blue plus a W reads as WordPress.",
-      "Don't give blogWomp a pale glyph.",
       "Don't hand-edit `src/themes/*`, `public/brands/*` or `public/fonts/*`; they are generated.",
       "Don't add shadows or rounded corners to the toolkit UI.",
       "Don't resemble WordPress, Shopify, Wix, Squarespace, Ghost, Medium, Notion, Webflow or Substack."

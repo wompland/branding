@@ -51,7 +51,7 @@ Below 24 px, use the favicon art: a 1 px margin instead of one module, snapped t
 A Womp's glyph is the core object of its job, built from the module kit inside the 7 × 7 field, set on one palette color with that color's pale or deep partner, and followed by its name in Archivo 600. No new design work per app: pick the object the app is about, draw it, choose a color. The theme follows from the color.
 
 - **blogWomp**: Vermilion field, pale glyph. A feed: the newest post is the big block with the rounded corner; older posts are bars. [Guide](https://brand.wompland.com/brands/blogwomp/guide.md)
-- **riverWomp**: Cornflower field, pale glyph. [Guide](https://brand.wompland.com/brands/riverwomp/guide.md)
+- **riverWomp**: Cornflower field, pale glyph. A river of news: headlines flow down the page, newest first, in batches by source. Each dot starts a new source; the bars beside and below it are its headlines. [Guide](https://brand.wompland.com/brands/riverwomp/guide.md)
 - **wikiWomp**: Teal field, pale glyph. A link target: square brackets around a page block, the way a wiki link wraps the page it points to. [Guide](https://brand.wompland.com/brands/wikiwomp/guide.md)
 
 ## The palette rules

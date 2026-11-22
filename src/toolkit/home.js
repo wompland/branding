@@ -49,19 +49,24 @@ async function renderBrands() {
   reapplyMode();
 }
 
+// Each color's four gate ratios; the home page shows only the ones that fail.
+const GATE_ROWS = [
+  ['field vs white', 'Field on white'],
+  ['field vs graphite', 'Field on graphite'],
+  ['pale on field', 'Pale on field'],
+  ['deep on field', 'Deep on field'],
+];
+
 function renderPalette() {
   const used = (id) => brands.filter((b) => b.color === id).map((b) => b.name);
+  let failing = 0;
   $('palette').innerHTML = palette
     .map((e) => {
       const checks = Object.fromEntries(entryChecks(e).map((c) => [c.label, c]));
-      const rows = [
-        ['Field on white', checks['field vs white']],
-        ['Field on graphite', checks['field vs graphite']],
-        ['Pale on field', checks['pale on field']],
-        ['Deep on field', checks['deep on field']],
-      ];
+      const fails = GATE_ROWS.filter(([key]) => !checks[key].pass);
+      if (fails.length) failing++;
       const users = used(e.id);
-      return `<li class="pal half">
+      return `<li class="pal quarter">
         <div class="pal-chips" aria-hidden="true">
           <span class="pal-field" style="background:${e.field}"><span style="background:${e.pale}"></span><span style="background:${e.deep}"></span></span>
         </div>
@@ -74,13 +79,13 @@ function renderPalette() {
             <div><dt>Deep</dt><dd class="hex">${e.deep}</dd></div>
           </dl>
         </div>
-        <table class="data pal-ratios">
-            <caption class="sr-only">${esc(e.name)} contrast ratios (minimum 3:1)</caption>
-            <tbody>${rows.map(([label, c]) => `<tr><th scope="row">${label}</th><td class="r num">${ratio(c.value)}</td><td class="r">${verdict(c.pass)}</td></tr>`).join('')}</tbody>
-        </table>
+        ${fails.length ? `<p class="small" role="alert">${fails.map(([key, label]) => `${label} ${ratio(checks[key].value)} ${verdict(false)}`).join('<br>')}</p>` : ''}
       </li>`;
     })
     .join('');
+  $('palette-status').innerHTML = failing
+    ? `<strong>${failing} of ${palette.length} colors fail the palette gate.</strong> Each fails where marked.`
+    : `All ${palette.length} pass the palette gate: every field at 3:1 or more on white and on graphite, and its pale and deep partners at 3:1 or more on the field. <a href="/toolkit/system.html#palette">The system guide</a> shows each color on both grounds.`;
 }
 
 // ---------- New Womp ----------

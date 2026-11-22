@@ -2,6 +2,8 @@
 
 A Womp, part of the [WompLand family](https://brand.wompland.com/index.md). Cornflower field, pale glyph. Themes `wompland-riverwomp-light` and `wompland-riverwomp-dark`.
 
+**Icon.** A river of news: headlines flow down the page, newest first, in batches by source. Each dot starts a new source; the bars beside and below it are its headlines.
+
 Visual version: https://brand.wompland.com/toolkit/brand.html?brand=riverwomp
 
 ## Logo files
@@ -33,7 +35,7 @@ Every file is generated from the brand data. The names in the SVGs are outlined 
 
 ## Colors
 
-The tile is the Cornflower field with its pale partner as the glyph. Fields are surfaces: they never set text. Text in the brand color uses the theme primary, which is derived from the field until it reaches 4.5:1 on both page grounds.
+The tile is the Cornflower field with its pale partner as the glyph. Fields are surfaces: text on a field is only ever large (22px bold), because the glyph partner is gated at 3:1, which is AA for large text only. Text in the brand color uses the theme primary, which is derived from the field until it reaches 4.5:1 on both page grounds.
 
 | Role | Hex | OKLCH |
 |---|---|---|
@@ -95,7 +97,7 @@ Save [`daisyui-theme.css`](https://brand.wompland.com/brands/riverwomp/daisyui-t
 The light theme is the default; the dark theme applies when the visitor prefers dark. Set `data-theme="wompland-riverwomp-dark"` on `<html>` to force it. Or paste the theme blocks directly:
 
 ```css
-/* riverWomp DaisyUI themes, generated from brands/riverwomp.json. Import this file (or paste these blocks) after @plugin "daisyui". */
+/* riverWomp DaisyUI themes, generated from brands/riverwomp.json. Import this file (or paste all of it) after @plugin "daisyui". */
 
 @plugin "daisyui/theme" {
   name: "wompland-riverwomp-light";
@@ -172,6 +174,9 @@ The light theme is the default; the dark theme applies when the visitor prefers 
   --field: #477ED8;
   --field-glyph: #E5EFFF;
 }
+
+/* Inactive tabs use the theme's muted color so they pass 4.5:1. */
+.tabs > .tab:not(:hover, .tab-active, [aria-selected="true"], [aria-current]:not([aria-current="false"], [aria-current=""]), .tab-disabled, [disabled]) { color: var(--muted); }
 ```
 
 Full setup, the logo swap for light and dark, and the usage rules: [How to apply a brand](https://brand.wompland.com/usage.md).

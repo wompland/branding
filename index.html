@@ -41,7 +41,7 @@
     <section class="plate cols" aria-labelledby="brands-title">
       <div class="plate-head">
         <h2 id="brands-title">The family</h2>
-        <p>Lockups are drawn live from each brand's saved data.<!-- dev-only --> Saving in the editor regenerates the files and updates this list.<!-- /dev-only --></p>
+        <p><!-- dev-only -->Lockups are drawn live from each brand's saved data. Saving in the editor regenerates the files and updates this list.<!-- /dev-only --><span data-prod-only>Each lockup comes from the same brand data as that brand's logo files.</span></p>
       </div>
       <div class="plate-body">
         <div id="master" class="master subgrid" aria-live="polite" aria-busy="true"><p class="muted small">Loading brands…</p></div>
@@ -77,6 +77,7 @@
       <div class="plate-head">
         <h2 id="palette-title">Palette</h2>
         <p>Every brand's tile is one of these field colors, with its pale or deep partner as the glyph. All fields share one lightness so no Womp outweighs another.</p>
+        <p id="palette-status"></p>
         <!-- dev-only --><p>The collection is edited in <code>scripts/palette.mjs</code> and checked with <code>npm run palette</code>.</p><!-- /dev-only -->
       </div>
       <div class="plate-body">

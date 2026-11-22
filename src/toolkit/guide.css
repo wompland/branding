@@ -106,14 +106,14 @@ pre.code { margin-top: 1.2em; padding: 14px 18px; background: var(--color-base-2
 .wlink::after { content: "]]"; opacity: 0.6; font-weight: 400; }
 .wlink.new { border-bottom-style: dashed; }
 .infobox { border: 2px solid var(--color-base-content); font-size: var(--t-small); align-self: start; }
-.infobox .ihead { background: var(--field); color: var(--field-glyph); padding: 10px 14px; font-weight: 700; }
+.infobox .ihead { background: var(--field); color: var(--field-glyph); padding: 10px 14px; font-size: var(--t-h3); font-weight: 700; line-height: 1.25; }
 .infobox dl { display: grid; grid-template-columns: auto 1fr; }
 .infobox dt, .infobox dd { padding: 8px 14px; border-top: 1px solid var(--grid-strong); }
 .infobox dt { font-weight: 600; }
 
 .shell { padding: clamp(20px, 4vw, 40px); }
 .shell-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; }
-.shell-band { margin-top: 20px; padding: 16px 20px; background: var(--field); color: var(--field-glyph); font-weight: 600; }
+.shell-band { margin-top: 20px; padding: 16px 20px; background: var(--field); color: var(--field-glyph); font-size: var(--t-h3); font-weight: 700; line-height: 1.25; }
 .shell table a { color: var(--color-primary); }
 
 /* Install */

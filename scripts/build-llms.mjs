@@ -215,7 +215,7 @@ ${table(['File', 'Use', 'URL'], FILES.map(([k, name, use]) => [name, use, url(a[
 
 ## Colors
 
-The tile is the ${c.name} field with its ${b.glyph} partner as the glyph. Fields are surfaces: they never set text. Text in the brand color uses the theme primary, which is derived from the field until it reaches 4.5:1 on both page grounds.
+The tile is the ${c.name} field with its ${b.glyph} partner as the glyph. Fields are surfaces: text on a field is only ever large (22px bold), because the glyph partner is gated at 3:1, which is AA for large text only. Text in the brand color uses the theme primary, which is derived from the field until it reaches 4.5:1 on both page grounds.
 
 ${table(['Role', 'Hex', 'OKLCH'], [
     [`Field (tile background)`, `\`${c.field}\``, oklch(c.field)],

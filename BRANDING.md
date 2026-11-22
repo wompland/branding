@@ -32,7 +32,7 @@ Folder: `~/code/wompland/branding` (this file's directory). Paths below are rela
 | `icon-16.png`, `icon-32.png` | Raster favicons. |
 | `apple-touch-icon.png` | 180 × 180. |
 | `icon-192.png`, `icon-512.png` | Web app manifest icons. |
-| `daisyui-theme.css` | The brand's light and dark DaisyUI 5 themes. |
+| `daisyui-theme.css` | The brand's light and dark DaisyUI 5 themes, plus one rule that keeps inactive tabs at 4.5:1. |
 | `brand.json` | Everything above as data, plus hex colors and theme tokens. |
 
 The names in the SVGs are outlined paths, so logos need no font installed.

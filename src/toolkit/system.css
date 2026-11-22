@@ -35,7 +35,7 @@
 .lockspec { width: 100%; max-width: 920px; margin-inline: auto; }
 /* Callouts stay readable as the drawing scales with the column; below 500px they drop and the caption carries the numbers. */
 @media (max-width: 759px) { .lockspec .dim-t { font-size: 20px; } #spec-h { padding: 16px; } }
-@media (max-width: 499px) { .lockspec .dim-t { display: none; } }
+@media (max-width: 499px) { .lockspec .dim-t, .stackspec .dim-t { display: none; } }
 .stackspec { width: 100%; max-width: 480px; }
 .stackspec .dim-t { font-size: 18px; }
 @media (max-width: 759px) { .stackspec .dim-t { font-size: 26px; } }

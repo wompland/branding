@@ -155,6 +155,13 @@ export function themeBlock({ name, mode, colors, shape = BASE.shape, vars = {}, 
 }
 
 /**
+ * Component fixes the theme variables cannot reach. DaisyUI draws inactive tabs at 50% of
+ * base-content (about 3.5:1); --muted is gated at 4.5:1 on base-100 and base-200.
+ * Unlayered, so it wins over DaisyUI's layered rules; hover keeps DaisyUI's full base-content.
+ */
+export const COMPONENT_CSS = `.tabs > .tab:not(:hover, .tab-active, [aria-selected="true"], [aria-current]:not([aria-current="false"], [aria-current=""]), .tab-disabled, [disabled]) { color: var(--muted); }`;
+
+/**
  * A brand's two theme blocks, ready to paste into an app's CSS (after `@plugin "daisyui"`).
  * Light is the default theme, dark is prefersdark. Throws if either mode fails the contrast gate.
  */
@@ -167,5 +174,6 @@ export function brandThemeCSS(brand, palette) {
       if (bad.length) throw new Error(`${themeName(brand.slug, mode)} fails: ${bad.map((k) => `${k.label} ${k.ratio}`).join(', ')}`);
       return themeBlock({ name: themeName(brand.slug, mode), mode, colors, vars: t.extra[mode], isDefault: mode === 'light', prefersDark: mode === 'dark' });
     })
+    .concat(`/* Inactive tabs use the theme's muted color so they pass 4.5:1. */\n${COMPONENT_CSS}`)
     .join('\n\n');
 }

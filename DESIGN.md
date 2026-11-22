@@ -150,8 +150,8 @@ components:
     rounded: "{rounded.none}"
     padding: "6px 10px"
   tile-wompland:
-    backgroundColor: "{colors.ochre-field}"
-    textColor: "{colors.ochre-deep}"
+    backgroundColor: "{colors.rose-field}"
+    textColor: "{colors.rose-pale}"
     rounded: "{rounded.none}"
     size: "72px"
 ---
@@ -217,7 +217,7 @@ In development, `vite/brands-plugin.mjs` serves a save API: `GET /__brands`, `GE
 Ink and white, or paper and graphite, with color arriving only through brand tiles.
 
 ### Primary
-Brand primaries are derived, not chosen: each is `fromField()` applied to the brand's palette field. With the current data they are #8B6700 / #B38821 (WompLand), #B94834 / #E16C56 (blogWomp) and #007973 / #1E9F97 (wikiWomp), light / dark. They change when a brand's color changes.
+Brand primaries are derived, not chosen: each is `fromField()` applied to the brand's palette field. With the current data they are #B4456D / #DD6A91 (WompLand), #B94834 / #E16C56 (blogWomp), #007973 / #1E9F97 (wikiWomp) and #346AC2 / #578FEB (riverWomp), light / dark. They change when a brand's color changes.
 
 ### Neutral
 - **Ink** (`ink`): text, 2px rules and borders, the ink button, checked tool radios on light pages; the light-mode neutral role.
@@ -231,12 +231,13 @@ Twelve fields, each with a pale and a deep glyph partner (`<id>-field`, `<id>-pa
 
 **The Palette Gate Rule.** `src/brand/palette.js` gates every entry: field at 3:1 or more against white and against graphite; pale and deep each at 3:1 or more on the field (WCAG 1.4.11); field lightness in OKLCH 0.56 to 0.62; pale and deep within 12 degrees of the field's hue; OKLab distance 0.1 or more from WordPress cerulean (#21759B), Gutenberg blue (#3858E9) and Shopify lime (#95BF47); and 0.045 or more between any two fields. `npm run palette` fails on any miss.
 
-**The One Blue Rule.** The palette has exactly one blue, Cornflower (hue 260, `#477ED8`). At the shared L 0.60, blue hues from about 200 to 275 degrees sit 0.071 to 0.103 OKLab from WordPress cerulean or Gutenberg blue; 260 is the hue between Teal (188) and Iris (288) that clears the 0.1 gate from both (0.103), and it sits 0.074 from Iris and 0.153 from Teal. The sky and cerulean blues around 220 to 245 degrees fail the gate and stay out. Blue itself is fine; what reads as WordPress is blue together with a W. So no Womp pairs a blue field with a W-shaped glyph, a letter, or a mark in a circle, and every icon stays a picture of its own object (the master icon included). Other blues at this lightness fail the distance gate, so Cornflower is the palette's blue.
+**The One Blue Rule.** The palette has exactly one blue, Cornflower (hue 260, `#477ED8`). At the shared L 0.60, blue hues from about 200 to 275 degrees sit 0.071 to 0.103 OKLab from WordPress cerulean or Gutenberg blue; 260 is the hue between Teal (188) and Iris (288) that clears the 0.1 gate from both (0.103), and it sits 0.074 from Iris and 0.153 from Teal. The sky and cerulean blues around 220 to 245 degrees fail the gate and stay out. Blue itself is fine; what reads as WordPress is blue together with a W. So no Womp pairs a blue field with a W-shaped glyph, a letter, or a mark in a circle, and every icon stays a picture of its own object (the master icon included). riverWomp is the blue Womp: a river is not a blog, and its icon is not a letter, so it reads as its own thing. Other blues at this lightness fail the distance gate, so Cornflower is the palette's blue.
 
 ### Current brands (user-editable data)
-- **WompLand** (master): ochre field, deep glyph.
-- **blogWomp**: vermilion field, deep glyph. Keep it deep: a pale glyph on an orange-red square drifts toward Blogger.
+- **WompLand** (master): rose field, pale glyph. The icon is a Womp, a made-up little guy.
+- **blogWomp**: vermilion field, pale glyph.
 - **wikiWomp**: teal field, pale glyph.
+- **riverWomp**: cornflower field, pale glyph.
 
 These are assignments in `brands/*.json`, editable in the toolkit, not fixed tokens.
 
@@ -293,10 +294,10 @@ Palette choices are tiles of the field color with pale and deep chips; the check
 A spec plate is a 2px-ruled box with art above and a caption row below (name left, downloads or figures right). Tables use uppercase label heads in muted, 1px hairlines and tabular numbers. Contrast-gate tables show each pair, ratio, minimum and a verdict; pass and fail always carry a word and a mark, with fail in error color. On narrow screens gate and minimum-size tables reflow into labelled rows.
 
 ### Navigation and mode toggle
-Masthead links are 15px weight 600, underlined only on hover or when current. The mode toggle (`mode-toggle`) is a 2px ink box with a 16px icon, an uppercase label and an inverted On/Off state chip; on hover the whole box inverts. Under 760px the word drops and the icon and state remain.
+Masthead links are 15px weight 600, underlined only on hover or when current. The mode toggle (`mode-toggle`) is a 2px ink box with a 16px icon, an uppercase label and an inverted On/Off state chip; on hover the whole box inverts. Under 760px the word "mode" drops; the icon, "Dark" and the state remain.
 
 ### Grounds and app screens
-Grounds are paired light and dark panels pinned with `data-mode`, inside one 2px frame. Sample app screens sit in a 3px frame: a 12px field bar, an app bar with the brand lockup, then the post or wiki. The brand field appears as bands, a pull quote and the infobox head, with `--field-glyph` text; reading stays ink on the ground. Wiki links keep visible `[[ ]]` brackets in primary with a 2px underline (dashed for pages not yet written).
+Grounds are paired light and dark panels pinned with `data-mode`, inside one 2px frame. Sample app screens sit in a 3px frame: a 12px field bar, an app bar with the brand lockup, then the post or wiki. The brand field appears as bands, a pull quote and the infobox head, with `--field-glyph` text at 22px bold or larger: the glyph partner clears 3:1 on its field, which is AA only for large text. Reading stays ink on the ground. Wiki links keep visible `[[ ]]` brackets in primary with a 2px underline (dashed for pages not yet written).
 
 ### Motion
 Motion is state feedback only: 150ms ease-out color changes on editor buttons and tool radios. Every page removes transitions and animations under reduced motion.
@@ -318,7 +319,6 @@ Motion is state feedback only: 150ms ease-out color changes on editor buttons an
 - **Don't** set the name in another face, or build it from modules.
 - **Don't** use a color outside the palette, even a familiar one.
 - **Don't** put a W, or any letter or circled mark, on a blue tile. Blue plus a W reads as WordPress.
-- **Don't** give blogWomp a pale glyph.
 - **Don't** hand-edit `src/themes/*`, `public/brands/*` or `public/fonts/*`; they are generated.
 - **Don't** add shadows or rounded corners to the toolkit UI.
 - **Don't** resemble WordPress, Shopify, Wix, Squarespace, Ghost, Medium, Notion, Webflow or Substack.

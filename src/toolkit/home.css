@@ -44,16 +44,12 @@
 
 /* Palette: one card per half; the ratio table runs the card's full width. */
 .palette { row-gap: 0; }
-.pal { display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 16px; align-content: start; padding-block: 16px 24px; border-top: 2px solid var(--rule); }
+.pal { display: grid; gap: 12px; align-content: start; padding-block: 16px 24px; border-top: 2px solid var(--rule); }
 .pal-field { position: relative; display: block; width: 72px; height: 72px; border: 1px solid var(--grid-strong); }
 .pal-field span { position: absolute; width: 24px; height: 24px; bottom: 8px; }
 .pal-field span:first-child { left: 8px; }
 .pal-field span:last-child { left: 40px; }
 .pal-name { font-size: var(--t-h3); letter-spacing: -0.01em; }
-.pal-hex { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 6px; }
+.pal-hex { display: grid; gap: 2px; margin-top: 6px; }
 .pal-hex div { display: flex; gap: 6px; }
 .pal-hex dt { color: var(--muted); }
-.pal-ratios { grid-column: 1 / -1; width: 100%; }
-.pal .pal-ratios th, .pal .pal-ratios td { padding: 6px 0; }
-.pal .pal-ratios td.r { padding-left: 12px; }
-.pal-ratios th { font-weight: 400; white-space: nowrap; }
