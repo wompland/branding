@@ -40,14 +40,14 @@ Brand data lives in `brands/<slug>.json`; everything in `public/brands/` is gene
 
 The production build is a static, read-only guide: no editor, no save API and no New Womp form. `dist/` is plain files, so Caddy (or any web server) serves it directly.
 
-On the server, clone the repo once (Node 22 or newer), then run the deploy script, now and after every brand change you push:
+On the server, clone the repo once (Node 22 or newer), then build, now and after every brand change you push:
 
 ```sh
 git clone https://github.com/wompland/branding.git /srv/brand.wompland.com
-sh /srv/brand.wompland.com/deploy/deploy.sh
+cd /srv/brand.wompland.com && git pull && npm ci && npm run build
 ```
 
-The script resets the clone to `origin/main`, installs, regenerates the brands and themes, and builds into a temporary folder that replaces `dist/` only when the build succeeds. Set `SITE_URL` if the site is not at https://brand.wompland.com; it is used for the absolute links in the markdown pages.
+`npm ci` picks up dependency changes; skip it if `package.json` did not change. Set `SITE_URL` if the site is not at https://brand.wompland.com; it is used for the absolute links in the markdown pages.
 
 Point Caddy at `dist/` with the site block in [`deploy/Caddyfile`](deploy/Caddyfile). It serves the markdown pages as `text/markdown`, caches the hashed assets, and allows other sites to fetch the brand files and markdown. To check, look at the `Content-Type` that `curl -sI https://brand.wompland.com/index.md` reports.
 
