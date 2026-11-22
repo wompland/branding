@@ -91,21 +91,13 @@ export function onBrandsChanged(fn) {
   });
 }
 
-/** Hide dev-only elements in the static build and show the plain note instead. */
+/** Dev shows the editing UI and hides the read-only wording; the static build strips dev-only markup (vite.config.js). */
 export function gateDevOnly() {
   for (const el of document.querySelectorAll('[data-dev-only]')) el.hidden = !DEV;
   for (const el of document.querySelectorAll('[data-prod-only]')) el.hidden = DEV;
 }
 
-/** Minimum sizes from the system spec (DESIGN.md, the Tile Lockup Rule). */
-export const MIN_SIZES = [
-  { name: 'Horizontal lockup', px: 120, print: '30 mm', note: 'width' },
-  { name: 'Stacked lockup', px: 72, print: '20 mm', note: 'width' },
-  { name: 'Tile, full art', px: 24, print: '8 mm', note: 'width' },
-  { name: 'Tile, favicon art', px: 16, print: '—', note: 'below 24 px, use the favicon art' },
-];
-/** Clear space on every side, in modules. */
-export const CLEAR_U = 2;
+export { MIN_SIZES, CLEAR_U } from '../brand/index.js';
 
 /** Pass / fail as a word plus a drawn mark, so the result never rests on color. */
 export function verdict(pass) {

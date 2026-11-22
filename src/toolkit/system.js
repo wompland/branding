@@ -1,5 +1,6 @@
 // System guide: every drawing on the page is built at runtime from brand data and the palette.
 import { shapePath, glyphPath, tileBody, horizontalLockup, stackedLockup, brandColors, entryChecks, contrast, LOCKUP, TILE, MARGIN, FIELD_SIZE, SIZE_RANGE, GATES, WHITE, GRAPHITE } from '../brand/index.js';
+import { OBJECT_NOTES } from '../brand/notes.js';
 import { palette, esc, font, inlineSVG, lockup, loadAllBrands, renderMasthead, reapplyMode, onBrandsChanged, ratio } from './site.js';
 
 const $ = (id) => document.getElementById(id);
@@ -113,10 +114,6 @@ function lockupSpec(master, f) {
 }
 
 // ---------- Sub-brand rule ----------
-const OBJECT_NOTES = {
-  blogwomp: 'A feed: the newest post is the big block with the rounded corner; older posts are bars. The glyph stays deep, never pale: a pale glyph on an orange-red square drifts toward Blogger.',
-  wikiwomp: 'A link target: square brackets around a page block, the way a wiki link wraps the page it points to.',
-};
 
 function womps(subs, f) {
   $('womps').innerHTML = subs.length

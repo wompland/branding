@@ -1,0 +1,23 @@
+# WompLand brand guide
+
+> WompLand is a family of small, self-hosted publishing apps. The master brand is WompLand; each app is a "Womp" named `<job>Womp` (blogWomp, wikiWomp, …). Every brand is an icon built from three modules (a square cell, a quarter ring and a filled quarter circle) on a 7 × 7 field inside a 9 × 9 tile, on one color from a shared palette, beside its name in Archivo 600.
+
+Every logo, icon and theme below is generated from each brand's data. Use the files as they are, pick the reverse logo for dark grounds, and take colors only from the brand's theme. Never invent a logo, color or theme for a Womp that is not listed here.
+
+## Brands
+
+- [WompLand](https://brand.wompland.com/brands/wompland/guide.md): master brand, Rose field, pale glyph. Logo files, colors, DaisyUI themes, contrast checks and install snippets.
+- [blogWomp](https://brand.wompland.com/brands/blogwomp/guide.md): Womp, Vermilion field, pale glyph. Logo files, colors, DaisyUI themes, contrast checks and install snippets.
+- [riverWomp](https://brand.wompland.com/brands/riverwomp/guide.md): Womp, Cornflower field, pale glyph. Logo files, colors, DaisyUI themes, contrast checks and install snippets.
+- [wikiWomp](https://brand.wompland.com/brands/wikiwomp/guide.md): Womp, Teal field, pale glyph. Logo files, colors, DaisyUI themes, contrast checks and install snippets.
+
+## Guides
+
+- [The family and the palette](https://brand.wompland.com/index.md): every brand and all palette colors with their contrast ratios.
+- [How to apply a brand](https://brand.wompland.com/usage.md): setup (Vite, Tailwind v4, DaisyUI 5, Archivo), favicons, manifest, light/dark logo swap, house style and the usage rules.
+- [The brand system](https://brand.wompland.com/toolkit/system.md): the module kit, the icon's construction, the lockup spec, the sub-brand rule, palette rules, don'ts and the type scale.
+
+## Optional
+
+- [Everything in one file](https://brand.wompland.com/llms-full.txt)
+- [All brands as JSON](https://brand.wompland.com/brands/index.json); each brand's `brand.json` is linked from its guide.

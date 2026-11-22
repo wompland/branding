@@ -1,0 +1,11 @@
+# WompLand brand guide (read-only). Set PORT in .env (see .env.example); Caddy proxies to it.
+services:
+  brand-guide:
+    build:
+      context: .
+      args:
+        SITE_URL: ${SITE_URL:-https://brand.wompland.com}
+    image: wompland-brand-guide
+    restart: unless-stopped
+    ports:
+      - "${PORT:-8080}:80"

@@ -12,6 +12,16 @@ export const WORD_INK = '#141414';
 export const WORD_REVERSE = '#EEECE6';
 export const LOCKUP = { capU: 5, gapU: 3, stackGapU: 2, tracking: -0.01 };
 
+/** Minimum sizes from the system spec (DESIGN.md, the Tile Lockup Rule). */
+export const MIN_SIZES = [
+  { name: 'Horizontal lockup', px: 120, print: '30 mm', note: 'width' },
+  { name: 'Stacked lockup', px: 72, print: '20 mm', note: 'width' },
+  { name: 'Tile, full art', px: 24, print: '8 mm', note: 'width' },
+  { name: 'Tile, favicon art', px: 16, print: '—', note: 'below 24 px, use the favicon art' },
+];
+/** Clear space on every side, in modules. */
+export const CLEAR_U = 2;
+
 function nameAt(font, brand, unit, x, y) {
   const size = (LOCKUP.capU / metrics(font, 1).capHeight) * unit;
   return textToPath(font, brand.name, { x, y, size, tracking: LOCKUP.tracking });

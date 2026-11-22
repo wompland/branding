@@ -62,6 +62,7 @@ export default function brandsPlugin() {
       const load = (rel) => import(pathToFileURL(resolve(root, rel)).href);
       const regenerate = async (...brandArgs) => {
         await run(process.execPath, [resolve(root, 'scripts/build-brands.mjs'), ...brandArgs], { cwd: root });
+        await run(process.execPath, [resolve(root, 'scripts/build-llms.mjs')], { cwd: root });
         await run(process.execPath, [resolve(root, 'scripts/build-themes.mjs')], { cwd: root });
       };
       const generated = (slug) => JSON.parse(readFileSync(resolve(root, 'public/brands', slug, 'brand.json'), 'utf8'));

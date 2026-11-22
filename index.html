@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>WompLand branding toolkit</title>
+  <link rel="alternate" type="text/markdown" href="/index.md" title="WompLand brands (markdown)">
   <link rel="icon" href="/brands/wompland/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/src/toolkit/home.css">
   <script type="module" src="/src/shared/mode.js"></script>
@@ -32,22 +33,22 @@
     <section class="opener cols" aria-labelledby="page-title">
       <div class="lede">
         <h1 id="page-title" class="h-display">Brands</h1>
-        <p>WompLand is the master brand; every Womp is a sub-brand drawn from the same module kit and palette. Open a brand to edit its glyph and color, or read its guide for logo files, colors and theme.</p>
-        <p class="mt-6" data-dev-only><a class="btn btn-outline" href="#new-womp" id="jump-new">New Womp</a></p>
+        <p>WompLand is the master brand; every Womp is a sub-brand drawn from the same module kit and palette. <!-- dev-only -->Open a brand to edit its glyph and color, or read its guide for logo files, colors and theme.<!-- /dev-only --><span data-prod-only>Each brand's guide has its logo files, colors and theme.</span></p>
+        <!-- dev-only --><p class="mt-6" data-dev-only><a class="btn btn-outline" href="#new-womp" id="jump-new">New Womp</a></p><!-- /dev-only -->
       </div>
     </section>
 
     <section class="plate cols" aria-labelledby="brands-title">
       <div class="plate-head">
         <h2 id="brands-title">The family</h2>
-        <p>Lockups are drawn live from each brand's saved data. Saving in the editor regenerates the files and updates this list.</p>
-        <p data-prod-only hidden><span class="devnote">Editing runs under <code>npm run dev</code>.</span></p>
+        <p>Lockups are drawn live from each brand's saved data.<!-- dev-only --> Saving in the editor regenerates the files and updates this list.<!-- /dev-only --></p>
       </div>
       <div class="plate-body">
         <div id="master" class="master subgrid" aria-live="polite" aria-busy="true"><p class="muted small">Loading brands…</p></div>
         <h3 class="mt-12">Womps</h3>
         <ul id="subs" class="subs subgrid mt-4" aria-busy="true"></ul>
 
+        <!-- dev-only -->
         <form id="new-womp" class="newwomp subgrid mt-12" data-dev-only novalidate>
           <h3 id="new-title">New Womp</h3>
           <p class="small muted mt-2 measure">Name it after its job. The editor opens with an empty glyph on the first palette color no brand uses yet.</p>
@@ -68,6 +69,7 @@
           </div>
           <button class="btn btn-primary mt-5" type="submit" id="create-btn">Create and open in editor</button>
         </form>
+        <!-- /dev-only -->
       </div>
     </section>
 
@@ -75,7 +77,7 @@
       <div class="plate-head">
         <h2 id="palette-title">Palette</h2>
         <p>Every brand's tile is one of these field colors, with its pale or deep partner as the glyph. All fields share one lightness so no Womp outweighs another.</p>
-        <p>The collection is edited in <code>scripts/palette.mjs</code> and checked with <code>npm run palette</code>.</p>
+        <!-- dev-only --><p>The collection is edited in <code>scripts/palette.mjs</code> and checked with <code>npm run palette</code>.</p><!-- /dev-only -->
       </div>
       <div class="plate-body">
         <ul id="palette" class="palette subgrid"></ul>
@@ -85,7 +87,7 @@
 
   <footer class="foot cols">
     <div>
-      <p>WompLand branding toolkit. Brand sources live in <code>brands/</code>; generated files in <code>public/brands/</code>.</p>
+      <p>WompLand branding toolkit.<!-- dev-only --> Brand sources live in <code>brands/</code>; generated files in <code>public/brands/</code>.<!-- /dev-only --></p>
       <ul class="dlist"><li><a href="/toolkit/system.html">System guide</a></li><li><a href="#page-title">Back to top</a></li></ul>
     </div>
   </footer>

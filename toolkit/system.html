@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>System guide · WompLand</title>
+  <link rel="alternate" type="text/markdown" href="/toolkit/system.md" title="The WompLand brand system (markdown)">
   <link rel="icon" href="/brands/wompland/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/src/toolkit/system.css">
   <script type="module" src="/src/shared/mode.js"></script>
@@ -72,7 +73,7 @@
       <div class="plate-body w-body">
         <figure class="w-art half" id="w-art"></figure>
         <div class="w-notes half">
-          <p class="measure">Like every Womp, WompLand is marked by an icon, not a letter: a picture built from the module kit on the 7 × 7 field, with every stroke one module thick. The table counts its pieces. Nothing is drawn freehand: change a shape in the editor and this drawing changes with it.</p>
+          <p class="measure">Like every Womp, WompLand is marked by an icon, not a letter: a picture built from the module kit on the 7 × 7 field, with every stroke one module thick. The table counts its pieces. Nothing is drawn freehand<!-- dev-only -->: change a shape in the editor and this drawing changes with it<!-- /dev-only -->.</p>
           <table class="data mt-6" id="w-table"></table>
         </div>
       </div>
@@ -104,6 +105,7 @@
       <div class="plate-body">
         <p class="rule-text measure">A Womp's glyph is the core object of its job, built from the module kit inside the 7 × 7 field, set on one palette color with that color's pale or deep partner, and followed by its name in Archivo 600.</p>
         <ul class="womps subgrid mt-10" id="womps"></ul>
+        <!-- dev-only -->
         <div class="howto mt-10">
           <h3>Making one in the editor</h3>
           <ol class="howto-steps mt-4">
@@ -113,6 +115,7 @@
             <li>Save. The editor checks the shapes and the contrast gate, then writes the logo files, icons and DaisyUI themes. The brand guide updates on its own.</li>
           </ol>
         </div>
+        <!-- /dev-only -->
       </div>
     </section>
 
@@ -120,7 +123,7 @@
       <div class="plate-head">
         <h2 id="palette-title">The palette rules</h2>
         <p>Every Womp draws its tile from one curated collection, so the family stays one family.</p>
-        <p>Edit the collection in <code>scripts/palette.mjs</code>; <code>npm run palette</code> fails on any miss.</p>
+        <!-- dev-only --><p>Edit the collection in <code>scripts/palette.mjs</code>; <code>npm run palette</code> fails on any miss.</p><!-- /dev-only -->
       </div>
       <div class="plate-body">
         <ol class="rules" id="palette-rules"></ol>

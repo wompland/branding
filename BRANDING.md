@@ -31,7 +31,26 @@ Folder: `~/code/wompland/branding` (this file's directory). Paths below are rela
 | `favicon.ico` | 16 + 32 px ICO for old browsers. |
 | `icon-16.png`, `icon-32.png` | Raster favicons. |
 | `apple-touch-icon.png` | 180 × 180. |
-| `icon-192.png`, `icon-512.png` | Web app manifest (`site.webmanifest`, linked with `<link rel="manifest" href="/site.webmanifest">`). `theme_color` is the brand's `colors.field` from `brand.json` (a surface, so it is allowed there):
+| `icon-192.png`, `icon-512.png` | Web app manifest icons. |
+| `daisyui-theme.css` | The brand's light and dark DaisyUI 5 themes. |
+| `brand.json` | Everything above as data, plus hex colors and theme tokens. |
+
+The names in the SVGs are outlined paths, so logos need no font installed.
+
+## 3. Apply it
+
+Copy the files you need into the project's static folder (e.g. `public/`). Re-copy after the brand changes here; or, in a monorepo-ish setup, have the project's build copy from `~/code/wompland/branding/public/brands/<slug>/`.
+
+<!-- public:start (from here to public:end, this file is published as /usage.md by scripts/build-llms.mjs; keep it free of local paths) -->
+**Favicons** in `<head>`:
+
+```html
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+```
+
+**Web app manifest** (`site.webmanifest`, linked with `<link rel="manifest" href="/site.webmanifest">`). `theme_color` is the brand's `colors.field` from `brand.json` (a surface, so it is allowed there):
 
 ```json
 {
@@ -177,5 +196,7 @@ These come from the brand system (`DESIGN.md`); they are the ones most often bro
 - Header logo is the right file for the ground, not stretched, with clear space.
 - Both themes load: toggle `data-theme` between `wompland-<slug>-light` and `-dark`.
 - No hard-coded brand hex values in text styles; text uses theme tokens.
+
+<!-- public:end -->
 
 If something here disagrees with the generated files, the files win, and this guide needs a fix: tell the user.

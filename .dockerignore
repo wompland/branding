@@ -1,0 +1,11 @@
+.git
+node_modules
+dist
+archive
+.impeccable
+.claude
+.agents
+.codex
+.cursor
+.env
+.DS_Store
