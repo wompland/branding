@@ -38,46 +38,18 @@ Brand data lives in `brands/<slug>.json`; everything in `public/brands/` is gene
 
 ## Deploy
 
-The production build is a static, read-only guide: no editor, no save API and no New Womp form.
+The production build is a static, read-only guide: no editor, no save API and no New Womp form. `dist/` is plain files, so Caddy (or any web server) serves it directly.
+
+On the server, clone the repo once (Node 22 or newer), then run the deploy script, now and after every brand change you push:
 
 ```sh
-cp .env.example .env   # set PORT (and SITE_URL if not brand.wompland.com)
-docker compose up -d --build
+git clone https://github.com/wompland/branding.git /srv/brand.wompland.com
+sh /srv/brand.wompland.com/deploy/deploy.sh
 ```
 
-The container serves the site with nginx on `PORT`. Put a reverse proxy such as Caddy in front of it. After changing a brand, commit, pull and rebuild.
+The script resets the clone to `origin/main`, installs, regenerates the brands and themes, and builds into a temporary folder that replaces `dist/` only when the build succeeds. Set `SITE_URL` if the site is not at https://brand.wompland.com; it is used for the absolute links in the markdown pages.
 
-### Without Docker
-
-`dist/` is a plain static site, so any web server can serve it. Build it on the server (Node 22 or newer):
-
-```sh
-npm ci
-SITE_URL=https://brand.wompland.com npm run build
-```
-
-Then point Caddy at the folder:
-
-```caddy
-brand.wompland.com {
-	root * /path/to/branding/dist
-	encode zstd gzip
-	file_server
-
-	# Serve the markdown pages as text, not downloads
-	@md path *.md
-	header @md Content-Type "text/markdown; charset=utf-8"
-
-	# Optional: the same caching and CORS as the Docker image
-	header /assets/* Cache-Control "public, max-age=31536000, immutable"
-	@shared path /brands/* *.md
-	header @shared Access-Control-Allow-Origin *
-}
-```
-
-After changing a brand, pull and run the build again. The build clears `dist/` first, so pages may briefly miss files while it runs.
-
-To check the result, look at the `Content-Type` that `curl -sI https://brand.wompland.com/index.md` reports.
+Point Caddy at `dist/` with the site block in [`deploy/Caddyfile`](deploy/Caddyfile). It serves the markdown pages as `text/markdown`, caches the hashed assets, and allows other sites to fetch the brand files and markdown. To check, look at the `Content-Type` that `curl -sI https://brand.wompland.com/index.md` reports.
 
 ## License
 

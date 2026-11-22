@@ -22,3 +22,5 @@ archive/*/review-final/
 
 # Deployment settings
 .env
+.dist-next
+.dist-old

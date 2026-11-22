@@ -18,7 +18,7 @@ This repo is the source of truth for the WompLand brand family and the local too
 
 `npm run build` produces the read-only guide: no editor page (`toolkit/edit.html` is left out of the build), no save API, and no markup between `<!-- dev-only -->` and `<!-- /dev-only -->` (the New Womp form and editing copy; stripped in `vite.config.js`). Wrap any new editing-only markup in those markers.
 
-`Dockerfile` builds it and serves `dist/` with nginx (`deploy/nginx.conf`). `compose.yaml` maps host port `PORT` from `.env` (copy `.env.example`) to the container and passes `SITE_URL` to the build; Caddy proxies to it. Redeploy after brand changes: commit, pull in the stack, rebuild.
+It is served as static files: the server's clone at `/srv/brand.wompland.com` runs `deploy/deploy.sh` (reset to `origin/main`, install, regenerate, build into `.dist-next`, swap into `dist/`), and Caddy serves `dist/` with the block in `deploy/Caddyfile`. `SITE_URL` (default https://brand.wompland.com) sets the absolute links in the markdown. Redeploy after brand changes: commit, push, run the script on the server.
 
 ## How it fits together
 

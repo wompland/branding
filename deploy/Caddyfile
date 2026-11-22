@@ -1,0 +1,14 @@
+# Site block for /etc/caddy/Caddyfile. Serves only the built dist/, never the clone.
+brand.wompland.com {
+	root * /srv/brand.wompland.com/dist
+	encode zstd gzip
+	file_server
+
+	# Markdown pages display as text instead of downloading
+	@md path *.md
+	header @md Content-Type "text/markdown; charset=utf-8"
+
+	header /assets/* Cache-Control "public, max-age=31536000, immutable"
+	@shared path /brands/* *.md
+	header @shared Access-Control-Allow-Origin *
+}
