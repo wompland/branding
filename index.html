@@ -19,6 +19,7 @@
       <ul>
         <li><a href="/" aria-current="page">Brands</a></li>
         <li><a href="/toolkit/system.html">System guide</a></li>
+        <li><a href="/toolkit/usage.html">How to apply</a></li>
       </ul>
     </nav>
     <div class="toggle-cell">
@@ -34,6 +35,7 @@
       <div class="lede">
         <h1 id="page-title" class="h-display">Brands</h1>
         <p>WompLand is the master brand; every Womp is a sub-brand drawn from the same module kit and palette. <!-- dev-only -->Open a brand to edit its glyph and color, or read its guide for logo files, colors and theme.<!-- /dev-only --><span data-prod-only>Each brand's guide has its logo files, colors and theme.</span></p>
+        <p class="small">Putting a brand in an app? Read <a href="/toolkit/usage.html">how to apply a brand</a>.</p>
         <!-- dev-only --><p class="mt-6" data-dev-only><a class="btn btn-outline" href="#new-womp" id="jump-new">New Womp</a></p><!-- /dev-only -->
       </div>
     </section>
@@ -73,25 +75,9 @@
       </div>
     </section>
 
-    <section class="plate cols" aria-labelledby="palette-title">
-      <div class="plate-head">
-        <h2 id="palette-title">Palette</h2>
-        <p>Every brand's tile is one of these field colors, with its pale or deep partner as the glyph. All fields share one lightness so no Womp outweighs another.</p>
-        <p id="palette-status"></p>
-        <!-- dev-only --><p>The collection is edited in <code>scripts/palette.mjs</code> and checked with <code>npm run palette</code>.</p><!-- /dev-only -->
-      </div>
-      <div class="plate-body">
-        <ul id="palette" class="palette subgrid"></ul>
-      </div>
-    </section>
   </main>
 
-  <footer class="foot cols">
-    <div>
-      <p>WompLand branding toolkit.<!-- dev-only --> Brand sources live in <code>brands/</code>; generated files in <code>public/brands/</code>.<!-- /dev-only --></p>
-      <ul class="dlist"><li><a href="/toolkit/system.html">System guide</a></li><li><a href="#page-title">Back to top</a></li></ul>
-    </div>
-  </footer>
+  <!-- partial:footer -->
 </div>
 <script type="module" src="/src/toolkit/home.js"></script>
 </body>

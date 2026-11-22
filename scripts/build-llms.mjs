@@ -1,7 +1,7 @@
 // Writes the plain-text side of the public brand guide, for people and LLMs that do not run JavaScript:
 //   public/llms.txt                   index (llmstxt.org format) linking every markdown page
 //   public/llms-full.txt              every markdown page in one file
-//   public/index.md                   the brand family and the palette
+//   public/index.md                   the brand family
 //   public/usage.md                   how to apply a brand (the public part of BRANDING.md)
 //   public/toolkit/system.md          the brand system
 //   public/brands/<slug>/guide.md     one brand's guide: files, colors, theme, contrast, install
@@ -44,16 +44,21 @@ const SUMMARY = `WompLand is a family of small, self-hosted publishing apps. The
 
 // ---------- Pages ----------
 
+/** Every palette color with its gate ratios and the brands that use it. */
+function paletteTable() {
+  const rows = palette.map((e) => {
+    const r = Object.fromEntries(entryChecks(e).map((k) => [k.label, k.value]));
+    const users = usedBy(e.id);
+    return [e.name, `\`${e.field}\``, `\`${e.pale}\``, `\`${e.deep}\``, ratio(r['field vs white']), ratio(r['field vs graphite']), ratio(r['pale on field']), ratio(r['deep on field']), users.length ? users.join(', ') : 'Unused'];
+  });
+  return table(['Color', 'Field', 'Pale', 'Deep', 'Field on white', 'Field on graphite', 'Pale on field', 'Deep on field', 'Used by'], rows);
+}
+
 function indexPage() {
   const row = (b) => {
     const c = brandColors(b, palette);
     return [`[${b.name}](${url(guideMd(b.slug))})`, b.role === 'master' ? 'Master brand' : 'Womp', `${c.name} \`${c.field}\``, `${b.glyph}`, `\`${themeName(b.slug, 'light')}\`, \`${themeName(b.slug, 'dark')}\``];
   };
-  const pal = palette.map((e) => {
-    const r = Object.fromEntries(entryChecks(e).map((k) => [k.label, k.value]));
-    const users = usedBy(e.id);
-    return [e.name, `\`${e.field}\``, `\`${e.pale}\``, `\`${e.deep}\``, ratio(r['field vs white']), ratio(r['field vs graphite']), ratio(r['pale on field']), ratio(r['deep on field']), users.length ? users.join(', ') : 'Unused'];
-  });
   return `# WompLand brands
 
 ${SUMMARY}
@@ -63,12 +68,6 @@ Each brand's guide lists its logo files, colors, DaisyUI themes and contrast che
 ## The family
 
 ${table(['Brand', 'Role', 'Field color', 'Glyph', 'Themes'], brands.map(row))}
-
-## Palette
-
-Every brand's tile is one of these field colors, with its pale or deep partner as the glyph. All fields share one lightness (OKLCH L ${GATES.lightness[0]} to ${GATES.lightness[1]}) so no Womp outweighs another. Each field reaches ${GATES.fieldOnGround}:1 against white (\`${WHITE}\`) and graphite (\`${GRAPHITE}\`); pale and deep reach ${GATES.glyphOnField}:1 on their field.
-
-${table(['Color', 'Field', 'Pale', 'Deep', 'Field on white', 'Field on graphite', 'Pale on field', 'Deep on field', 'Used by'], pal)}
 
 ## More
 
@@ -137,7 +136,11 @@ ${subs.map(womp).join('\n')}
 3. **Pale and deep partners.** Each field has a pale and a deep glyph color of the same hue (within ${GATES.hueDrift}°), both at ${GATES.glyphOnField}:1 or more on the field. A brand picks one.
 4. **Distinct, and clear of look-alikes.** Neighbouring fields stay tellable apart, and every field keeps its distance from WordPress and Shopify colors. Blue is fine, but never blue plus a W.
 
-The colors themselves: [the palette](${url('/index.md')}#palette).
+### The colors
+
+Take a brand's colors from its theme, not from this table: the theme primary is derived from the field so it reaches 4.5:1 as text.
+
+${paletteTable()}
 
 ## Don'ts
 
@@ -288,9 +291,9 @@ ${brands.map((b) => `- [${b.name}](${url(guideMd(b.slug))}): ${b.role === 'maste
 
 ## Guides
 
-- [The family and the palette](${url('/index.md')}): every brand and all palette colors with their contrast ratios.
+- [The family](${url('/index.md')}): every brand with its color, glyph and theme names.
 - [How to apply a brand](${url('/usage.md')}): setup (Vite, Tailwind v4, DaisyUI 5, Archivo), favicons, manifest, light/dark logo swap, house style and the usage rules.
-- [The brand system](${url('/toolkit/system.md')}): the module kit, the icon's construction, the lockup spec, the sub-brand rule, palette rules, don'ts and the type scale.
+- [The brand system](${url('/toolkit/system.md')}): the module kit, the icon's construction, the lockup spec, the sub-brand rule, the palette and its rules, don'ts and the type scale.
 
 ## Optional
 

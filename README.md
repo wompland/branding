@@ -21,7 +21,7 @@ npm run dev
 
 This regenerates every brand, then serves the toolkit at http://localhost:5173/:
 
-- the brand family, palette and the form for creating a new Womp (`/`)
+- the brand family and the form for creating a new Womp (`/`)
 - the editor (`/toolkit/edit.html?brand=<slug>`)
 - each brand guide (`/toolkit/brand.html?brand=<slug>`)
 - the system guide (`/toolkit/system.html`)

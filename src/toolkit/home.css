@@ -16,6 +16,8 @@
 .meta { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
 .dot { display: inline-block; width: 14px; height: 14px; border: 1px solid var(--grid-strong); flex: none; }
 .actions { display: flex; flex-wrap: wrap; gap: 8px; }
+/* Full-size tap targets on the type scale. */
+.actions .btn { min-height: 44px; font-size: var(--t-small); }
 
 /* Subs: one row each, lockups at one scale, on the same 5 + 3 split as the master. */
 .subs { border-top: 2px solid var(--rule); row-gap: 0; }
@@ -42,14 +44,3 @@
 .preview-box { border: 2px dashed var(--grid-strong); padding: 16px; min-height: 80px; display: flex; align-items: center; }
 .preview-box svg { display: block; height: 48px; width: auto; max-width: 100%; }
 
-/* Palette: one card per half; the ratio table runs the card's full width. */
-.palette { row-gap: 0; }
-.pal { display: grid; gap: 12px; align-content: start; padding-block: 16px 24px; border-top: 2px solid var(--rule); }
-.pal-field { position: relative; display: block; width: 72px; height: 72px; border: 1px solid var(--grid-strong); }
-.pal-field span { position: absolute; width: 24px; height: 24px; bottom: 8px; }
-.pal-field span:first-child { left: 8px; }
-.pal-field span:last-child { left: 40px; }
-.pal-name { font-size: var(--t-h3); letter-spacing: -0.01em; }
-.pal-hex { display: grid; gap: 2px; margin-top: 6px; }
-.pal-hex div { display: flex; gap: 6px; }
-.pal-hex dt { color: var(--muted); }

@@ -30,7 +30,7 @@ function hero(b, f) {
       <h1 id="page-title" class="h1">${esc(b.name)} brand guide</h1>
       <p class="small muted">${b.role === 'master' ? 'Master brand' : 'Womp'} · ${esc(b.colors.name)} field · ${b.glyph === 'pale' ? 'Pale' : 'Deep'} glyph · themes <code>${b.themes.light}</code> and <code>${b.themes.dark}</code></p>
       ${OBJECT_NOTES[b.slug] ? `<p>${esc(OBJECT_NOTES[b.slug])}</p>` : ''}
-      <p class="small">Working with a coding agent? Give it <a href="/brands/${b.slug}/guide.md">this guide as markdown</a>, or <a href="/llms.txt">llms.txt</a> for every brand.</p>
+      <p class="small">Working with a coding agent? Give it <a href="/brands/${b.slug}/guide.md">this guide as markdown</a>.</p>
       ${edit ? `<div class="hero-actions mt-6">${edit}</div>` : ''}
     </div>
     <nav class="pagenav" aria-label="On this page"><ol>${sections.map(([id, t]) => `<li><a href="#${id}">${t}</a></li>`).join('')}</ol></nav>
@@ -370,7 +370,7 @@ function install(b, themeCSS) {
     ${snippet('snip-links', 'Favicon tags', `Copy <code>favicon.ico</code>, <code>favicon.svg</code> and <code>apple-touch-icon.png</code> to your site root, then add these to the <code>&lt;head&gt;</code>.`, links)}
     ${snippet('snip-manifest', 'Web app manifest', 'Copy <code>icon-192.png</code> and <code>icon-512.png</code> to your site root, save this as <code>site.webmanifest</code>, and link it with <code>&lt;link rel="manifest" href="/site.webmanifest"&gt;</code>.', manifest)}
     ${snippet('snip-logo', 'Logo in the header', 'Size the logo with a class, not a <code>height</code> attribute: Tailwind\'s base styles override the attribute. Both images carry the brand name as <code>alt</code>; the CSS below shows the one that matches the theme.', logo)}
-    ${snippet('snip-logo-css', 'Logo, light and dark', `Shows the reverse logo when the visitor prefers dark or the page sets a dark theme. For a remembered light/dark switch, see <a href="/usage.md">the usage notes</a>.`, logoCSS)}
+    ${snippet('snip-logo-css', 'Logo, light and dark', `Shows the reverse logo when the visitor prefers dark or the page sets a dark theme. For a remembered light/dark switch, see <a href="/toolkit/usage.html">how to apply a brand</a>.`, logoCSS)}
     ${snippet('snip-import', 'DaisyUI theme, as a file', 'Save <code>daisyui-theme.css</code> next to your main stylesheet and import it after DaisyUI.', imp)}
     ${snippet('snip-blocks', 'DaisyUI theme, pasted', 'Or paste all of it after <code>@plugin "daisyui"</code>: both theme blocks and the tab fix.', themeCSS ?? 'Could not load daisyui-theme.css. Download it from Logo files above.')}`);
 }
@@ -408,7 +408,6 @@ async function render() {
   alt.href = `/brands/${b.slug}/guide.md`;
   alt.title = `${b.name} brand guide (markdown)`;
   document.getElementById('favicon').href = fresh(b.assets.favicon);
-  document.getElementById('foot-src').href = `/brands/${b.slug}/brand.json`;
   const y = scrollY;
   main.innerHTML = hero(b, f) + files(b) + grounds(b, f) + colors(b) + themes(b) + app(b, f) + install(b, themeCSS);
   main.removeAttribute('aria-busy');

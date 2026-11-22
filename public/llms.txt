@@ -13,9 +13,9 @@ Every logo, icon and theme below is generated from each brand's data. Use the fi
 
 ## Guides
 
-- [The family and the palette](https://brand.wompland.com/index.md): every brand and all palette colors with their contrast ratios.
+- [The family](https://brand.wompland.com/index.md): every brand with its color, glyph and theme names.
 - [How to apply a brand](https://brand.wompland.com/usage.md): setup (Vite, Tailwind v4, DaisyUI 5, Archivo), favicons, manifest, light/dark logo swap, house style and the usage rules.
-- [The brand system](https://brand.wompland.com/toolkit/system.md): the module kit, the icon's construction, the lockup spec, the sub-brand rule, palette rules, don'ts and the type scale.
+- [The brand system](https://brand.wompland.com/toolkit/system.md): the module kit, the icon's construction, the lockup spec, the sub-brand rule, the palette and its rules, don'ts and the type scale.
 
 ## Optional
 

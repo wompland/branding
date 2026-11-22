@@ -1,6 +1,8 @@
 import { defineConfig } from 'vite';
 import tailwindcss from '@tailwindcss/vite';
 import brands from './vite/brands-plugin.mjs';
+import usagePage from './vite/usage-page.mjs';
+import partials from './vite/partials.mjs';
 import { existsSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 
@@ -22,7 +24,7 @@ export default defineConfig(({ command }) => {
       .map((f) => [f.replace('.html', ''), resolve(toolkit, f)]),
   );
   return {
-    plugins: [tailwindcss(), brands(), stripDevOnly],
+    plugins: [tailwindcss(), brands(), partials(), usagePage(), stripDevOnly],
     build: { rollupOptions: { input: { index: resolve(import.meta.dirname, 'index.html'), ...pages } } },
   };
 });

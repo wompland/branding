@@ -139,7 +139,7 @@ sync();
 
 ## Rules
 
-These come from the brand system (`DESIGN.md`); they are the ones most often broken.
+These come from the brand system; they are the ones most often broken.
 
 - **Use the files as they are.** Don't redraw, recolor, stretch, rotate, flip, outline or add effects (shadows, gradients, rounded corners) to the tile or the logo. Don't put the icon inside a circle or ring.
 - **Never rebuild the name.** Don't set "blogWomp" in a font next to `mark.svg` to fake a lockup; use `horizontal.svg` or `stacked.svg`.

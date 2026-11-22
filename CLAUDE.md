@@ -26,10 +26,10 @@ This repo is the source of truth for the WompLand brand family and the local too
 - `brands/palette.json` is generated: edit `SPEC` in `scripts/palette.mjs`, then run `node scripts/palette.mjs --write`.
 - `src/brand/` is the isomorphic core (schema, palette gates, geometry, text outlining, lockups, theme tokens). The browser pages and the Node generator import the same code; keep it free of Node APIs.
 - `scripts/build-brands.mjs` writes `public/brands/<slug>/` (SVG, PNG, ICO, `daisyui-theme.css`, `brand.json`) and `public/brands/index.json`. Generated: never edit by hand.
-- `scripts/build-llms.mjs` writes the plain-text site for readers without JavaScript: `public/llms.txt`, `llms-full.txt`, `index.md`, `usage.md`, `toolkit/system.md` and `brands/<slug>/guide.md`, each linked from its HTML page with `<link rel="alternate" type="text/markdown">`. `usage.md` is the part of `BRANDING.md` between the `public:start` / `public:end` markers, so keep that part free of local paths. `system.md` mirrors `toolkit/system.html`'s copy: change both together.
+- `scripts/build-llms.mjs` writes the plain-text site for readers without JavaScript: `public/llms.txt`, `llms-full.txt`, `index.md`, `usage.md`, `toolkit/system.md` and `brands/<slug>/guide.md`, each linked from its HTML page with `<link rel="alternate" type="text/markdown">`. `usage.md` is the part of `BRANDING.md` between the `public:start` / `public:end` markers, so keep that part free of local paths; `vite/usage-page.mjs` renders it into the HTML page `toolkit/usage.html` at serve and build time. `system.md` mirrors `toolkit/system.html`'s copy: change both together.
 - `src/brand/notes.js` holds per-brand prose (what each icon depicts, usage notes), shared by the guides and the markdown.
 - `vite/brands-plugin.mjs` is the dev-only save API (`/__brands`) the editor uses; it validates, writes atomically, regenerates and fires the `wompland:brands` HMR event.
-- Pages: `index.html`, `toolkit/*.html`, scripts and CSS in `src/toolkit/`. Read pages share `base.css` + `sheet.css`.
+- Pages: `index.html`, `toolkit/*.html`, scripts and CSS in `src/toolkit/`. Read pages share `base.css` + `sheet.css`, and the footer: `<!-- partial:footer -->` is replaced with `src/partials/footer.html` (`vite/partials.mjs`).
 - `archive/` holds the retired identity explorations; see `archive/README.md`. Not part of the build.
 
 ## Rules when changing things
