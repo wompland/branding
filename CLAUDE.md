@@ -29,7 +29,7 @@ This repo is the source of truth for the WompLand brand family and the local too
 - `scripts/build-llms.mjs` writes the plain-text site for readers without JavaScript: `public/llms.txt`, `llms-full.txt`, `index.md`, `usage.md`, `toolkit/system.md` and `brands/<slug>/guide.md`, each linked from its HTML page with `<link rel="alternate" type="text/markdown">`. `usage.md` is the part of `BRANDING.md` between the `public:start` / `public:end` markers, so keep that part free of local paths; `vite/usage-page.mjs` renders it into the HTML page `toolkit/usage.html` at serve and build time. `system.md` mirrors `toolkit/system.html`'s copy: change both together.
 - `src/brand/notes.js` holds per-brand prose (what each icon depicts, usage notes), shared by the guides and the markdown.
 - `vite/brands-plugin.mjs` is the dev-only save API (`/__brands`) the editor uses; it validates, writes atomically, regenerates and fires the `wompland:brands` HMR event.
-- Pages: `index.html`, `toolkit/*.html`, scripts and CSS in `src/toolkit/`. Read pages share `base.css` + `sheet.css`, and the footer: `<!-- partial:footer -->` is replaced with `src/partials/footer.html` (`vite/partials.mjs`).
+- Pages: `index.html`, `toolkit/*.html`, scripts and CSS in `src/toolkit/`. Read pages share `base.css` + `sheet.css`, plus the masthead and footer: `<!-- partial:masthead current="/path" -->` and `<!-- partial:footer -->` are replaced with `src/partials/*.html` (`vite/partials.mjs`); `current` marks the nav link for that page's section.
 - `archive/` holds the retired identity explorations; see `archive/README.md`. Not part of the build.
 
 ## Rules when changing things
